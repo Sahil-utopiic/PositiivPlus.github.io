@@ -140,7 +140,7 @@ $(function(){
           ticks: {
             beginAtZero:true,
             fontSize: 10,
-            fontColor: '#182b49'
+            fontColor: '#e5e9f2'
           }
         }],
         xAxes: [{
@@ -152,7 +152,7 @@ $(function(){
           ticks: {
             beginAtZero:true,
             fontSize: 11,
-            fontColor: '#182b49'
+            fontColor: '#e5e9f2'
           }
         }]
       }
