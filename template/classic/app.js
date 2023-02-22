@@ -28,7 +28,7 @@ $(document).on("change", ".uploadProfileInput", function () {
           // If upload successful
           if (Math.random() < 0.9) {
             $(wrapper).append(
-              '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i>Profile image updated successfully</div>'
+              '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i>Profile Logo updated successfully</div>'
             );
   
             // Clear input after upload
