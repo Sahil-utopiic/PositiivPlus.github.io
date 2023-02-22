@@ -32,21 +32,30 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
 
-    <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
+    <title>Positiiv Plus | Dashboard</title>
 
     <!-- vendor css -->
     <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="../../lib/jqvmap/jqvmap.min.css" rel="stylesheet">
+    <link href="../lib/jqvmap/jqvmap.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.dashboard.css">
-    <link href="../../lib/morris.js/morris.css" rel="stylesheet">
+    <!-- <link href="../../lib/morris.js/morris.css" rel="stylesheet"> -->
    
    <style>   
+   .Profile-text{
+    display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  min-height: 45vh;
+  width: 100%;
+   }
       .profile-pic-wrapper {
-        padding-left: 3%;
+        padding-right: 3%;
         background-color: #f8f8f6;
   min-height: 50vh;
   width: 100%;
@@ -54,7 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: start;
+  align-items: flex-end;
 }
 .pic-holder {
   text-align: center;
@@ -409,31 +418,42 @@
             <h4 class="mg-b-0 tx-spacing--1">Welcome to Dashboard</h4>
           </div>
           <div class="d-none d-md-block">
-            <!-- <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="mail" class="wd-10 mg-r-5"></i> Email</button>
-            <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="printer" class="wd-10 mg-r-5"></i> Print</button>
-            <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Generate Report</button> -->
+              <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="share-2" class="wd-10 mg-r-5"></i> Share</button>
+              <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="sliders" class="wd-10 mg-r-5"></i> Edit</button>
           </div>
         </div>
         <!-- photo  -->
-        <div class="card profile-pic-wrapper mg-t-10">
-          <div class="pic-holder">
-            <img id="profilePic" class="pic" src="../../assets/img/cal1.png">
-            <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
-            <label for="newProfilePhoto" class="upload-file-block">
-              <div class="text-center">
-                <div class="mb-2">
-                  <i class="fa fa-camera fa-2x"></i>
-                </div>
-                <div class="text-uppercase">
-                  Update <br /> Profile Photo
-                </div>
-              </div>
-            </label>
+        <div class="container card" style="background-color: #f8f8f6;">
+          <div class="row ">
+          <div class="col-8"> 
+            <div class="Profile-text">
+              <h1 class="mg tx-spacing--1">Company Name</h1>
+              <h3 class="mg-t-10 tx-spacing--1">Industry | Location</h3>
+            </div>  
           </div>
+          <div class="col-4">
+            <div class=" profile-pic-wrapper mg-t-10">
+                <div class="pic-holder">
+                <img id="profilePic" class="pic" src="../../assets/img/cal1.png">
+                <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
+                <label for="newProfilePhoto" class="upload-file-block">
+                  <div class="text-center">
+                    <div class="mb-2">
+                      <i class="fa fa-camera fa-2x"></i>
+                    </div>
+                    <div class="text-uppercase">
+                      Update <br /> Profile Photo
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div> 
+          </div>
+        </div>
         </div>
         <!-- end  -->
         <!-- <profile names  -->
-        <div class="card mg-t-10 pd-40 bg-white-100 ">
+        <!-- <div class="card mg-t-10 pd-40 bg-white-100 ">
         <div class="row">
           <div class="col-9">
             <h4 class=" tx-color-03 ">Name</h4>
@@ -474,7 +494,7 @@
             <a href="" class="nav-link"><i data-feather="github"></i></a>
           </nav>
         </div>
-        </div>
+        </div> -->
         <!-- end  -->
         <!-- description  -->
         <div class="card mg-t-10 pd-40 bg-white-100 ">
@@ -488,12 +508,36 @@
 
         <!-- row -->
         <div class="row row-xs mg-t-10">
-       
+          <div class="col-6">
+            <div class="card">
+              line
+            </div>
           </div>
-          <!-- col -->
-          
+          <div class="col-6">
+            <div class="card">
+
+              <!-- <div data-label="Example" class="df-example">
+                <div id="morrisStacked" class="morris-wrapper-demo"></div>
+              </div> -->
+              <div data-label="Example" class="df-example">
+                <div class="ht-250 ht-lg-300"><canvas id="chartBar1"></canvas></div>
+              </div>
+          </div>
+          </div>
+          <div class="row">
+              
+    <div class="card mg-t-20 contet ontent-components">
+      <div class="container">
+        <p class="df-lead text-white">Lorem ipsum dolor sit amet sdfsdfsafd consectetur adipisicing elit. Aliquam exercitationem illum quis consectetur blanditiis natus deserunt earum ducimus optio quos cumque dolorem nihil, quisquam, doloribus quam labore, officia adipisci fugiat?</p>
+        <div data-label="Example" class="df-example">
+          <div id="vmap5" class="ht-600 ht-lg-500"></div>
         </div>
-      </div><!-- container -->
+      </div>
+    </div><!-- content -->
+          </div>
+          </div>
+        </div>
+      </div>
     </div><!-- content -->
 
     <footer class="footer">
@@ -521,18 +565,95 @@
     <script src="../../lib/jqvmap/jquery.vmap.min.js"></script>
     <script src="../../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
 
+    <!-- <script src="../../assets/js/dashforge.js"></script> -->
+    <!-- <script src="../../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="../../lib/jqvmap/maps/jquery.vmap.canada.js"></script> -->
+    <script src="../../assets/js/jquery.vmap.sampledata.js"></script>
     <script src="../../assets/js/dashforge.js"></script>
+    <script src="../../assets/js/chart.chartjs.js"></script>
+
+      
     <script src="../../assets/js/dashforge.sampledata.js"></script>
     <script src="../../assets/js/dashboard-one.js"></script>
-    
-
-
-    <script src="../../lib/morris.js/morris.min.js"></script>
-    <script src="../../assets/js/chart.morris.js"></script>
+    <script src="../../lib/jqvmap/maps/jquery.vmap.world.js"></script>
+    <!-- <script src="../../lib/morris.js/morris.min.js"></script> -->
+    <!-- <script src="../../assets/js/chart.morris.js"></script> -->
     <!-- append theme customizer -->
     <script src="../../lib/js-cookie/js.cookie.js"></script>
     <script src="../../assets/js/dashforge.settings.js"></script>
+    
 <script src="../classic/app.js"></script>
+<script>
+  $(function(){
+    'use strict';
+
+    $('#vmap').vectorMap({
+      map: 'world_en',
+      backgroundColor: '#fff',
+      borderColor: '#fff',
+      color: '#8392a5',
+      selectedColor: null,
+      hoverColor: null,
+      hoverOpacity: 0.8,
+      enableZoom: false,
+      showTooltip: false
+    });
+
+    $('#vmap2').vectorMap({
+      map: 'world_en',
+      backgroundColor: '#fff',
+      borderColor: '#fff',
+      color: '#8392a5',
+      selectedColor: null,
+      hoverColor: null,
+      hoverOpacity: 0.8,
+      enableZoom: true,
+      showTooltip: false
+    });
+
+    $('#vmap3').vectorMap({
+      map: 'world_en',
+      backgroundColor: '#fff',
+      borderColor: '#fff',
+      color: '#8392a5',
+      selectedColor: null,
+      hoverColor: null,
+      hoverOpacity: 0.8,
+      enableZoom: false,
+      showTooltip: true
+    });
+
+    $('#vmap4').vectorMap({
+      map: 'usa_en',
+      backgroundColor: '#fff',
+      borderColor: '#fff',
+      color: '#8392a5',
+      selectedColor: null,
+      hoverColor: null,
+      hoverOpacity: 0.8,
+      enableZoom: false,
+      showTooltip: true
+    });
+
+    $('#vmap5').vectorMap({
+      map: 'world_en',
+      backgroundColor: '#fff',
+      borderColor: '#fff',
+      color: '#8392a5',
+      selectedColor: null,
+      hoverColor: null,
+      hoverOpacity: 0.8,
+      enableZoom: false,
+      showTooltip: true,
+      selectedColor: '#0168fa',
+      selectedRegions: ['IN','TX','MO', 'CO'],
+      multiSelectRegion: true
+    });
+
+  });
+</script>
+
+
 
   </body>
 </html>
