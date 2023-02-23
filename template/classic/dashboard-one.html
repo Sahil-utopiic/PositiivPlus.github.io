@@ -47,7 +47,7 @@
    
    <style>   
    .Profile-text{
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -55,8 +55,8 @@
   width: 100%;
    }
       .profile-pic-wrapper {
-        padding-right: 5%;
-        background-color: #f8f8f6;
+  padding-right: 5%;
+  background-color: #f8f8f6;
   min-height: 30vh;
   width: 100%;
   position: relative;
@@ -68,7 +68,6 @@
 .pic-holder {
   text-align: center;
   position: relative;
-  /* border-radius: 50%; */
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -121,7 +120,76 @@
 .pic-holder.uploadInProgress .upload-loader {
   opacity: 1;
 }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 326px) { 
+  #company-heading{
+    font-size: 20px;font-weight: 500;
+  }
+  #industry-text{
+    font-size: 14px;font-weight: 300;
 
+  }
+  .pic-holder {
+  text-align: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Profile-text{
+  min-height: 25vh;
+   }
+      .profile-pic-wrapper {
+  min-height: 25vh;
+}
+
+ }
+@media (min-width: 576px) { 
+  #company-heading{
+    font-size: 28px;font-weight: 500;
+  }
+  #industry-text{
+    font-size: 18px;font-weight: 300;
+
+  }
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  #company-heading{
+    font-size: 34px;font-weight: 500;
+  }
+  #industry-text{
+    font-size: 24px;font-weight: 300;
+
+  }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #company-heading{
+    font-size: 48px;font-weight: 500;
+  }
+  #industry-text{
+    font-size: 30px;font-weight: 300;
+
+  }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
 /* Snackbar css */
 .snackbar {
   visibility: hidden;
@@ -144,6 +212,7 @@
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
+
 
 @-webkit-keyframes fadein {
   from {
@@ -427,8 +496,8 @@
           <div class="row ">
           <div class="col-8"> 
             <div class="Profile-text">
-              <p style="font-size: 48px;font-weight: 500;">Utopiic Innovation Pvt Ltd</p>
-              <p style="font-size: 30px;font-weight: 300;" >Software Company | Faridabad</p>
+              <p id="company-heading">Utopiic Innovation Pvt Ltd</p>
+              <p id="industry-text" >Software Company | Faridabad</p>
             </div>  
           </div>
           <div class="col-4">
@@ -485,8 +554,7 @@
         </div>
           
         <div><canvas id="chartBar2"></canvas></div>
-
-          <div><canvas id="chartBar1"></canvas></div>
+        <div><canvas id="chartBar1"></canvas></div>
     
       </div>
     </div><!-- content -->

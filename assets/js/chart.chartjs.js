@@ -119,7 +119,7 @@ $(function(){
         backgroundColor: ctxColor1
       }, {
         data: ctxData2,
-        backgroundColor: ctxColor2
+        backgroundColor: ctxColor1
       }]
     },
     options: {
