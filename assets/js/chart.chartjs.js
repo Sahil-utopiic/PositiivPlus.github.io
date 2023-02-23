@@ -7,6 +7,9 @@ $(function(){
   var ctxData2 = [10, 40, 30, 40, 60, 55, 45, 35, 30, 20, 15, 20];
   var ctxColor1 = '#001737';
   var ctxColor2 = '#1ce1ac';
+  var ctxColor3 = '#000000';
+  var ctxColor4  = '#dffd73';
+
 
   // Bar chart
   var ctx1 = document.getElementById('chartBar1').getContext('2d');
@@ -116,10 +119,10 @@ $(function(){
       labels: ctxLabel,
       datasets: [{
         data: ctxData1,
-        backgroundColor: ctxColor1
+        backgroundColor: ctxColor3
       }, {
         data: ctxData2,
-        backgroundColor: ctxColor1
+        backgroundColor: ctxColor4
       }]
     },
     options: {
@@ -172,7 +175,7 @@ $(function(){
         fill: false
       },{
         data: ctxData2,
-        borderColor: ctxColor2,
+        borderColor: ctxColor4,
         borderWidth: 1,
         fill: false
       }]
