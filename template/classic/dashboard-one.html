@@ -121,6 +121,22 @@
 .pic-holder.uploadInProgress .upload-loader {
   opacity: 1;
 }
+ /* line css  */
+.head {
+  border: 1px solid rgb(215, 214, 214);
+  width: 100%;
+  height: auto;
+  border-radius:6px;
+}
+
+.head p {
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 20%;
+  padding-left:1%;
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 326px) { 
   #company-heading{
@@ -265,7 +281,7 @@
     opacity: 0;
   }
 }
-
+/* lines css  */
     </style>
   </head>
   <body class="page-profile">
@@ -541,21 +557,23 @@
           </div>
         </div>
       <!-- end  -->
-
+    
         <!-- row -->
         <div class="row row-xs mg-t-10">
-          <div class="col-md-6 col-lg-6">
-            <div class="card p-3">
-              <div class="container">
-              <div data-label="Example" class="df-example">
+          <div class="col-md-6 col-lg-4">
+            <div class="head">
+              <p>Line Graph</p>
+            <div class="p-3">
+              <div data-label="Example" class=".inline" >
               <div class="ht-250 ht-lg-300"><canvas id="chartLine1"></canvas></div>
             </div>
             </div>
-            </div>
           </div>
-          <div class="col-md-6 col-lg-6">
-            <div class="card p-3">
-              <div class="container">
+          </div>
+          <div class="col-md-6 col-lg-8">
+            <div class="head">
+              <p>Bar Graph</p>
+            <div class=" p-3">
                 <div data-label="Example" class="df-example">
                   <div class="ht-250 ht-lg-300"><canvas id="chartBar3"></canvas></div>
                 </div>
@@ -565,8 +583,9 @@
             </div>
           </div>
           <div class="row row-xs">
-              
-    <div class="card mg-t-20 contet ontent-components">
+    <div class=" mg-t-20 contet ontent-components">
+      <div class="head">
+        <p>World Map</p>
       <div class="container">
         <p class="df-lead " style="opacity: 0;visibility: hidden;">Lorem ipsum dolor sit amet sdfsdfsafd consectetur adipisicing elit. Aliquam exercitationem illum quis consectetur blanditiis natus deserunt earum ducimus optio quos cumque dolorem nihil, quisquam, doloribus quam labore, officia adipisci fugiat?</p>
         <div data-label="Example" class="df-example">
