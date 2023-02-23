@@ -131,21 +131,14 @@
 
   }
   .pic-holder {
-  text-align: center;
-  position: relative;
   width: 100px;
   height: 100px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
 }
 .Profile-text{
-  min-height: 25vh;
+    min-height: 25vh;
    }
-      .profile-pic-wrapper {
-  min-height: 25vh;
+  .profile-pic-wrapper {
+    min-height: 25vh;
 }
 
  }
@@ -155,8 +148,11 @@
   }
   #industry-text{
     font-size: 18px;font-weight: 300;
-
   }
+  .pic-holder {
+  width: 150px;
+  height: 150px;
+}
 
  }
 
@@ -169,6 +165,10 @@
     font-size: 24px;font-weight: 300;
 
   }
+  .pic-holder {
+  width: 170px;
+  height: 170px;
+}
  }
 
 /* // Large devices (desktops, 992px and up) */
@@ -180,11 +180,18 @@
     font-size: 30px;font-weight: 300;
 
   }
+  .pic-holder {
+  width:170px;
+  height: 170px;
+}
  }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
+  .pic-holder {
+  width:200px;
+  height: 200px;
+}
  }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -547,16 +554,16 @@
           <div class="col-md-6 col-lg-6">
             <div class="card">
               
-    <div class="content content-components">
-      <div class="container">
+            <div class="content content-components">
+              <div class="container">
 
-        <div data-label="Example" class="df-example">
-          <div class="ht-250 ht-lg-300"><canvas id="chartBar3"></canvas></div>
-        </div>
-          
-        <div><canvas id="chartBar2"></canvas></div>
-        <div><canvas id="chartBar1"></canvas></div>
-    
+                <div data-label="Example" class="df-example">
+                  <div class="ht-250 ht-lg-300"><canvas id="chartBar3"></canvas></div>
+                </div>
+                  
+                <div style="display: none;"><canvas id="chartBar2"></canvas></div>
+                <div style="display: none;"><canvas id="chartBar1"></canvas></div>
+            
       </div>
     </div><!-- content -->
             </div>
