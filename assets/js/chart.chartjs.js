@@ -161,6 +161,56 @@ $(function(){
       }
     }
   });
+   //Custom  Stacked chart
+   var ctx3 = document.getElementById('customchartBar3').getContext('2d');
+   new Chart(ctx3, {
+     type: 'horizontalBar',
+     data: {
+       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+       datasets: [{
+        data: [20, 60, 50, 45, 50, 60],
+        backgroundColor: ctxColor1
+      }, {
+         data: ctxData2,
+         backgroundColor: ctxColor4
+       }]
+     },
+     options: {
+       maintainAspectRatio: false,
+       responsive: true,
+       legend: {
+         display: false,
+         labels: {
+           display: false
+         }
+       },
+       scales: {
+         yAxes: [{
+           stacked: true,
+           gridLines: {
+             color: '#e5e9f2'
+           },
+           ticks: {
+             beginAtZero:true,
+             fontSize: 10,
+             fontColor: '#e5e9f2'
+           }
+         }],
+         xAxes: [{
+           stacked: true,
+           gridLines: {
+             display: false
+           },
+           barPercentage: 0.6,
+           ticks: {
+             beginAtZero:true,
+             fontSize: 11,
+             fontColor: '#e5e9f2'
+           }
+         }]
+       }
+     }
+   });
 
   // Line chart
   var ctx4 = document.getElementById('chartLine1');
