@@ -128,7 +128,21 @@
   height: auto;
   border-radius:6px;
 }
+.descriptionhead{
+  border: 1px solid rgb(215, 214, 214);
+  width: 100%;
+  height: auto;
+  border-radius:6px;
 
+}
+.descriptionhead .desc-text{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 90px;
+  padding-left:1%;
+}
 .head p {
   margin-top: -0.7em;
   margin-left: 20px;
@@ -564,7 +578,7 @@
           <div class="col-4">
             <div class=" profile-pic-wrapper mg-t-5">
                 <div class="pic-holder">
-                <img id="profilePic" class="pic" src="../../assets/img/imgg.jpeg">
+                <img id="profilePic" class="pic " src="../../UTOPIIC_2_1_100x100.png">
                 <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
                 <label for="newProfilePhoto" class="upload-file-block">
                   <div class="text-center">
@@ -584,15 +598,17 @@
         <!-- end  -->
         
         <!-- description  -->
-        <div class="card mg-t-25 pd-40 bg-white-100 ">
-          <h4>Description</h4>
-          <div class="placeholder-paragraph">
-            <label class="">Sustainability software companies typically work with organizations across different 
-              industries to help them identify and track their environmental impact, set goals for reducing their
-               carbon footprint, and manage their sustainability-related data. This can include tracking energy 
-               consumption, water usage, waste generation, and greenhouse gas emissions.</label>
+        <div class="row row-xs mg-t-20">
+          <div class="col mg-t-20 ">
+            <div class="descriptionhead">
+              <p class="desc-text">Description</p>
+             <p class="p-4">Sustainability software companies typically work with organizations across different industries to help them identify 
+              and track their environmental impact, set goals for reducing their carbon footprint, and manage their sustainability-related data.
+               This can include tracking energy consumption, water usage, waste generation, and greenhouse gas emissions.
+              </p> 
           </div>
         </div>
+      </div>
       <!-- end  -->
     
         <!-- row -->
