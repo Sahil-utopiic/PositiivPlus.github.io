@@ -166,12 +166,12 @@ $(function(){
    new Chart(ctx3, {
      type: 'horizontalBar',
      data: {
-       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+       labels: ['Jan', 'Feb' ],
        datasets: [{
-        data: [20, 60, 50, 45, 50, 60],
+        data: [20, 60],
         backgroundColor: ctxColor1
       }, {
-         data: ctxData2,
+         data:[10, 40],
          backgroundColor: ctxColor4
        }]
      },
@@ -188,12 +188,13 @@ $(function(){
          yAxes: [{
            stacked: true,
            gridLines: {
+            display:false,
              color: '#e5e9f2'
            },
            ticks: {
              beginAtZero:true,
-             fontSize: 10,
-             fontColor: '#e5e9f2'
+             fontSize: 12,
+             fontColor: '#182b49'
            }
          }],
          xAxes: [{
@@ -201,11 +202,12 @@ $(function(){
            gridLines: {
              display: false
            },
-           barPercentage: 0.6,
+           barPercentage: 0.,
            ticks: {
              beginAtZero:true,
              fontSize: 11,
-             fontColor: '#e5e9f2'
+             fontColor: '#182b49',
+             max:100
            }
          }]
        }
