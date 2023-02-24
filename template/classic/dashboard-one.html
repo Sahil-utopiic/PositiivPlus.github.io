@@ -134,8 +134,49 @@
   margin-left: 20px;
   background-color: white;
   display: block;
-  width: 20%;
+  width: 80px;
   padding-left:1%;
+}
+.head label{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 50px;
+  padding-left:1%;
+}
+.maphead {
+  border: 1px solid rgb(215, 214, 214);
+  width: 100%;
+  height: auto;
+  border-radius:6px;
+}
+.maphead .map-title{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 90px;
+  padding-left:1%;
+
+}
+.head .title-border{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 110px;
+  padding-left:1%;
+
+}
+.head .title-border2{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 140px;
+  padding-left:1%;
+
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 326px) { 
@@ -574,6 +615,7 @@
             <div class="head">
               <p>Bar Graph</p>
             <div class=" p-3">
+              <!-- <div class="container"> -->
                 <div data-label="Example" class="df-example">
                   <div class="ht-250 ht-lg-300"><canvas id="chartBar3"></canvas></div>
                 </div>
@@ -582,22 +624,27 @@
               </div>
             </div>
           </div>
-          <div class="row row-xs">
-    <div class=" mg-t-20 contet ontent-components">
-      <div class="head">
-        <p>World Map</p>
-      <div class="container">
-        <p class="df-lead " style="opacity: 0;visibility: hidden;">Lorem ipsum dolor sit amet sdfsdfsafd consectetur adipisicing elit. Aliquam exercitationem illum quis consectetur blanditiis natus deserunt earum ducimus optio quos cumque dolorem nihil, quisquam, doloribus quam labore, officia adipisci fugiat?</p>
-        <div data-label="Example" class="df-example">
-          <div id="vmap5" class="ht-600 ht-lg-500"></div>
-        </div>
-      </div>
-    </div><!-- content -->
-          </div>
+            <div class="row row-xs">
+            <div class=" mg-t-20">
+              <div class="maphead">
+                <p class="map-title">World Map</p>
+              <div class="container">
+                <p class="df-lead " style="opacity: 0;visibility: hidden;">Lorem ipsum dolor sit amet sdfsdfsafd consectetur adipisicing elit. Aliquam exercitationem illum quis consectetur blanditiis natus deserunt earum ducimus optio quos cumque dolorem nihil, quisquam, doloribus quam labore, officia adipisci fugiat?</p>
+                <div data-label="Example" class="df-example">
+                  <div id="vmap5" class="ht-600 ht-lg-500"></div>
+                </div>
+              </div>
+              </div>
+              
+            </div><!-- content -->
+           </div>
+          
           <div class="row row-xs mg-t-30">
               <div class="col-md-4 col-lg-4 mg-t-40">
-                <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Skills</label>
-                <ul class="list-inline list-inline-skills">
+                <div class="head">
+                  <label>Skills</label>
+                <!-- <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Skills</label> -->
+                <ul class="list-inline list-inline-skills"  style="padding-left: 5%;">
                   <li class="list-inline-item"><a href="">HTML5</a></li>
                   <li class="list-inline-item"><a href="">Sass</a></li>
                   <li class="list-inline-item"><a href="">CSS</a></li>
@@ -612,10 +659,14 @@
                   <li class="list-inline-item"><a href="">Front-End Development</a></li>
                   <li class="list-inline-item"><a href="">Web Design</a></li>
                 </ul>
+            </div>
+
               </div>
               <div class="col-md-4 col-lg-4 mg-t-40">
-              <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Websites &amp; Social Channel</label>
-              <ul class="list-unstyled profile-info-list">
+                <div class="head">
+                  <label class="title-border">Social Channels</label>
+              <!-- <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Websites &amp; Social Channel</label> -->
+              <ul class="list-unstyled profile-info-list" style="padding-left: 5%;">
                 <li><i data-feather="globe"></i> <a href="">http://fenchiumao.me/</a></li>
                 <li><i data-feather="github"></i> <a href="">@fenchiumao</a></li>
                 <li><i data-feather="twitter"></i> <a href="">@fenmao</a></li>
@@ -623,15 +674,19 @@
                 <li><i data-feather="facebook"></i> <a href="">@fenchiumao</a></li>
               </ul>
               </div>
+              </div>
               <div class="col-md-4 col-lg-4 mg-t-40">
-              <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Contact Information</label>
-              <ul class="list-unstyled profile-info-list">
+                <div class="head">
+                  <label class="title-border2">Contact Information</label>
+              <!-- <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Contact Information</label> -->
+              <ul class="list-unstyled profile-info-list" style="padding-left: 5%;">
                 <li><i data-feather="briefcase"></i> <span class="tx-color-03">Bay Area, San Francisco, CA</span></li>
                 <li><i data-feather="home"></i> <span class="tx-color-03">Westfield, Oakland, CA</span></li>
                 <li><i data-feather="smartphone"></i> <a href="">(+1) 012 345 6789</a></li>
                 <li><i data-feather="phone"></i> <a href="">(+1) 987 654 3201</a></li>
                 <li><i data-feather="mail"></i> <a href="">me@fenchiumao.me</a></li>
               </ul>
+                </div>
               </div>
             </div>
           </div>
