@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.dashboard.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.profile.css">
+    <link rel="stylesheet" href="aupload.css">
     <!-- <link href="../../lib/morris.js/morris.css" rel="stylesheet"> -->
    
    <style>   
@@ -362,9 +363,9 @@
           <li class="nav-item with-sub">
             <a href="" class="nav-link text-white"><i data-feather="package"></i> DataCollection</a>
             <ul class="navbar-menu-sub">
-              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="calendar"></i>Indicator</a></li>
+              <li class="nav-sub-item"><a href="./indicator.html" class="nav-sub-link"><i data-feather="calendar"></i>Indicator</a></li>
               <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="message-square"></i>Assessment</a></li>
-              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="users"></i>Tools</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="users"></i>Scope3</a></li>
             </ul>
           </li>
           <li class="nav-item with-sub">
@@ -372,18 +373,18 @@
             <div class="navbar-menu-sub">
               <div class="d-lg-flex">
                 <ul>
-                  <li class="nav-label">Authentication</li>
-                  <li class="nav-sub-item"><a href="page-signin.html" class="nav-sub-link"><i data-feather="log-in"></i> Sign In</a></li>
-                  <li class="nav-sub-item"><a href="page-signup.html" class="nav-sub-link"><i data-feather="user-plus"></i> Sign Up</a></li>
-                  <li class="nav-sub-item"><a href="page-verify.html" class="nav-sub-link"><i data-feather="user-check"></i> Verify Account</a></li>
-                  <li class="nav-sub-item"><a href="page-forgot.html" class="nav-sub-link"><i data-feather="shield-off"></i> Forgot Password</a></li>
-                  <li class="nav-label mg-t-20">User Pages</li>
+                  <!-- <li class="nav-label">Authentication</li> -->
+                  <li class="nav-sub-item"><a href="page-signin.html" class="nav-sub-link"><i data-feather="log-in"></i> Automation</a></li>
+                  <li class="nav-sub-item"><a href="page-signup.html" class="nav-sub-link"><i data-feather="user-plus"></i> Reporting</a></li>
+                  <li class="nav-sub-item"><a href="page-verify.html" class="nav-sub-link"><i data-feather="user-check"></i> Materiality</a></li>
+                  <!-- <li class="nav-sub-item"><a href="page-forgot.html" class="nav-sub-link"><i data-feather="shield-off"></i> Forgot Password</a></li> -->
+                  <!-- <li class="nav-label mg-t-20">User Pages</li>
                   <li class="nav-sub-item"><a href="page-profile-view.html" class="nav-sub-link"><i data-feather="user"></i> View Profile</a></li>
                   <li class="nav-sub-item"><a href="page-connections.html" class="nav-sub-link"><i data-feather="users"></i> Connections</a></li>
                   <li class="nav-sub-item"><a href="page-groups.html" class="nav-sub-link"><i data-feather="users"></i> Groups</a></li>
-                  <li class="nav-sub-item"><a href="page-events.html" class="nav-sub-link"><i data-feather="calendar"></i> Events</a></li>
+                  <li class="nav-sub-item"><a href="page-events.html" class="nav-sub-link"><i data-feather="calendar"></i> Events</a></li> -->
                 </ul>
-                <ul>
+                <!-- <ul>
                   <li class="nav-label">Error Pages</li>
                   <li class="nav-sub-item"><a href="page-404.html" class="nav-sub-link"><i data-feather="file"></i> 404 Page Not Found</a></li>
                   <li class="nav-sub-item"><a href="page-500.html" class="nav-sub-link"><i data-feather="file"></i> 500 Internal Server</a></li>
@@ -394,7 +395,7 @@
                   <li class="nav-sub-item"><a href="page-pricing.html" class="nav-sub-link"><i data-feather="file-text"></i> Pricing</a></li>
                   <li class="nav-sub-item"><a href="page-help-center.html" class="nav-sub-link"><i data-feather="file-text"></i> Help Center</a></li>
                   <li class="nav-sub-item"><a href="page-invoice.html" class="nav-sub-link"><i data-feather="file-text"></i> Invoice</a></li>
-                </ul>
+                </ul> -->
               </div>
             </div><!-- nav-sub -->
           </li>
@@ -578,7 +579,7 @@
           <div class="col-4">
             <div class=" profile-pic-wrapper mg-t-5">
                 <div class="pic-holder">
-                <img id="profilePic" class="pic " src="../../ulogo.png">
+                <img id="profilePic" class="pic " src="../../ulogo.jpeg">
                 <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
                 <label for="newProfilePhoto" class="upload-file-block">
                   <div class="text-center">
@@ -596,7 +597,9 @@
         </div>
         </div>
         <!-- end  -->
-        
+        <!-- testt  -->
+       
+        <!-- end   -->
         <!-- description  -->
         <div class="row row-xs mg-t-20">
           <div class="col mg-t-10 ">
@@ -739,6 +742,7 @@
     <!-- append theme customizer -->
     <script src="../../lib/js-cookie/js.cookie.js"></script>
     <script src="../../assets/js/dashforge.settings.js"></script>
+    
     
 <script src="../classic/app.js"></script>
 <script>

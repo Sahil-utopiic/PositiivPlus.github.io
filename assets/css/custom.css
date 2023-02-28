@@ -1,0 +1,139 @@
+
+.custom-marker-icon {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 45px;
+    height: 45px; }
+    .custom-marker-icon::before {
+      content: '';
+      position: absolute;
+      top: -70%;
+      left: -70%;
+      width: 140%;
+      height: 140%;
+      background-color: #f3f5f9;
+      transform: rotate(45deg); }
+    .custom-marker-icon svg {
+      width: 16px;
+      height: 16px;
+      margin-top: calc(30% - 8px);
+      margin-left: calc(30% - 8px);
+      position: relative;
+      z-index: 1; }
+    .custom-marker-icon.custom-marker-top-right::before {
+      left: auto;
+      right: -70%; }
+    .custom-marker-icon.custom-marker-top-right svg {
+      margin-left: auto;
+      margin-right: calc(30% - 8px); }
+    .custom-marker-icon.custom-marker-bottom-left::before {
+      top: auto;
+      bottom: -70%; }
+    .custom-marker-icon.custom-marker-bottom-left svg {
+      margin-top: auto;
+      margin-bottom: calc(30% - 8px); }
+    .custom-marker-icon.custom-marker-bottom-right::before {
+      top: auto;
+      bottom: -70%;
+      left: auto;
+      right: -70%; }
+    .custom-marker-icon.custom-marker-bottom-right svg {
+      margin-top: auto;
+      margin-left: auto;
+      margin-bottom: calc(30% - 8px);
+      margin-right: calc(30% - 8px); }
+  
+  .custom-marker-ribbon {
+    margin-left: -10px;
+    box-shadow: 1px 1px 1px rgba(28, 39, 60, 0.16); }
+    .custom-marker-ribbon::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 40;
+      border-bottom: 7px solid #0c0c0d;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      transform: rotate(45deg); }
+    .custom-marker-ribbon.custom-marker-top-right {
+      margin-left: 0;
+      margin-right: -10px; }
+      .custom-marker-ribbon.custom-marker-top-right::after {
+        left: auto;
+        right: 0;
+        transform: rotate(-45deg); }
+  
+  .custom-marker-primary {
+    color: #fff; }
+    .custom-marker-primary.custom-marker-icon::before {
+      background-color: #030609; }
+    .custom-marker-primary.custom-marker-ribbon {
+      background-color: #060707; }
+      .custom-marker-primary.custom-marker-ribbon::after {
+        border-bottom-color: #e85f10; }
+  
+  .custom-marker-secondary {
+    color: #fff; }
+    .custom-marker-secondary.custom-marker-icon::before {
+      background-color: #97a3b9; }
+    .custom-marker-secondary.custom-marker-ribbon {
+      background-color: #97a3b9; }
+      .custom-marker-secondary.custom-marker-ribbon::after {
+        border-bottom-color: #697b9a; }
+  
+  .custom-marker-success {
+    color: #fff; }
+    .custom-marker-success.custom-marker-icon::before {
+      background-color: #10b759; }
+    .custom-marker-success.custom-marker-ribbon {
+      background-color: #10b759; }
+      .custom-marker-success.custom-marker-ribbon::after {
+        border-bottom-color: #0a7137; }
+  
+  .custom-marker-danger {
+    color: #fff; }
+    .custom-marker-danger.custom-marker-icon::before {
+      background-color: #dc3545; }
+    .custom-marker-danger.custom-marker-ribbon {
+      background-color: #dc3545; }
+      .custom-marker-danger.custom-marker-ribbon::after {
+        border-bottom-color: #a71d2a; }
+  
+  .custom-marker-warning {
+    color: #fff; }
+    .custom-marker-warning.custom-marker-icon::before {
+      background-color: #ffc107; }
+    .custom-marker-warning.custom-marker-ribbon {
+      background-color: #ffc107; }
+      .custom-marker-warning.custom-marker-ribbon::after {
+        border-bottom-color: #ba8b00; }
+  
+  .custom-marker-info {
+    color: #fff; }
+    .custom-marker-info.custom-marker-icon::before {
+      background-color: #00b8d4; }
+    .custom-marker-info.custom-marker-ribbon {
+      background-color: #00b8d4; }
+      .custom-marker-info.custom-marker-ribbon::after {
+        border-bottom-color: #007688; }
+  
+  .custom-marker-dark {
+    color: #fff; }
+    .custom-marker-dark.custom-marker-icon::before {
+      background-color: #1c273c; }
+    .custom-marker-dark.custom-marker-ribbon {
+      background-color: #1c273c; }
+      .custom-marker-dark.custom-marker-ribbon::after {
+        border-bottom-color: #040508; }
+  
+/* card hover  */
+.card:hover{
+    transition: all 0.5s ease-out;
+    box-shadow: 0px 4px  rgba(38, 38, 38, 0.2);
+    top: -3px;
+    border: 1px solid #060505;
+    /* background-color: white; */
+    background-color: #deff73de;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}

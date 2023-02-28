@@ -8582,7 +8582,8 @@ textarea.form-control {
     line-height: 0.87; }
 
 .modal-backdrop {
-  background-color: rgba(15, 21, 32, 0.7); }
+  background-color: rgba(15, 21, 32, 0.7); 
+}
   .modal-backdrop.show {
     opacity: 1; }
 

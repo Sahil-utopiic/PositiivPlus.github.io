@@ -166,12 +166,15 @@ $(function(){
    new Chart(ctx3, {
      type: 'horizontalBar',
      data: {
-       labels: ['Jan', 'Feb','Jan', 'Feb','Jan', 'Feb' ],
+      labels:['jan','feb'],
+      //  labels: ['Jan', 'Feb','Jan', 'Feb','Jan', 'Feb' ],
        datasets: [{
-        data: [20, 60,10,22,45,45],
+        data:[20,40],
+        // data: [20, 60,10,22,45,45],
         backgroundColor: ctxColor1
       }, {
-         data:[10, 40,10,22,45,45],
+        data:[40,20],
+        //  data:[10, 40,10,22,45,45],
          backgroundColor: ctxColor4
        }]
      },
