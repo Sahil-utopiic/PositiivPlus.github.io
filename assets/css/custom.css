@@ -141,6 +141,7 @@
 /* active state hover  */
 .ui-accordion-header.ui-state-active {
     color: #070900de;
+    /* background-color: #deff73de; */
 }
 .ui-accordion-header.ui-state-active .ui-accordion-header-icon::before {
     content: none;

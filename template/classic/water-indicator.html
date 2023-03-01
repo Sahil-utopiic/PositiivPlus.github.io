@@ -36,6 +36,7 @@
 
     <!-- vendor css -->
     <link href="../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
@@ -362,45 +363,881 @@
             <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <!-- accordian 1 -->
-              
         <div data-label="Example" class="df-example">
             <div id="accordion2" class="accordion">
-              <h6 class="accordion-title">Interaction with water as a shared resource</h6>
+              <h6 class="accordion-title">
+                <div class="row">
+                    <div class="col-12">Interaction with water as a shared resource</div>
+                </div>
+            </h6>
               <div class="accordion-body">
                 <div data-label="Example" class="df-example">
                     <div id="accordion3" class="accordion">
-                      <h6 class="accordion-title">Briefly describe how the organization interacts with water:</h6>
-                      <div class="accordion-body">Royalty free means you just need to pay for rights to use the item once per end product. You don't need to pay additional or ongoing fees for each person who sees or uses it.</div>
-                      <h6 class="accordion-title">What do you mean by item and end product?</h6>
-                      <div class="accordion-body">The item is what you purchase from Envato Market. The end product is what you build with that item. For example, the item is a business card template; the end product is the finalized business card. The item is a button graphic; the end product is an app using the button graphic in the app's interface. </div>
-                      <h6 class="accordion-title">What are some examples of permitted end products?</h6>
-                      <div class="accordion-body">You can buy a web template, add your text and images, and use it as your website. You can buy an HTML site template, convert it to WordPress, and use it as your website (but not as a stock template for sale. You can buy a flyer template, modify the text, print a flyer, and hand it out. You can buy a game starter kit, compile it, and put the game on an app store. You can buy a music track and use it in your radio or TV ad.</div>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">1-Briefly describe how the organization interacts with water:</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                    </h6>
+                      <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>How and where water is withdrawn?</p>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_1" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>How and where water is consumed?</p>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_1" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>How and where water is discharged?</p>
+                            </div>
+                            <div class="col-md-8 mb-1">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_1" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>Water-related impacts caused by the
+                                    organization.</p>
+                            </div>
+                            <div class="col-md-8 mb-1">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_1" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>Water-related impacts contributed to the
+                                    organization.</p>
+                            </div>
+                            <div class="col-md-8 mb-1">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_1" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>Water-related impacts are directly linked
+                                    to its operations, products, or services
+                                    by its business relationships (e.g.,
+                                    impacts caused by runoff).</p>
+                            </div>
+                            <div class="col-md-8 mb-1">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_1" readonly="">
+                            </div>
+                            <!-- Value 1 Sidebar -->
+                            <div class="modal modal-slide-in fade" id="add-value-sidebar_1" aria-hidden="true">
+                                <div class="modal-dialog modal-lg sidebar-lg">
+                                    <div class="modal-content p-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                                        <div class="d-inline-flex">
+                                            <button class="btn btn-dark w-100 waves-effect waves-float waves-light">
+                                                Record
+                                            </button>
+                                            <button class="btn btn-secondary w-100 waves-effect waves-float waves-light">
+                                                Calculate
+                                            </button>
+                                        </div>
+                                        <div class="modal-body flex-grow-1 bg-light pt-1">
+                                            
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            Start Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            End Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            How and where
+                                                            water is
+                                                            withdrawn?</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            How and where
+                                                            water is
+                                                            consumed?</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">How
+                                                            and where water
+                                                            is
+                                                            discharged?</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Water-related
+                                                            impacts caused
+                                                            by the
+                                                            organization.</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Water-related
+                                                            impacts
+                                                            contributed to
+                                                            the
+                                                            organization.</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Water-related
+                                                            impacts are
+                                                            directly linked
+                                                            to its
+                                                            operations,
+                                                            products, or
+                                                            services by its
+                                                            business
+                                                            relationships
+                                                            (e.g., impacts
+                                                            caused by
+                                                            runoff).</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                                            If any</label>
+                                                        <input class=" form-control" type="file" aria-invalid="false">
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Comment
+                                                            (Optional)</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                                            If any</label>
+                                                        <input class=" form-control" type="file" aria-invalid="false">
+                                                    </div>
+                                                    <div class="col-md-12 mb-2 text-end border-bottom">
+                                                        <button type="button" class="btn btn-dark waves-effect mb-1">Record</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            <div class="Guidance">
+                                                <h6 class="text-decoration-underline">
+                                                    Guidance:</h6>
+                                                <p>For Non-Renewable
+                                                    Sources: coal; fuels
+                                                    distilled from petroleum
+                                                    or
+                                                    crude oil, such as
+                                                    gasoline, diesel fuel,
+                                                    jet fuel, and heating
+                                                    oil; fuels
+                                                    extracted from natural
+                                                    gas processing and
+                                                    petroleum refinings,
+                                                    such as
+                                                    butane, propane, and
+                                                    liquefied petroleum gas
+                                                    (LPG); natural gas, such
+                                                    as compressed natural
+                                                    gas (CNG), and liquefied
+                                                    natural gas (LNG);
+                                                    nuclear power</p>
+                                                <p>For Renewable Souces:
+                                                    biomass, geothermal,
+                                                    hydro, solar, wind.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end value 1 Sidebar -->
+                            <div class="offset-md-10 col-md-2 admin_btn mt-1 mb-1">
+                                <button type="button" class="btn  btn-secondary btn-sm  waves-effect">Reset</button>
+                                <button type="button" class="btn btn-dark btn-sm  waves-effect">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">2-Briefly describe the approach used to identify (assess) water-related impacts, including the scope of assessments, their timeframe, and any tools or methodologies used.:</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                    </h6>
+                      <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_2" readonly="">
+                            </div>
+                            <!-- Value 2 Sidebar -->
+                            <div class="modal modal-slide-in fade" id="add-value-sidebar_2" aria-hidden="true">
+                                <div class="modal-dialog sidebar-lg">
+                                    <div class="modal-content p-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                                        <div class="d-inline-flex">
+                                            <button class="btn btn-dark w-100 waves-effect waves-float waves-light">
+                                                Record
+                                            </button>
+                                            <button class="btn btn-secondary w-100 waves-effect waves-float waves-light">
+                                                Calculate
+                                            </button>
+                                        </div>
+                                        <div class="modal-body flex-grow-1 bg-light pt-1">
+                                            
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            Start Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            End Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                                            If any</label>
+                                                        <input class=" form-control" type="file" aria-invalid="false">
+                                                    </div>
+                                                    <div class="col-md-12 mb-2 text-end border-bottom">
+                                                        <button type="button" class="btn btn-dark waves-effect mb-1">Record</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            <div class="Guidance">
+                                                <h6 class="text-decoration-underline">
+                                                    Guidance:</h6>
+                                                <p>For Non-Renewable
+                                                    Sources: coal; fuels
+                                                    distilled from petroleum
+                                                    or
+                                                    crude oil, such as
+                                                    gasoline, diesel fuel,
+                                                    jet fuel, and heating
+                                                    oil; fuels
+                                                    extracted from natural
+                                                    gas processing and
+                                                    petroleum refinings,
+                                                    such as
+                                                    butane, propane, and
+                                                    liquefied petroleum gas
+                                                    (LPG); natural gas, such
+                                                    as compressed natural
+                                                    gas (CNG), and liquefied
+                                                    natural gas (LNG);
+                                                    nuclear power</p>
+                                                <p>For Renewable Souces:
+                                                    biomass, geothermal,
+                                                    hydro, solar, wind.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end value 2 Sidebar -->
+                            <div class="offset-md-10 col-md-2 admin_btn mt-1 mb-1">
+                                <button type="button" class="btn  btn-secondary btn-sm  waves-effect">Reset</button>
+                                <button type="button" class="btn btn-dark btn-sm  waves-effect">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">3-Briefly describe how water-related impacts are addressed, including how the organization works with stakeholders to steward water as a shared resource, and how it engages with suppliers or customers with significant water-related impacts.</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                    </h6>
+                      <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_3" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1 mt-1 text-dark mt-2">
+                                <p>How the organization works with
+                                    stakeholders to steward water as a
+                                    shared resource.</p>
+                            </div>
+                            <div class="col-md-8 mt-2">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_3" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1 mt-1 text-dark">
+                                <p>How it engages with suppliers or
+                                    customers with significant water-related
+                                    impacts.</p>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value-sidebar_3" readonly="">
+                            </div>
+                            <!-- Value 3 Sidebar -->
+                            <div class="modal modal-slide-in fade" id="add-value-sidebar_3" aria-hidden="true">
+                                <div class="modal-dialog sidebar-lg">
+                                    <div class="modal-content p-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                                        <div class="d-inline-flex">
+                                            <button class="btn btn-dark w-100 waves-effect waves-float waves-light">
+                                                Record
+                                            </button>
+                                            <button class="btn btn-secondary w-100 waves-effect waves-float waves-light">
+                                                Calculate
+                                            </button>
+                                        </div>
+                                        <div class="modal-body flex-grow-1 bg-light pt-1">
+                                            
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            Start Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Value</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="Enter the value">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            End Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Value</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input type="number" id="vertical-landmark" class="form-control  form-control-sm  total_number" placeholder="Joules" readonly="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Comment
+                                                            (Optional)</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                                            If any</label>
+                                                        <input class=" form-control" type="file" aria-invalid="false">
+                                                    </div>
+                                                    <div class="col-md-12 mb-2 text-end border-bottom">
+                                                        <button type="button" class="btn btn-dark waves-effect mb-1">Record</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            <div class="Guidance">
+                                                <h6 class="text-decoration-underline">
+                                                    Guidance:</h6>
+                                                <p>For Non-Renewable
+                                                    Sources: coal; fuels
+                                                    distilled from petroleum
+                                                    or
+                                                    crude oil, such as
+                                                    gasoline, diesel fuel,
+                                                    jet fuel, and heating
+                                                    oil; fuels
+                                                    extracted from natural
+                                                    gas processing and
+                                                    petroleum refinings,
+                                                    such as
+                                                    butane, propane, and
+                                                    liquefied petroleum gas
+                                                    (LPG); natural gas, such
+                                                    as compressed natural
+                                                    gas (CNG), and liquefied
+                                                    natural gas (LNG);
+                                                    nuclear power</p>
+                                                <p>For Renewable Souces:
+                                                    biomass, geothermal,
+                                                    hydro, solar, wind.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end value 3 Sidebar -->
+                            <div class="offset-md-10 col-md-2 admin_btn mt-1 mb-1">
+                                <button type="button" class="btn  btn-secondary btn-sm  waves-effect">Reset</button>
+                                <button type="button" class="btn btn-dark btn-sm  waves-effect">Save</button>
+                            </div>
+                        </div>
+                      </div>                      
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">4-Briefly describe how water-related impacts are addressed, including how the organization works with stakeholders to steward water as a shared resource, and how it engages with suppliers or customers with significant water-related impacts.</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                    </h6>
+                      <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value4-sidebar_1" readonly="">
+                            </div>
+                            <!-- Value 4 Sidebar -->
+                            <div class="modal modal-slide-in fade" id="add-value4-sidebar_1" aria-hidden="true">
+                                <div class="modal-dialog sidebar-lg">
+                                    <div class="modal-content p-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                                        <div class="d-inline-flex">
+                                            <button class="btn btn-dark w-100 waves-effect waves-float waves-light">
+                                                Record
+                                            </button>
+                                            <button class="btn btn-secondary w-100 waves-effect waves-float waves-light">
+                                                Calculate
+                                            </button>
+                                        </div>
+                                        <div class="modal-body flex-grow-1 bg-light pt-1">
+                                            
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            Start Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            End Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            How and where
+                                                            water is
+                                                            withdrawn?</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            How and where
+                                                            water is
+                                                            consumed?</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">How
+                                                            and where water
+                                                            is
+                                                            discharged?</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Water-related
+                                                            impacts caused
+                                                            by the
+                                                            organization.</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Water-related
+                                                            impacts
+                                                            contributed to
+                                                            the
+                                                            organization.</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Water-related
+                                                            impacts are
+                                                            directly linked
+                                                            to its
+                                                            operations,
+                                                            products, or
+                                                            services by its
+                                                            business
+                                                            relationships
+                                                            (e.g., impacts
+                                                            caused by
+                                                            runoff).</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                                            If any</label>
+                                                        <input class=" form-control" type="file" aria-invalid="false">
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Comment
+                                                            (Optional)</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                                            If any</label>
+                                                        <input class=" form-control" type="file" aria-invalid="false">
+                                                    </div>
+                                                    <div class="col-md-12 mb-2 text-end border-bottom">
+                                                        <button type="button" class="btn btn-dark waves-effect mb-1">Record</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            <div class="Guidance">
+                                                <h6 class="text-decoration-underline">
+                                                    Guidance:</h6>
+                                                <p>For Non-Renewable
+                                                    Sources: coal; fuels
+                                                    distilled from petroleum
+                                                    or
+                                                    crude oil, such as
+                                                    gasoline, diesel fuel,
+                                                    jet fuel, and heating
+                                                    oil; fuels
+                                                    extracted from natural
+                                                    gas processing and
+                                                    petroleum refinings,
+                                                    such as
+                                                    butane, propane, and
+                                                    liquefied petroleum gas
+                                                    (LPG); natural gas, such
+                                                    as compressed natural
+                                                    gas (CNG), and liquefied
+                                                    natural gas (LNG);
+                                                    nuclear power</p>
+                                                <p>For Renewable Souces:
+                                                    biomass, geothermal,
+                                                    hydro, solar, wind.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end value 4 Sidebar -->
+                            <div class="offset-md-10 col-md-2 admin_btn mt-1 mb-1">
+                                <button type="button" class="btn  btn-secondary btn-sm  waves-effect">Reset</button>
+                                <button type="button" class="btn btn-dark btn-sm  waves-effect">Save</button>
+                            </div>
+                            <div class="offset-md-9 col-md-3 text-end">
+                                <button type="button" class="btn btn-primary waves-effect mb-1 mt-0">Save
+                                    &amp; Submit</button>
+                            </div>
+                        </div>
+                      </div>
                     </div><!-- az-accordion -->
                   </div><!-- df-example -->
             </div>
-              <h6 class="accordion-title">What do you mean by item and end product?</h6>
+            <!-- accordian 2 -->
+              <h6 class="accordion-title">
+                <div class="row">
+                    <div class="col-12">Management of water discharge-related impacts</div>
+                </div>
+              </h6>
               <div class="accordion-body">
                 <!-- sub acord  -->
                 <div data-label="Example" class="df-example">
                     <div id="accordion4" class="accordion">
-                      <h6 class="accordion-title">What does royalty free mean?</h6>
-                      <div class="accordion-body">Royalty free means you just need to pay for rights to use the item once per end product. You don't need to pay additional or ongoing fees for each person who sees or uses it.</div>
-                      <h6 class="accordion-title">What do you mean by item and end product?</h6>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-12">Briefly describe any minimum standards set for the quality of effluent discharge, and how these minimum standards were determined, including</div>
+                        </div>
+                      </h6>
+                      <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>How standards for facilities operating in
+                                    locations with no local discharge
+                                    requirements were determined.</p>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value2-sidebar_3" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>Any internally developed water quality
+                                    standards or guidelines.</p>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value2-sidebar_3" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>Any sector-specific standards considered.
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value2-sidebar_3" readonly="">
+                            </div>
+                            <div class="col-md-3 mb-1  text-dark">
+                                <p>whether the profile of the receiving
+                                    waterbody was considered.</p>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="number" id="vertical-landmark" class="form-control total_number" placeholder="Comments" data-bs-toggle="modal" data-bs-target="#add-value2-sidebar_3" readonly="">
+                            </div>
+                            <!-- Value 1 Sidebar -->
+                            <div class="modal modal-slide-in fade" id="add-value2-sidebar_3" aria-hidden="true">
+                                <div class="modal-dialog sidebar-lg">
+                                    <div class="modal-content p-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                                        <div class="d-inline-flex">
+                                            <button class="btn btn-dark w-100 waves-effect waves-float waves-light">
+                                                Record
+                                            </button>
+                                            <button class="btn btn-secondary w-100 waves-effect waves-float waves-light">
+                                                Calculate
+                                            </button>
+                                        </div>
+                                        <div class="modal-body flex-grow-1 bg-light pt-1">
+                                            
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            Start Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h6 class="text-center">
+                                                            End Date</h6>
+                                                        <div class="row mb-1">
+                                                            <div class="col-md-4">
+                                                                <label for="exampleFormControlInput1" class="form-label fs-6">Period</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="calender">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            How it engages
+                                                            with suppliers
+                                                            or customers
+                                                            with significant
+                                                            water-related
+                                                            impacts.</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            How it engages
+                                                            with suppliers
+                                                            or customers
+                                                            with significant
+                                                            water-related
+                                                            impacts.</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">How
+                                                            it engages with
+                                                            suppliers or
+                                                            customers with
+                                                            significant
+                                                            water-related
+                                                            impacts.</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            How it engages
+                                                            with suppliers
+                                                            or customers
+                                                            with significant
+                                                            water-related
+                                                            impacts.</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                                            If any</label>
+                                                        <input class=" form-control" type="file" aria-invalid="false">
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">
+                                                            Comment
+                                                            (Optional)</label>
+                                                        <textarea class="form-control fs-6" id="exampleFormControlTextarea1" rows="3" placeholder="Comment..."></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mb-2">
+                                                        <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                                            If any</label>
+                                                        <input class=" form-control" type="file" aria-invalid="false">
+                                                    </div>
+                                                    <div class="col-md-12 mb-2 text-end border-bottom">
+                                                        <button type="button" class="btn btn-dark waves-effect mb-1">Record</button>
+                                                    </div>
+                                                </div>
+                                            
+                                            <div class="Guidance">
+                                                <h6 class="text-decoration-underline">
+                                                    Guidance:</h6>
+                                                <p>For Non-Renewable
+                                                    Sources: coal; fuels
+                                                    distilled from petroleum
+                                                    or
+                                                    crude oil, such as
+                                                    gasoline, diesel fuel,
+                                                    jet fuel, and heating
+                                                    oil; fuels
+                                                    extracted from natural
+                                                    gas processing and
+                                                    petroleum refinings,
+                                                    such as
+                                                    butane, propane, and
+                                                    liquefied petroleum gas
+                                                    (LPG); natural gas, such
+                                                    as compressed natural
+                                                    gas (CNG), and liquefied
+                                                    natural gas (LNG);
+                                                    nuclear power</p>
+                                                <p>For Renewable Souces:
+                                                    biomass, geothermal,
+                                                    hydro, solar, wind.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end value 1 Sidebar -->
+                            <div class="offset-md-10 col-md-2 admin_btn  mb-1">
+                                <button type="button" class="btn  btn-secondary btn-sm  waves-effect">Reset</button>
+                                <button type="button" class="btn btn-dark btn-sm  waves-effect">Save</button>
+                            </div>
+                            <div class="offset-md-9 col-md-3 text-end">
+                                <button type="button" class="btn btn-primary waves-effect mb-1 mt-0">Save
+                                    &amp; Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">2-Briefly describe how the organization interacts with water:</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                      </h6>
                       <div class="accordion-body">The item is what you purchase from Envato Market. The end product is what you build with that item. For example, the item is a business card template; the end product is the finalized business card. The item is a button graphic; the end product is an app using the button graphic in the app's interface. </div>
-                      <h6 class="accordion-title">What are some examples of permitted end products?</h6>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">3-Briefly describe how the organization interacts with water:</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                      </h6>
                       <div class="accordion-body">You can buy a web template, add your text and images, and use it as your website. You can buy an HTML site template, convert it to WordPress, and use it as your website (but not as a stock template for sale. You can buy a flyer template, modify the text, print a flyer, and hand it out. You can buy a game starter kit, compile it, and put the game on an app store. You can buy a music track and use it in your radio or TV ad.</div>
                     </div><!-- az-accordion -->
                   </div><!-- -example --> 
              </div>
-              <h6 class="accordion-title">What are some examples of permitted end products?</h6>
+              <h6 class="accordion-title">
+                <div class="row">
+                    <div class="col-12">Water Withdrawal</div>
+                </div>
+              </h6>
               <div class="accordion-body">
                 <div data-label="Example" class="df-example">
                     <div id="accordion5" class="accordion">
-                      <h6 class="accordion-title">What does royalty free mean?</h6>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">1-Briefly describe how the organization interacts with water:</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                      </h6>
                       <div class="accordion-body">Royalty free means you just need to pay for rights to use the item once per end product. You don't need to pay additional or ongoing fees for each person who sees or uses it.</div>
-                      <h6 class="accordion-title">What do you mean by item and end product?</h6>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">1-Briefly describe how the organization interacts with water:</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                      </h6>
                       <div class="accordion-body">The item is what you purchase from Envato Market. The end product is what you build with that item. For example, the item is a business card template; the end product is the finalized business card. The item is a button graphic; the end product is an app using the button graphic in the app's interface. </div>
-                      <h6 class="accordion-title">What are some examples of permitted end products?</h6>
+                      <h6 class="accordion-title">
+                        <div class="row">
+                            <div class="col-10">1-Briefly describe how the organization interacts with water:</div>
+                            <div class="col-2">
+                                <i class="fa-solid fa-lg fa-user-plus"></i>
+                                <i class="fa-solid fa-lg fa-eye"></i>
+                            </div>
+                        </div>
+                      </h6>
                       <div class="accordion-body">You can buy a web template, add your text and images, and use it as your website. You can buy an HTML site template, convert it to WordPress, and use it as your website (but not as a stock template for sale. You can buy a flyer template, modify the text, print a flyer, and hand it out. You can buy a game starter kit, compile it, and put the game on an app store. You can buy a music track and use it in your radio or TV ad.</div>
                     </div><!-- az-accordion -->
                   </div><!-- df-example -->
