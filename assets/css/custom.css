@@ -137,3 +137,14 @@
     background-color: #deff73de;
     box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 }
+
+/* active state hover  */
+.ui-accordion-header.ui-state-active {
+    color: #070900de;
+}
+.ui-accordion-header.ui-state-active .ui-accordion-header-icon::before {
+    content: none;
+}
+.ui-accordion-header .ui-accordion-header-icon::before{
+    content: none;
+}
