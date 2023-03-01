@@ -149,3 +149,41 @@
 .ui-accordion-header .ui-accordion-header-icon::before{
     content: none;
 }
+/* description  */
+.category_page_header {
+    background: black;
+    color: white;
+    position: relative;
+    border-radius: 15px;
+}
+.cph_inner {
+    padding: 20px;
+    display: flex;
+}
+.cph_left {
+    width: 170px;
+    margin-right: 20px;
+}
+.cph_right {
+    margin-right: 5%;
+    width: 100%;
+}
+.cph_title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.cph_short_desc {
+    max-width: 390px;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px){
+    .cph_short_desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
