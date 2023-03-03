@@ -1,4 +1,29 @@
-
+.btn-primary{
+   background-color: #222!important;
+   color: white;
+   border: black;
+}
+#heading-Text{
+    background-color: black;
+    color: white;
+}
+.ui-accordion-header{
+    /* background-color: black; */
+}
+.ui-accordion-header:hover{
+    /* background-color: rgb(210, 31, 31); */
+}
+button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-circle {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+#font_button{
+    margin-left: 8px;
+}
 .custom-marker-icon {
     position: relative;
     overflow: hidden;
@@ -140,8 +165,7 @@
 
 /* active state hover  */
 .ui-accordion-header.ui-state-active {
-    color: #070900de;
-    /* background-color: #deff73de; */
+    color: black;
 }
 .ui-accordion-header.ui-state-active .ui-accordion-header-icon::before {
     content: none;
