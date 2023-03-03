@@ -417,24 +417,132 @@
                                                             <div class="modal fade" id="modal2" 
                                                             tabindex="-1" role="dialog" 
                                                             aria-labelledby="exampleModalLabel2"
-                                                             aria-hidden="true">
-                                                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                                                  <div class="modal-content tx-14">
+                                                             aria-hidden="true" style="display: none;">
+                                                             <div  class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
                                                                     <div class="modal-header">
-                                                                      <h6 class="modal-title" id="exampleModalLabel2">Modal Title</h6>
-                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                        <span aria-hidden="true">&times;</span>
-                                                                      </button>
+                                                                        <h5 class="modal-title"
+                                                                            id="exampleModalCenterTitle">
+                                                                            Assign task</h5>
+                                                                        <button type="button"
+                                                                            class="btn-close"
+                                                                            data-bs-dismiss="modal"
+                                                                            aria-label="Close"></button>
                                                                     </div>
-                                                                    <div class="modal-body">
-                                                                      <p class="mg-b-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                                                                    <div class="modal-body text-dark">
+                                                                        <form>
+                                                                            <div class="row">
+                                                                                <div
+                                                                                    class="col-md-6 text-start mb-1">
+                                                                                    <label
+                                                                                        class="form-label fs-6"
+                                                                                        for="basicInput"><h5>Boundary</h5></label>
+                                                                                    <select
+                                                                                        class="select2 form-select">
+                                                                                        <option>Select
+                                                                                            Boundary
+                                                                                        </option>
+                                                                                        <option>Sites
+                                                                                        </option>
+                                                                                        <option>Products
+                                                                                        </option>
+                                                                                        <option>Supplier
+                                                                                        </option>
+                                                                                        <option>Projects
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="col-md-6 text-start mb-1">
+                                                                                    <label
+                                                                                        class="form-label fs-6"
+                                                                                        for="basicInput"><h5>Sub-Boundary</h5></label>
+                                                                                    <select
+                                                                                        class="select2 form-select">
+                                                                                        <option>Choose
+                                                                                            Sub-Boundary
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="col-md-6 text-start mb-1">
+                                                                                    <label
+                                                                                        class="form-label fs-6"
+                                                                                        for="basicInput"><h5>Assigned
+                                                                                        to</h5></label>
+                                                                                    <select
+                                                                                        class="select2 form-select">
+                                                                                        <option>No data
+                                                                                            found
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="col-md-6 text-start mb-1">
+                                                                                    <label
+                                                                                        class="form-label fs-6"
+                                                                                        for="basicInput"><h5>Frequency</h5></label>
+                                                                                    <select
+                                                                                        class="select2 form-select">
+                                                                                        <option>One-time
+                                                                                        </option>
+                                                                                        <option>
+                                                                                            Recurring
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="col-md-6 text-start mb-1">
+                                                                                    <label
+                                                                                        class="form-label fs-6"
+                                                                                        for="basicInput"><h5>Priority</h5></label>
+                                                                                    <select
+                                                                                        class="select2 form-select">
+                                                                                        <option>Low
+                                                                                        </option>
+                                                                                        <option>Medium
+                                                                                        </option>
+                                                                                        <option>High
+                                                                                        </option>
+                                                                                        <option>Critical
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="col-md-6 text-start mb-1">
+                                                                                    <label
+                                                                                        class="form-label fs-6"
+                                                                                        for="city-column"><h5>Due
+                                                                                        Date</h5></label>
+                                                                                    <input type="date"
+                                                                                        class="form-control"
+                                                                                        placeholder="05-05-2022"
+                                                                                        name="due_date"
+                                                                                        id="due_date"
+                                                                                        required="">
+                                                                                </div>
+                                                                                <div
+                                                                                    class="col-md-12 mb-1 text-start">
+                                                                                    <label
+                                                                                        class="form-label fs-6"
+                                                                                        for="exampleFormControlTextarea1"><h6>Comment(Optional)</h6></label>
+                                                                                    <textarea
+                                                                                        class="form-control"
+                                                                                        id="exampleFormControlTextarea1"
+                                                                                        rows="2"
+                                                                                        placeholder="Your Comment..."></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
                                                                     </div>
                                                                     <div class="modal-footer">
-                                                                      <button type="button" class="btn btn-secondary tx-13" data-dismiss="modal">Close</button>
-                                                                      <button type="button" class="btn btn-primary tx-13">Save changes</button>
+                                                                        <button type="button"
+                                                                            class="btn  btn-secondary waves-effect">Reset</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-dark  waves-effect">Submit</button>
                                                                     </div>
-                                                                  </div>
                                                                 </div>
+                                                            </div>
                                                               </div>
                                                             <!-- end  -->
                                                     </div>
