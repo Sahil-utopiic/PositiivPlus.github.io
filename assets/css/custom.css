@@ -188,6 +188,11 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
     width: 170px;
     margin-right: 20px;
 }
+.cph_left img {
+  width: 85px;
+  position: relative;
+  top: 15px;
+}
 .cph_right {
     margin-right: 5%;
     width: 100%;
@@ -198,7 +203,9 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
     margin-bottom: 18px;
     position: relative;
 }
-
+.cph_status {
+  display: flex;
+}
 .cph_short_desc {
     max-width: 390px;
     margin-bottom: 20px;
