@@ -220,3 +220,21 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
 .off-canvas {
   width: 300px;
 }
+.off-canvas-dark {
+  background-color: black;
+  color: #fff;
+}
+.sidebar-nav .nav-link.active::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -25px;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+}
+.sidebar-nav .nav-link.active {
+  position: relative;
+  color: #deff73de;
+}
+
