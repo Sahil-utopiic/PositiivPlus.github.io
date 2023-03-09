@@ -52,8 +52,8 @@
 
 </head>
 
-<body class="pos-relative" data-spy="scroll" data-target="#navSection" data-offset="120" class="page-profile"
-    style="overflow-x: hidden;">
+<body class="pos-relative" data-spy="scroll" data-target="#navSection" data-offset="120" class="page-profile" style="overflow-x: hidden;">
+
     <div id="offCanvas10" class="off-canvas off-canvas-push off-canvas-overlay off-canvas-dark off-canvas-right">
 
         <div class="off-canvas-header">
@@ -96,7 +96,9 @@
         </div>
       </div><!-- off-canvas -->
 
-    <header class="navbar navbar-header navbar-header-fixed  " style="background-color: black;">
+<div class="off-canvas-pusher" data-spy="scroll" data-target="#navSection" data-offset="120">
+     
+    <header class="navbar navbar-header navbar-header-fixed   " style="background-color: black;">
         <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
         <div class="navbar-brand">
             <a href="../classic/dashboard-one.html" class="df-logo"><img src="../../logo1.png"></a>
@@ -315,8 +317,8 @@
             </div><!-- navbar-search-body -->
         </div><!-- navbar-search -->
     </header><!-- navbar -->
-
-    <div class="content content-fixed">
+    
+    <div class="content content-fixed ">
         <div class="container ">
             <div class="d-sm-flex align-items-center justify-content-between ">
                 <div>
@@ -336,10 +338,8 @@
             </div>
         </div>
     </div>
-    </div>
-    </div><!-- content -->
     <!-- description  -->
-    <div class="container">
+    <div class="content container ">
         <div class="mg-t-20">
             <div class="category_page_header">
                 <div class="cph_inner">
@@ -376,7 +376,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- end  -->
 
@@ -13380,7 +13379,7 @@
         <div>
         </div>
     </footer>
-
+</div>
     <script src="../../lib/jquery/jquery.min.js"></script>
     <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../lib/feather-icons/feather.min.js"></script>
