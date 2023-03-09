@@ -237,3 +237,10 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
   position: relative;
   color: #deff73de;
 }
+
+.modal-backdrop {
+  position: initial;
+}
+.modal{
+  background-color: rgba(15, 21, 32, 0.7);
+}

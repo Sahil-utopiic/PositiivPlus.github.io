@@ -54,7 +54,7 @@
 
 <body class="pos-relative" data-spy="scroll" data-target="#navSection" data-offset="120" class="page-profile" style="overflow-x: hidden;">
 
-    <div id="offCanvas10" lass="off-canvas off-canvas-push off-canvas-overlay off-canvas-dark off-canvas-right">
+    <div id="offCanvas10" class="off-canvas off-canvas-push off-canvas-overlay off-canvas-dark off-canvas-right">
 
         <div class="off-canvas-header">
           <a href="#" class="df-logo">UTOPIIC<span></span></a>
@@ -13402,7 +13402,7 @@
             $('#accordion2').accordion({
                 heightStyle: 'content',
                 collapsible: true,
-                active: false
+                // active: false
             });
 
             // Custom style
@@ -13468,18 +13468,14 @@
    $(function(){
       'use strict'
         
-    // $('.modal-backdrop fade show').on('click', function(e){
-    //     e.preventDefault();
-    //     $(this).closest('modal-backdrop ').removeClass('modal-backdrop fade show');
-    //   })
+      $('.modal fade show ').on('click', function(e){
+        e.preventDefault();
+        $('.modal fade show .modal-backdrop fade show').removeClass('.modal-backdrop fade show')
+        $(this).addClass('modal fade')
+        // $(this).closest('.modal fade').removeClass('show');
+      })
+      });
       
-    //   $('.modal-backdrop fade show').on('click', function(e){
-    //     e.preventDefault();
-    //     var target = $(this).attr('href');
-    //     $(target).addClass('modal-backdrop');
-    //   });
-
-    });
  
   </script>
 
