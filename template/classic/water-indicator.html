@@ -324,7 +324,10 @@
                 <div>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-style1 ">
-                            <li aria-current="page">Water Indicator</li>
+                            <li class="breadcrumb-item"><a href="./dashboard-one.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="./indicator.html">Indicator</a></li>
+                            <li class="breadcrumb-item"><a href="./water-indicator.html">Water Indicator</a></li>
+                            <!-- <li aria-current="page">Water Indicator</li> -->
                         </ol>
                     </nav>
                     <h4 class="mg-b-0 tx-spacing--1">Welcome to Dashboard</h4>
@@ -379,7 +382,7 @@
     </div>
     <!-- end  -->
 
-    <div class="content content-components">
+    <div class="content content-components" style="margin-bottom: 3%;">
         <div class="container">
             <div data-label="Example" class="df-example">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -13372,7 +13375,7 @@
        </div><!-- container -->
     </div><!-- content -->
 
-    <footer class="footer " style="background-color: black;position: fixed; left: 0;bottom: 0;width: 100%;">
+    <footer class="footer mg-t-20" style="background-color: black;position: fixed; left: 0;bottom: 0;width: 100%;">
         <div>
             <span class="text-white">&copy; 2023 PositiivPlus v30. </span>
         </div>
@@ -13464,6 +13467,7 @@
 
     });
   </script>
+  
   <script>
    $(function(){
       'use strict'
@@ -13472,7 +13476,6 @@
         e.preventDefault();
         $('.modal fade show .modal-backdrop fade show').removeClass('.modal-backdrop fade show')
         $(this).addClass('modal fade')
-        // $(this).closest('.modal fade').removeClass('show');
       })
       });
       
