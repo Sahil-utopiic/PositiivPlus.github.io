@@ -57,44 +57,147 @@
     <div id="offCanvas10" class="off-canvas off-canvas-push off-canvas-overlay off-canvas-dark off-canvas-right">
 
         <div class="off-canvas-header">
-          <a href="#" class="df-logo">UTOPIIC<span></span></a>
+          <!-- <a href="#" class="df-logo">UTOPIIC<span></span></a> -->
           <a href="#" class="close"><i data-feather="x"></i></a>
         </div>
-        <div class="off-canvas-body pd-25 tx-13">
-          <ul class="sidebar-nav mg-b-25">
-            <li class="nav-label mg-b-15">Navigation</li>
-            <li class="nav-item"><a href="" class="nav-link active"><i data-feather="file-text"></i>Overview</a></li>
-            <li class="nav-item show">
-              <a href="" class="nav-link with-sub"><i data-feather="package"></i> Orders</a>
-              <nav class="nav">
-                <a href="#">Manage Orders</a>
-                <a href="#">Successful Purchase</a>
-                <a href="#">Purchase Cancellation</a>
-                <a href="#">Overdue Shipments</a>
-              </nav>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link"><i data-feather="shopping-bag"></i> Products</a></li>
-            <li class="nav-item show">
-              <a href="" class="nav-link with-sub"><i data-feather="users"></i> Customers</a>
-              <nav class="nav">
-                <a href="#">Manage Customers</a>
-                <a href="#">New Customers</a>
-                <a href="#">Returning Customers</a>
-              </nav>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link with-sub"><i data-feather="pie-chart"></i> Reports</a>
-              <nav class="nav">
-                <a href="#">Acquisition</a>
-                <a href="#">Audience</a>
-                <a href="#">Behavior</a>
-                <a href="#">Conversions</a>
-              </nav>
-            </li>
-            <li class="nav-item"><a href="" class="nav-link"><i data-feather="layers"></i> Integration</a></li>
-          </ul>
+        <div class="off-canvas-body d-25 x-13">
+          <!-- modal  -->
+          <div class="modal-dialog sidebar-lg">
+            <div class="modal-content p-0">
+                <div class="d-inline-flex">
+                    <button class="btn btn-dark w-100 waves-effect waves-float waves-light">
+                        Record
+                    </button>
+                    <button class="btn btn-secondary w-100 waves-effect waves-float waves-light">
+                        Calculate
+                    </button>
+                </div>
+                <div class="modal-body flex-grow-1 pt-3" tyle="background-color: white;">
+                    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row mb-1">
+                                   <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Boundary" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row mb-1">
+                                    <div class="col-md-12">
+                                        <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="Sub-Boundary">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="row mb-1">
+                                   <div class="col-md-12">
+                                        <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="Date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="row mb-1">
+                                    <div class="col-md-12">
+                                        <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="Sub-Date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row mb-1">
+                                   <div class="col-md-12">
+                                        <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="Value">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row mb-1">
+                                    <div class="col-md-12">
+                                        <input id="smallInput" class="form-control form-control-sm fs-6" type="text" placeholder="Sub-Value">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="col-md-12 mb-1 mt-2 text-start">
+                                     <label class="form-label fs-6" for="exampleFormControlTextarea1">Comment(Optional)</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Your Comment..."></textarea>
+                              </div>
+                            <div class="col-md-12 mb-2">
+                                <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                    If any</label>
+                                <input class=" form-control" type="file" aria-invalid="false">
+                            </div>
+                            <div class="offset-md-7 col-md-3 mb-2 ">
+                                <button type="button" class="btn btn-dark waves-effect mb-1">Record</button>
+                            </div>
+                        </div>
+                    
+                    <div class="Guidance text-white">
+                        <h6 class="text-decoration-underline text-white">
+                            Guidance:</h6>
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div><!-- off-canvas -->
+          <!-- end  -->
+        </div>
+      </div>
+      <div id="offCanvas11" class="off-canvas off-canvas-push off-canvas-overlay off-canvas-dark off-canvas-right">
+
+        <div class="off-canvas-header">
+          <!-- <a href="#" class="df-logo">UTOPIIC<span></span></a> -->
+          <a href="#" class="close"><i data-feather="x"></i></a>
+        </div>
+        <div class="off-canvas-body d-25 tx-13">
+          <!-- modal  -->
+          <div class="modal-dialog sidebar-lg">
+            <div class="modal-content p-0">
+                <div class="d-inline-flex">
+                    <button class="btn btn-dark w-100 waves-effect waves-float waves-light">
+                        Record
+                    </button>
+                    <button class="btn btn-secondary w-100 waves-effect waves-float waves-light">
+                        Calculate
+                    </button>
+                </div>
+                <div class="modal-body flex-grow-1 pt-3" tyle="background-color: white;">
+                    
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea class="form-control" rows="2" placeholder="Comments"></textarea>
+                            </div>
+                            <div class="col-md-12 mb-1 mt-2 text-start">
+                                     <label class="form-label fs-6" for="exampleFormControlTextarea1">Comment(Optional)</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Your Comment..."></textarea>
+                              </div>
+                              <hr>
+                            <div class="col-md-12 mb-2">
+                                <label class="form-label" for="exampleFormControlTextarea1 fs-6">Attachments,
+                                    If any</label>
+                                <input class=" form-control" type="file" aria-invalid="false">
+                            </div>
+                            <div class="offset-md-7 col-md-3 mb-2 ">
+                                <button type="button" class="btn btn-dark waves-effect mb-1">Record</button>
+                            </div>
+                        </div>
+                    
+                    <div class="Guidance text-white">
+                        <h6 class="text-decoration-underline text-white">
+                            Guidance:</h6>
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- end  -->
+        </div>
+      </div>
 
 <div class="off-canvas-pusher" data-spy="scroll" data-target="#navSection" data-offset="120">
      
@@ -412,7 +515,7 @@
                                 <div class="accordion-body" style="background-color: black;">
                                     <div data-label="Example" class="df-example">
                                         <div id="accordion3" class="accordion" style="background-color: white;">
-                                            <h6 class="accordion-title " style="background-color: #f5f6fa;">
+                                            <h6 class="accordion-title " tyle="background-color: #f5f6fa;">
                                                 <div class="row">
                                                     <div class="col-md-10">Sub Clause :1 SideBar & Modal Effect in this clause</div>
                                                     <div class="col-md-2 d-flex justify-content-end" >
@@ -443,8 +546,7 @@
                                                                     <div class="modal-body text-dark">
                                                                         <form>
                                                                             <div class="row">
-                                                                                <div
-                                                                                    class="col-md-6 text-start mb-1">
+                                                                                <div class="col-md-6 text-start mb-1">
                                                                                     <label
                                                                                         class="form-label fs-6"
                                                                                         for="basicInput"><h5>Boundary</h5></label>
@@ -579,7 +681,7 @@
                                                             class="form-control off-canvas-menu is-overlay is-dark" placeholder="Comments"
                                                             data-bs-toggle="modal" data-bs-target="#add-value-sidebar_1"
                                                             readonly=""
-                                                            href="#offCanvas10">
+                                                            href="#offCanvas11">
                                                     </div>
                                                    
                                                     <!-- Value 1 Sidebar -->
@@ -834,34 +936,40 @@
                                                     </div>
                                                     <div class="col-md-2">
                                                         <div data-label="Example" class="df-example">
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-secondar dropdown-toggle" type="button" id="dropdownMenuButton"
-                                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                                    style="background-color: #F5F6FA;border: 1px solid #c0ccda;">
-                                                                    Select From List
-                                                                </button>
-                                                                <div class="dropdown-menu tx-13" aria-labelledby="dropdownMenuButton">
-                                                                    <a class="dropdown-item" href="#">yes</a>
-                                                                    <a class="dropdown-item" href="#">no</a>
-                                                                    <a class="dropdown-item" href="#">noooo</a>
-                                                                </div>
-                                                            </div>
+                                                        <button  class="btn dropdown" >
+                                                            <select class="btn select2 form-select "   style="background-color: #F5F6FA;border: 1px solid #c0ccda;">
+                                                                <option>Select
+                                                                    from list
+                                                                </option>
+                                                                <option>Sites
+                                                                </option>
+                                                                <option>Products
+                                                                </option>
+                                                                <option>Supplier
+                                                                </option>
+                                                                <option>Projects
+                                                                </option>
+                                                            </select>
+                                                        </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-2">
                                                         <div data-label="Example" class="df-example">
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-secondar dropdown-toggle" type="button" id="dropdownMenuButton"
-                                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                                    style="background-color: #F5F6FA;border: 1px solid #c0ccda;">
-                                                                    Select From List
-                                                                </button>
-                                                                <div class="dropdown-menu tx-13" aria-labelledby="dropdownMenuButton" style="">
-                                                                    <a class="dropdown-item" href="#">yes</a>
-                                                                    <a class="dropdown-item" href="#">no</a>
-                                                                    <a class="dropdown-item" href="#">noooo</a>
-                                                                </div>
-                                                            </div>
+                                                            <button  class="btn dropdown" >
+                                                                <select class="btn select2 form-select "   style="background-color: #F5F6FA;border: 1px solid #c0ccda;">
+                                                                    <option>Select
+                                                                        from list
+                                                                    </option>
+                                                                    <option>Sites
+                                                                    </option>
+                                                                    <option>Products
+                                                                    </option>
+                                                                    <option>Supplier
+                                                                    </option>
+                                                                    <option>Projects
+                                                                    </option>
+                                                                </select>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-2">
@@ -13446,7 +13554,7 @@
             $('#accordion2').accordion({
                 heightStyle: 'content',
                 collapsible: true,
-                active: false
+                // active: false
             });
 
             // Custom style
