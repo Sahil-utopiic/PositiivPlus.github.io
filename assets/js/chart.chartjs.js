@@ -3,11 +3,11 @@ $(function(){
   'use strict'
 
   var ctxLabel = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  var ctxData1 = [20, 60, ];
-  var ctxData2 = [10, 40, ];
+  var ctxData1 = [20, 60,22 ];
+  var ctxData2 = [10, 40,33 ];
   var ctxColor1 = '#001737';
   var ctxColor2 = '#1ce1ac';
-  var ctxColor3 = '#000000';
+  var ctxColor3 = '#313131';
   var ctxColor4  = '#dffd73';
 
 
@@ -116,12 +116,14 @@ $(function(){
   new Chart(ctx3, {
     type: 'bar',
     data: {
-      labels: ctxLabel,
+      labels: ['jan','feb','jan','feb',],
       datasets: [{
-        data: ctxData1,
+        data:[20,40,50,12],
+        // data: ctxData1,
         backgroundColor: ctxColor3
       }, {
-        data: ctxData2,
+        data:[40,20,23,12],
+        // data: ctxData2,
         backgroundColor: ctxColor4
       }]
     },
@@ -171,7 +173,7 @@ $(function(){
        datasets: [{
         data:[20,40],
         // data: [20, 60,10,22,45,45],
-        backgroundColor: ctxColor1
+        backgroundColor: ctxColor3
       }, {
         data:[40,20],
         //  data:[10, 40,10,22,45,45],
