@@ -154,15 +154,28 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
   
 /* card hover  */
 .card:hover{
-    transition: all 0.5s ease-out;
-    box-shadow: 0px 4px  rgba(38, 38, 38, 0.2);
-    top: -3px;
-    border: 1px solid #060505;
-    /* background-color: white; */
+    transition: all 0.9s ease-out;
+    box-shadow: 2px 6px  rgba(239, 237, 237, 0.2);
+    top: -5px;
+    border: 1px solid #b8b6b6;
     background-color: #deff73de;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 }
 
+#bg_gradient{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(90deg, #eb3434, #eb5e34, #eb8334, #eba434, #ebcc34, #ebeb34, #c3eb34, #89eb34, #58eb34, #34eb52, #34ebcc, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3, #eb3489, #eb3461);
+  filter: blur(500px);
+  border-radius: 100%;
+  background-size: 1000% 100%;
+  
+  animation: gradient 10s infinite ease-out;
+  
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  
+  z-index: 0
+}
 /* active state hover  */
 .ui-accordion-header.ui-state-active {
     color: black;
