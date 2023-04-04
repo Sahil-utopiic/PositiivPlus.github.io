@@ -6,7 +6,7 @@ $(function(){
   var ctxData1 = [20, 60,22 ];
   var ctxData2 = [10, 40,33 ];
   var ctxColor1 = '#001737';
-  var ctxColor2 = '#1ce1ac';
+  var ctxColor2 = '#bbbbbb';
   var ctxColor3 = '#313131';
   var ctxColor4  = '#dffd73';
 
@@ -116,16 +116,22 @@ $(function(){
   new Chart(ctx3, {
     type: 'bar',
     data: {
-      labels: ['jan','feb','jan','feb',],
+
+      labels: ['jan','feb','jan',],
       datasets: [{
-        data:[20,40,50,12],
+        data:[20,30,40],
         // data: ctxData1,
         backgroundColor: ctxColor3
       }, {
-        data:[40,20,23,12],
+        data:[20,30,40],
         // data: ctxData2,
         backgroundColor: ctxColor4
-      }]
+      }, {
+        data:[20,30,40],
+        // data: ctxData2,
+        backgroundColor: ctxColor2
+      }
+    ]
     },
     options: {
       maintainAspectRatio: false,
@@ -144,8 +150,8 @@ $(function(){
           },
           ticks: {
             beginAtZero:true,
-            fontSize: 10,
-            fontColor: '#e5e9f2'
+            fontSize: 12,
+            fontColor: 'black'
           }
         }],
         xAxes: [{
@@ -157,7 +163,7 @@ $(function(){
           ticks: {
             beginAtZero:true,
             fontSize: 11,
-            fontColor: '#e5e9f2'
+            fontColor: 'black'
           }
         }]
       }
@@ -178,7 +184,9 @@ $(function(){
         data:[40,20],
         //  data:[10, 40,10,22,45,45],
          backgroundColor: ctxColor4
-       }]
+       }
+      ]
+       
      },
      options: {
        maintainAspectRatio: false,
