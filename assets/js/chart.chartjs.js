@@ -120,11 +120,9 @@ $(function(){
       labels: ['jan','feb','jan',],
       datasets: [{
         data:[20,30,40],
-        // data: ctxData1,
         backgroundColor: ctxColor3
       }, {
         data:[20,30,40],
-        // data: ctxData2,
         backgroundColor: ctxColor4
       }, {
         data:[20,30,40],
