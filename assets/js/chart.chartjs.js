@@ -117,15 +117,15 @@ $(function(){
     type: 'bar',
     data: {
 
-      labels: ['jan','feb','jan',],
+      labels: ['Employees','Workers','KMPs','BODs'],
       datasets: [{
-        data:[20,30,40],
+        data:[20,30,40,20],
         backgroundColor: ctxColor3
       }, {
-        data:[20,30,40],
+        data:[20,30,40,50],
         backgroundColor: ctxColor4
       }, {
-        data:[20,30,40],
+        data:[20,30,40,30],
         // data: ctxData2,
         backgroundColor: ctxColor2
       }
