@@ -153,12 +153,32 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
         border-bottom-color: #040508; }
   
 /* card hover  */
-.card:hover{
-    transition: all 0.9s ease-out;
-    box-shadow: 2px 6px  rgba(239, 237, 237, 0.2);
+.environment:hover{
+    transition: all 1.9s ease-out;
+    box-shadow: 2px 6px  rgba(72, 72, 72, 0.2);
     top: -5px;
-    border: 1px solid #b8b6b6;
-    background-color: #deff73de;
+    border: 1px solid #171717;
+    background:#deff73de;
+    transition: background-color 1s ease-out 100ms;
+    /* transform: scale(1.1); */
+}
+.social:hover{
+  transition: all 0.9s ease-out;
+  box-shadow: 2px 6px  rgba(239, 237, 237, 0.2);
+  top: -5px;
+  border: 1px solid #b8b6b6;
+  background: #f98f45;
+  transition: background-color 1s ease-out 100ms;
+  /* transform: scale(1.1); */
+}
+.governance:hover{
+  transition: all 0.9s ease-out;
+  box-shadow: 2px 6px  rgba(239, 237, 237, 0.2);
+  top: -5px;
+  border: 1px solid #b8b6b6;
+  background: #03FDFB;
+  transition: background-color 1s ease-out 100ms;
+  /* transform: scale(1.1); */
 }
 
 #bg_gradient{
@@ -275,112 +295,13 @@ background-color: black;
 } */
 
 
+/* underline  */
+  table{
+    border-collapse: collapse;
+}
+#firstLine td{
+    border-bottom: 2px solid black;
+}
 
 
 
-
-
-
-
-
-element.style {
-}
-.glow-orbit._80 {
-  display: none;
-  width: 80.5%;
-  height: 81%;
-}
-.glow-orbit {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  display: block;
-  width: 91%;
-  height: 91%;
-  margin: auto;
-  opacity: 0.08;
-  transform: rotate(-66deg);
-}
-img {
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
-}
-img {
-  border: 0;
-}
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-underline-position: under;
-}
-* {
-  -moz-osx-font-smoothing: grayscale;
-  text-underline-position: under;
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-user agent stylesheet
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-.leaders-hero_circle-aspect {
-  pointer-events: auto;
-}
-.leaders-hero_circle-wrapper {
-  pointer-events: none;
-}
-.section.hero-main {
-  overflow: visible;
-  padding-top: 190px;
-  padding-bottom: 120px;
-  color: #fff;
-}
-body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  transition: border-color 600ms ease, color 600ms ease, background-color 600ms ease, opacity 600ms ease;
-  font-family: Graphik, sans-serif;
-  color: #000;
-  font-size: 1rem;
-  line-height: 1.75;
-}
-body {
-  margin: 0;
-  min-height: 100%;
-  background-color: #fff;
-  font-family: Arial,sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333;
-}
-style attribute {
-  --vh: 8.81px;
-}
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-::selection {
-  background: rgb(67, 83, 255);
-  color: white;
-}
-::selection {
-  background: rgba(67,83,255,.95);
-  color: #fff;
-}
