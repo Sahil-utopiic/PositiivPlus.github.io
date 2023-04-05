@@ -184,6 +184,15 @@
   padding-left:1%;
 
 }
+.head .title-border-strength{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 80px;
+  padding-left:1%;
+
+}
 .head .title-border2{
   margin-top: -0.7em;
   margin-left: 20px;
@@ -580,25 +589,37 @@
         </div>
         </div>
         <!-- end  -->
-        <!-- testt  -->
-       
-        <!-- end   -->
         <!-- description  -->
         <div class="row row-xs mg-t-20">
           <div class="col mg-t-10 ">
             <div class="descriptionhead">
               <p class="desc-text">Description</p>
-             <p class="p-4">Sustainability software companies typically work with organizations across different industries to help them identify 
+             <p class="p-4" style="font-size: medium;">Sustainability software companies typically work with organizations across different industries to help them identify 
               and track their environmental impact, set goals for reducing their carbon footprint, and manage their sustainability-related data.
                This can include tracking energy consumption, water usage, waste generation, and greenhouse gas emissions.Sustainability software companies typically work with organizations across different industries to help them identify 
                and track their environmental impact, set goals for reducing their carbon footprint, and manage their sustainability-related data.
                 This can include tracking energy consumption, water usage, waste generation, and greenhouse gas emissions.
               </p> 
+              <div class="row">
+                <div class="col">
+                  <ul>
+                    <li><h4>GHG</h4></li>
+                    <li><h4>SDG</h4></li>
+                    <li><h4>ESMS</h4></li>
+                  </ul>  
+                </div>
+                <div class="col">
+                  <ul>
+                    <li><h4>GHG</h4></li>
+                    <li><h4>SDG</h4></li>
+                    <li><h4>ESMS</h4></li>
+                  </ul>  
+                </div>
+              </div>
           </div>
         </div>
       </div>
-      <!-- end  -->
-    
+      <!-- end  -->  
         <!-- row -->
         <div class="row row-xs mg-t-10">
           <div class="col-md-6 col-lg-4 mg-t-20">
@@ -624,6 +645,7 @@
               </div>
             </div>
           </div>
+          </div>
             <div class="row row-xs mg-t-10">
             <div class=" mg-t-20">
               <div class="maphead">
@@ -637,8 +659,81 @@
               </div>
               
             </div><!-- content -->
-           </div>
-          <div class="row row-xs mg-t-10">
+           </div>          
+           <div class="row row-xs mg-t-10">
+            <div class="col-md-4 col-lg-4 mg-t-20">
+              <div class="head"  style="padding-bottom: 22%;">
+                <label>ESG</label>
+                <div data-label="Example" class="df-example mg-t-30">
+                  <div id="flotPie" class="wd-lg-100p ht-100 ht-sm-200"></div>
+                </div><!-- df-example -->
+              </div>
+
+            </div>
+            <div class="col-md-4 col-lg-4 mg-t-20">
+              <div class="head">
+                <label class="title-border-sdg">SDG </label>
+                <div class="row " style="padding: 10px;padding-bottom: 14%;">
+                  <div class="col d-flex justify-content-center">
+                  <img lass="img-fluid" width="90vh" src="../../assets/img/No poverty.png">
+                  </div>
+                  <div class="col">
+                    <img lass="img-fluid" width="90vh" src="../../assets/img/zero hunger.png">
+                  </div>
+                </div>
+                <div class="row" style="padding: 10px;padding-bottom: 14%;">
+                  <div class="col d-flex justify-content-center">
+                    <img lass="img-fluid" width="90vh" src="../../assets/img/good health.png">
+                  </div>
+                  <div class="col">
+                    <img lass="img-fluid" width="90vh" src="../../assets/img/quality edu.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 mg-t-20 ">
+              <div class="head">
+                <label class="title-border-strength">STRENGTH</label>
+                <div class="row d-flex" style="padding: 10px;padding-bottom: 18%;">
+                  <div class="col">
+                    <div class="row d-flex justify-content-center">
+                      <div class="avatar">
+                        <img src="../../assets/img/icon/1 EnergyBlack.png" class="rounded" alt="">
+                      </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                      <h6 class="mg-t-10 "> ENERGY</h6>
+                    </div>
+                  </div>
+                  <div class="col">
+                     <div class="avatar">
+                      <img src="../../assets/img/icon/10 Diversity _ InclusionBlack.png" class="rounded" alt="">
+                    </div>
+                    <h6 class="mg-t-10"> DIVERSITY</h6>
+                  </div>
+                </div>
+                <div class="row" style="padding: 10px;padding-bottom: 18%;">
+                  <div class="col">
+                    <div class="row d-flex justify-content-center">
+                      <div class="avatar">
+                        <img src="../../assets/img/icon/3 EmissionBlack.png" class="rounded" alt="">
+                      </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                      <h6 class="mg-t-10 "> EMISSION</h6>
+                    </div>
+                  </div>
+                  <div class="col">
+                     <div class="avatar">
+                      <img src="../../assets/img/icon/16 EthicsBlack.png" class="rounded" alt="">
+                    </div>
+                    <h6 class="mg-t-10"> ETHICS</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row row-xs mg-t-10">
               <div class="col-md-4 col-lg-4 mg-t-20">
                 <div class="head">
                   <label>Tags</label>
@@ -707,23 +802,21 @@
     <script src="../../lib/feather-icons/feather.min.js"></script>
     <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
    
-     <!-- <script src="../../lib/jquery.flot/jquery.flot.js"></script> -->
-    <!-- <script src="../../lib/jquery.flot/jquery.flot.stack.js"></script>
-    <script src="../../lib/jquery.flot/jquery.flot.resize.js"></script> -->
-   
    <script src="../../lib/jqvmap/jquery.vmap.min.js"></script>
     <script src="../../lib/jqvmap/maps/jquery.vmap.usa.js"></script> 
     <script src="../../assets/js/jquery.vmap.sampledata.js"></script>
     <script src="../../assets/js/dashforge.js"></script>
-
 
     <script src="../../lib/chart.js/Chart.bundle.min.js"></script>
     <script src="../../assets/js/dashforge.sampledata.js"></script>
     <script src="../../assets/js/dashboard-one.js"></script>
     <script src="../../lib/jqvmap/maps/jquery.vmap.world.js"></script>
     <script src="../../assets/js/chart.chartjs.js"></script>
-    <!-- <script src="../../lib/morris.js/morris.min.js"></script> -->
-    <!-- <script src="../../assets/js/chart.morris.js"></script> -->
+   
+    <script src="../../lib/jquery.flot/jquery.flot.js"></script>
+    <script src="../../lib/jquery.flot/jquery.flot.pie.js"></script>
+    <script src="../../assets/js/chart.flot.sampledata.js"></script>
+    <script src="../../assets/js/chart.flot.js"></script>
     <!-- append theme customizer -->
     <script src="../../lib/js-cookie/js.cookie.js"></script>
     <script src="../../assets/js/dashforge.settings.js"></script>
@@ -799,8 +892,5 @@
 
   });
 </script>
-
-
-
   </body>
 </html>
