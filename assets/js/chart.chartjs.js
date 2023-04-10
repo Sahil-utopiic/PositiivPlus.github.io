@@ -172,7 +172,7 @@ $(function(){
    new Chart(ctx3, {
      type: 'horizontalBar',
      data: {
-      labels:['jan','feb'],
+      labels:['National','InterNational'],
       //  labels: ['Jan', 'Feb','Jan', 'Feb','Jan', 'Feb' ],
        datasets: [{
         data:[20,40],
