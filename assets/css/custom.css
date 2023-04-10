@@ -157,17 +157,18 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
 .custom-environment{
   background-color:#deff73de;
 }
-.custom-environment:hover{
-  background-color:#f3f5f9;
-}
 .environment:hover{
     transition: all 1.9s ease-out;
     box-shadow: 2px 6px  rgba(72, 72, 72, 0.2);
     top: -5px;
     border: 1px solid #b8b6b6;
     background:#deff73de;
-    transition: background-color 1s ease-out 100ms;
-    
+    transition: background-color 1s ease-out 100ms;  
+}
+.environment:hover .custom-environment { background-color:#f3f5f9; }
+
+.custom-social{
+  background-color:#f98f45 ;
 }
 .social:hover{
   transition: all 0.9s ease-out;
@@ -176,7 +177,11 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
   border: 1px solid #b8b6b6;
   background: #f98f45;
   transition: background-color 1s ease-out 100ms;
-  /* transform: scale(1.1); */
+}
+.social:hover .custom-social { background-color:#f3f5f9; }
+
+.custom-governance{
+  background-color:  #03FDFB;
 }
 .governance:hover{
   transition: all 0.9s ease-out;
@@ -187,7 +192,7 @@ button.btn.btn-primary.btn-icon.waves-effect.waves-float.waves-light.rounded-cir
   transition: background-color 1s ease-out 100ms;
   /* transform: scale(1.1); */
 }
-
+.governance:hover .custom-governance { background-color:#f3f5f9; }
 #bg_gradient{
   height: 100%;
   width: 100%;
