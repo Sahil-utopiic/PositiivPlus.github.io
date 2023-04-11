@@ -31,7 +31,8 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Positiiv Plus | Dashboard</title>
 
     <!-- vendor css -->
@@ -144,6 +145,20 @@
   width: 90px;
   padding-left:1%;
 }
+.Policy-head {
+  border: 1px solid rgb(215, 214, 214);
+  width: 100%;
+  height: auto;
+  border-radius:6px;
+}
+.title-border-policies {
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 80px;
+  padding-left:1%;
+}
 .head p {
   margin-top: -0.7em;
   margin-left: 20px;
@@ -190,6 +205,15 @@
   background-color: white;
   display: block;
   width: 80px;
+  padding-left:1%;
+
+}
+.head .title-border-certificate{
+  margin-top: -0.7em;
+  margin-left: 23px;
+  background-color: white;
+  display: block;
+  width: 100px;
   padding-left:1%;
 
 }
@@ -593,7 +617,7 @@
         <div class="row row-xs mg-t-20">
           <div class="col mg-t-10 ">
             <div class="descriptionhead">
-              <p class="desc-text">Description</p>
+              <p class="desc-text"><strong>Description</strong></p>
              <p class="p-4" style="font-size: medium;">Sustainability software companies typically work with organizations across different industries to help them identify 
               and track their environmental impact, set goals for reducing their carbon footprint, and manage their sustainability-related data.
                This can include tracking energy consumption, water usage, waste generation, and greenhouse gas emissions.Sustainability software companies typically work with organizations across different industries to help them identify 
@@ -651,7 +675,7 @@
               <div class="maphead">
                 <p class="map-title">Coverage</p>
               <div class="container">
-                <p class="df-lead " style="opacity: 0;visibility: hidden;">Lorem ipsum dolor sit amet sdfsdfsafd consectetur adipisicing elit. Aliquam exercitationem illum quis consectetur blanditiis natus deserunt earum ducimus optio quos cumque dolorem nihil, quisquam, doloribus quam labore, officia adipisci fugiat?</p>
+                <!-- <p class="df-lead " style="opacity: 0;visibility: hidden;">Lorem ipsum dolor sit amet sdfsdfsafd consectetur adipisicing elit. Aliquam exercitationem illum quis consectetur blanditiis natus deserunt earum ducimus optio quos cumque dolorem nihil, quisquam, doloribus quam labore, officia adipisci fugiat?</p> -->
                 <div data-label="Example" class="df-example">
                   <div id="vmap5" class="ht-300 ht-lg-500"></div>
                 </div>
@@ -707,41 +731,201 @@
                   my name is hardik live in sec-14 faridabad
                   my name is hardik live in sec-14 faridabad
                   my name is hardik live in sec-14 faridabad</div>
-                <div class="row d-flex" style="padding: 10px;padding-bottom: 1%;">
-                  <div class="col">
-                    <div class="row d-flex justify-content-center" style="padding-left: 15%;">
-                      <div class="avatar">
-                        <img src="../../assets/img/icon/1 EnergyBlack.png" class="rounded" alt="">
-                      </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                      <h6 class="mg-t-10 "> ENERGY</h6>
+                <div class="row " style="padding: 10px;padding-bottom: 5%;">
+                  <div class="col " >
+                    <div class="d-flex justify-content-center">
+                    <div class="avatar ">
+                      <img src="../../assets/img/icon/11 WasteBlack.png" class="rounded" alt="">
                     </div>
                   </div>
-                  <div class="col" style="padding-left: 17%;">
-                     <div class="avatar">
-                      <img src="../../assets/img/icon/10 Diversity _ InclusionBlack.png" class="rounded" alt="">
+                    <h6 class="mg-t-20 d-flex justify-content-center"> WASTE</h6>
+                  </div>
+                  <div class="col " >
+                    <div class="d-flex justify-content-start">
+                    <div class="avatar ">
+                      <img src="../../assets/img/icon/41 communitiesBlack.png" class="rounded" alt="">
                     </div>
-                    <h6 class="mg-t-10"> DIVERSITY</h6>
+                  </div>
+                    <h6 class="mg-t-20 d-flex justify-content-start">COMMUNITIES</h6>
                   </div>
                 </div>
-                <div class="row" style="padding: 10px;padding-bottom: 14%;">
-                  <div class="col">
-                    <div class="row d-flex justify-content-center" style="padding-left: 15%;">
-                      <div class="avatar">
-                        <img src="../../assets/img/icon/3 EmissionBlack.png" class="rounded" alt="">
-                      </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                      <h6 class="mg-t-10 "> EMISSION</h6>
+                <div class="row " style="padding: 10px;padding-bottom: 5%;">
+                  <div class="col " >
+                    <div class="d-flex justify-content-center">
+                    <div class="avatar ">
+                      <img src="../../assets/img/icon/14 Labour LawBlack.png" class="rounded" alt="">
                     </div>
                   </div>
-                  <div class="col" style="padding-left: 17%;">
-                     <div class="avatar">
-                      <img src="../../assets/img/icon/16 EthicsBlack.png" class="rounded" alt="">
-                    </div>
-                    <h6 class="mg-t-10"> ETHICS</h6>
+                    <h6 class="mg-t-20 d-flex justify-content-center"> LABOUR</h6>
                   </div>
+                  <div class="col " >
+                    <div class="d-flex justify-content-start">
+                    <div class="avatar ">
+                      <img src="../../assets/img/icon/10 Diversity _ InclusionBlack.png" class="rounded" alt="">
+                    </div>
+                  </div>
+                    <h6 class="mg-t-20 d-flex justify-content-start">DIVERSITY</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-xs mg-t-10">
+            <div class="col-md-7 col-lg-8 mg-t-20">
+              <div class="Policy-head"  style="padding-bottom: 2%;">
+                <label class="title-border-policies">POLICIES</label>
+                <div class="row" >
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="card-body pd-20">
+                      <ul class="activity tx-13">
+                        <li class="activity-item">
+                          <i class="fab fa-firefox tx-orange"></i>
+                          <div class="activity-body">
+                            <p class="mg-b-2"><strong>Louise</strong> added a time entry to the ticket <a href="" class="link-02"><strong>Sales Revenue</strong></a></p>
+                          </div> 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mg-t-10">
+                    <div class="media">
+                      <div class="avatar"><img src="../../assets/img/icon/14 Labour LawBlack.png" class="rounded-circle" alt=""></div>              
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mg-t-10" >
+                    <button class="btn"><i class="bi bi-three-dots-vertical"></i></button>
+                  </div>
+                </div>
+                <div class="row" >
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="card-body pd-20">
+                      <ul class="activity tx-13">
+                        <li class="activity-item">
+                          <i class="fab fa-firefox tx-orange"></i>
+                          <div class="activity-body">
+                            <p class="mg-b-2"><strong>Louise</strong> added a time entry to the ticket <a href="" class="link-02"><strong>Sales Revenue</strong></a></p>
+                          </div> 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mg-t-10">
+                    <div class="media">
+                      <div class="avatar"><img src="../../assets/img/icon/14 Labour LawBlack.png" class="rounded-circle" alt=""></div>              
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mg-t-10" >
+                    <button class="btn"><i class="bi bi-three-dots-vertical"></i></button>
+                  </div>
+                </div>
+                <div class="row" >
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="card-body pd-20">
+                      <ul class="activity tx-13">
+                        <li class="activity-item">
+                          <i class="fab fa-firefox tx-orange"></i>
+                          <div class="activity-body">
+                            <p class="mg-b-2"><strong>Louise</strong> added a time entry to the ticket <a href="" class="link-02"><strong>Sales Revenue</strong></a></p>
+                          </div> 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mg-t-10">
+                    <div class="media">
+                      <div class="avatar"><img src="../../assets/img/icon/14 Labour LawBlack.png" class="rounded-circle" alt=""></div>              
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mg-t-10" >
+                    <button class="btn"><i class="bi bi-three-dots-vertical"></i></button>
+                  </div>
+                </div>
+                <div class="row" >
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="card-body pd-20">
+                      <ul class="activity tx-13">
+                        <li class="activity-item">
+                          <i class="fab fa-firefox tx-orange"></i>
+                          <div class="activity-body">
+                            <p class="mg-b-2"><strong>Louise</strong> added a time entry to the ticket <a href="" class="link-02"><strong>Sales Revenue</strong></a></p>
+                          </div> 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mg-t-10">
+                    <div class="media">
+                      <div class="avatar"><img src="../../assets/img/icon/14 Labour LawBlack.png" class="rounded-circle" alt=""></div>              
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mg-t-10" >
+                    <button class="btn"><i class="bi bi-three-dots-vertical"></i></button>
+                  </div>
+                </div>
+
+               
+               
+            </div>
+            </div>
+            <div class="col-md-5 col-lg-4 mg-t-20">
+              <div class="head">
+                <label class="title-border-certificate">CERTIFICATE</label>
+                <div class="">
+                  <div class="card-body " style="padding-top: 0px;">
+                    <div class="table-responsive">
+                      <table class="table table-borderless table-sm tx-13 tx-nowrap mg-b-0">
+                        <thead>
+                          <tr class="tx-10 tx-spacing-1 tx-color-03 tx-uppercase">
+                            <th class="wd-5p">Link</th>
+                            <th>Page Title</th>
+                            <th class="text-medium">Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="align-middle text-center"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link wd-12 ht-12 stroke-wd-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+                            <td class="align-middle tx-medium">Homepage</td>
+                            <td class="align-middle text-medium"><span class="tx-medium">65.35%</span></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle text-center"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link wd-12 ht-12 stroke-wd-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+                            <td class="align-middle tx-medium">Our Services</td>
+                           <td class="text-medium"><span class="tx-medium">84.97%</span></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle text-center"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link wd-12 ht-12 stroke-wd-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+                            <td class="align-middle tx-medium">List of Products</td>
+                            <td class="text-medium"><span class="tx-medium">38.66%</span></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle text-center"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link wd-12 ht-12 stroke-wd-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+                            <td class="align-middle tx-medium">Contact Us</td>
+                            <td class="text-medium"><span class="tx-medium">16.11%</span></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle text-center"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link wd-12 ht-12 stroke-wd-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+                            <td class="align-middle tx-medium">Product 50% Sale</td>
+                            <td class="text-medium"><span class="tx-medium">59.34%</span></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle text-center"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link wd-12 ht-12 stroke-wd-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+                            <td class="align-middle tx-medium">Product 50% Sale</td>
+                            <td class="text-medium"><span class="tx-medium">59.34%</span></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle text-center"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link wd-12 ht-12 stroke-wd-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+                            <td class="align-middle tx-medium">List of Products</td>
+                            <td class="text-medium"><span class="tx-medium">38.66%</span></td>
+                          </tr>
+                          <tr>
+                            <td class="align-middle text-center"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link wd-12 ht-12 stroke-wd-3"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></td>
+                            <td class="align-middle tx-medium">List of Products</td>
+                            <td class="text-medium"><span class="tx-medium">38.66%</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><!-- card-body -->
                 </div>
               </div>
             </div>
