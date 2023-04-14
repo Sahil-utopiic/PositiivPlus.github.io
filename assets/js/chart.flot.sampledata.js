@@ -318,11 +318,9 @@ var females = {'15%': [[2, 84.8], [3, 93.7], [4, 100.6], [5, 105.8], [6, 113.3],
 
 
 var pieData1 = [
-  { label: 'Series 1', data: [[1,10]], color: '#6610f2'},
-  { label: 'Series 2', data: [[1,30]], color: '#007bff'},
-  { label: 'Series 3', data: [[1,90]], color: '#85d00b'},
-  { label: 'Series 4', data: [[1,70]], color: '#00cccc'},
-  { label: 'Series 5', data: [[1,80]], color: '#00275e'}
+  { label: 'Series 1w', data: [[1,10]], color: '#222'},
+  { label: 'Series 2', data: [[1,30]], color: '#03FDFB'},
+  { label: 'Series 3', data: [[1,90]], color: '#deff73de'}
 ];
 
 function getRandomData(totalPoints = 150, start = 50) {
