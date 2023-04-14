@@ -318,8 +318,8 @@ var females = {'15%': [[2, 84.8], [3, 93.7], [4, 100.6], [5, 105.8], [6, 113.3],
 
 
 var pieData1 = [
-  { label: 'Series 1w', data: [[1,10]], color: '#222'},
-  { label: 'Series 2', data: [[1,30]], color: '#03FDFB'},
+  { label: 'Series 1', data: [[1,10]], color: '#222'},
+  { label: 'Series 2', data: [[1,30]], color: '#bbbbbb'},
   { label: 'Series 3', data: [[1,90]], color: '#deff73de'}
 ];
 

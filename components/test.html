@@ -35,48 +35,121 @@
     <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
 
     <!-- vendor css -->
-    <!-- <link href="../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
-    <!-- <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
-    <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet"> -->
+    <link href="../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <!-- <link href="../lib/typicons.font/typicons.css" rel="stylesheet"> -->
+    <!-- <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet"> -->
+    <link href="../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../assets/css/dashforge.css">
-		<!-- <link rel="stylesheet" href="../assets/css/dashforge.demo.css"> -->
+		<link rel="stylesheet" href="../assets/css/dashforge.demo.css">
 
   </head>
   <body data-spy="scroll" data-target="#navSection" data-offset="120">
 
+
     <div class="content content-components">
       <div class="container">
-
-
-        <div data-label="Example" class="df-example">
-          <div id="flotPie" class="wd-lg-70p ht-200 ht-sm-300"></div>
+  
+      
+        <h5 id="section3" class="mg-b-10">Data Source (Array)</h5>
+        <p class="mg-b-30">DataTables has the ability to read data from virtually any JSON data source that can be obtained by Ajax.</p>
+        <div data-label="Example" class="df-example demo-table">
+          <table id="example3" class="table">
+            <thead>
+              <tr>
+                <th class="wd-20p">Name</th>
+                <th class="wd-25p">Position</th>
+                <th class="wd-20p">Office</th>
+                <th class="wd-15p">Age</th>
+                <th class="wd-20p">Salary</th>
+              </tr>
+            </thead>
+          </table>
         </div><!-- df-example -->
 
-        <hr class="mg-y-50 mg-b-40">
-
-
+        <footer class="content-footer">
+          <div>
+            <span>&copy; 2019 DashForge v1.0.0. </span>
+            <span>Made by <a href="http://themepixels.me">ThemePixels</a></span>
+          </div>
+          <div>
+            <nav class="nav">
+              <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+              <a href="../change-log.html" class="nav-link">Change Log</a>
+              <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link">Get Help</a>
+            </nav>
+          </div>
+        </footer><!-- content-footer -->
 
       </div><!-- container -->
     </div><!-- content -->
 
     <script src="../lib/jquery/jquery.min.js"></script>
-    <!-- <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="../lib/feather-icons/feather.min.js"></script>
-    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script> -->
-    <!-- <script src="../lib/prismjs/prism.js"></script> -->
-    <script src="../lib/jquery.flot/jquery.flot.js"></script>
-    <script src="../lib/jquery.flot/jquery.flot.pie.js"></script>
-    <!-- <script src="../lib/jquery.flot/jquery.flot.stack.js"></script>
-    <script src="../lib/jquery.flot/jquery.flot.resize.js"></script> -->
-    <!-- <script src="../lib/jquery.flot/jquery.flot.threshold.js"></script>
-    <script src="../lib/jquery.flot/jquery.flot.fillbetween.js"></script>
-    <script src="../lib/jquery.flot/jquery.flot.crosshair.js"></script> -->
+    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../lib/prismjs/prism.js"></script> -->
+    <script src="../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="../lib/select2/js/select2.min.js"></script>
 
     <!-- <script src="../assets/js/dashforge.js"></script> -->
-    <script src="../assets/js/chart.flot.sampledata.js"></script>
-    <script src="../assets/js/chart.flot.js"></script>
+    <script>
+      $(function(){
+        'use strict'
+
+        $('#example1').DataTable({
+          language: {
+            searchPlaceholder: 'Search...',
+            sSearch: '',
+            lengthMenu: '_MENU_ items/page',
+          }
+        });
+
+        $('#example2').DataTable({
+          responsive: true,
+          language: {
+            searchPlaceholder: 'Search...',
+            sSearch: '',
+            lengthMenu: '_MENU_ items/page',
+          }
+        });
+
+        $('#example3').DataTable({
+          'ajax': '../assets/data/datatable-arrays.txt',
+          language: {
+            searchPlaceholder: 'Search...',
+            sSearch: '',
+            lengthMenu: '_MENU_ items/page',
+          }
+        });
+
+        $('#example4').DataTable({
+          'ajax': '../assets/data/datatable-objects.txt',
+          "columns": [
+            { "data": "name" },
+            { "data": "position" },
+            { "data": "office" },
+            { "data": "extn" },
+            { "data": "salary" }
+          ],
+          language: {
+            searchPlaceholder: 'Search...',
+            sSearch: '',
+            lengthMenu: '_MENU_ items/page',
+          }
+        });
+
+        // Select2
+        $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
+      });
+    </script>
   </body>
 </html>

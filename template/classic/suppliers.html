@@ -38,335 +38,339 @@
     <!-- vendor css -->
     <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <!-- <link href="../../lib/jqvmap/jqvmap.min.css" rel="stylesheet"> -->
     <link href="../../lib/jqvmap/jqvmap.min.css" rel="stylesheet">
-    <link href="../lib/jqvmap/jqvmap.min.css" rel="stylesheet">
+    <link href="../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.dashboard.css">
-    <link rel="stylesheet" href="../../assets/css/dashforge.profile.css">
-    <link rel="stylesheet" href="aupload.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/dashforge.profile.css"> -->
+    <!-- <link rel="stylesheet" href="aupload.css"> -->
+    <!-- <link href="../../lib/morris.js/morris.css" rel="stylesheet"> -->
+   
+   <style>   
+   .Profile-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 30vh;
+  width: 100%;
+   }
+      .profile-pic-wrapper {
+  padding-right: 5%;
+  /* background-color: #f8f8f6; */
+  min-height: 30vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.pic-holder {
+  text-align: center;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-    <style>   
-        .Profile-text{
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-end;
-       align-items: flex-start;
-       min-height: 30vh;
-       width: 100%;
-        }
-           .profile-pic-wrapper {
-       padding-right: 5%;
-       /* background-color: #f8f8f6; */
-       min-height: 30vh;
-       width: 100%;
-       position: relative;
-       display: flex;
-       flex-direction: column;
-       justify-content: end;
-       align-items: end;
-     }
-     .pic-holder {
-       text-align: center;
-       position: relative;
-       width: 180px;
-       height: 180px;
-       overflow: hidden;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin-bottom: 20px;
-     }
-     
-     .pic-holder .pic {
-       height: 100%;
-       width: 100%;
-       -o-object-fit: cover;
-       object-fit: cover;
-       -o-object-position: center;
-       object-position: center;
-     }
-     
-     .pic-holder .upload-file-block,
-     .pic-holder .upload-loader {
-       position: absolute;
-       top: 0;
-       left: 0;
-       height: 100%;
-       width: 100%;
-       background-color: rgba(90, 92, 105, 0.7);
-       color: #f8f9fc;
-       font-size: 12px;
-       font-weight: 600;
-       opacity: 0;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       transition: all 0.2s;
-     }
-     
-     .pic-holder .upload-file-block {
-       cursor: pointer;
-     }
-     
-     .pic-holder:hover .upload-file-block,
-     .uploadProfileInput:focus ~ .upload-file-block {
-       opacity: 1;
-     }
-     
-     .pic-holder.uploadInProgress .upload-file-block {
-       display: none;
-     }
-     
-     .pic-holder.uploadInProgress .upload-loader {
-       opacity: 1;
-     }
-      /* line css  */
-     .head {
-       border: 1px solid rgb(215, 214, 214);
-       width: 100%;
-       height: auto;
-       border-radius:6px;
-     }
-     .descriptionhead{
-       border: 1px solid rgb(215, 214, 214);
-       width: 100%;
-       height: auto;
-       border-radius:6px;
-     
-     }
-     .descriptionhead .desc-text{
-       margin-top: -0.7em;
-       margin-left: 20px;
-       background-color: white;
-       display: block;
-       width: 90px;
-       padding-left:1%;
-     }
-     .Policy-head {
-       border: 1px solid rgb(215, 214, 214);
-       width: 100%;
-       height: auto;
-       border-radius:6px;
-     }
-     .title-border-policies {
-       margin-top: -0.7em;
-       margin-left: 20px;
-       background-color: white;
-       display: block;
-       width: 80px;
-       padding-left:1%;
-     }
-     .head p {
-       margin-top: -0.7em;
-       margin-left: 20px;
-       background-color: white;
-       display: block;
-       width: 80px;
-       padding-left:1%;
-     }
-     .head label{
-       margin-top: -0.7em;
-       margin-left: 20px;
-       background-color: white;
-       display: block;
-       width: 40px;
-       padding-left:1%;
-     }
-     .maphead {
-       border: 1px solid rgb(215, 214, 214);
-       width: 100%;
-       height: auto;
-       border-radius:6px;
-     }
-     .maphead .map-title{
-       margin-top: -0.7em;
-       margin-left: 20px;
-       background-color: white;
-       display: block;
-       width: 90px;
-       padding-left:1%;
-     
-     }
-     .head .title-border{
-       margin-top: -0.7em;
-       margin-left: 20px;
-       background-color: white;
-       display: block;
-       width: 50px;
-       padding-left:1%;
-     
-     }
-     .head .title-border-strength{
-       margin-top: -0.7em;
-       margin-left: 20px;
-       background-color: white;
-       display: block;
-       width: 80px;
-       padding-left:1%;
-     
-     }
-     .head .title-border-certificate{
-       margin-top: -0.7em;
-       margin-left: 23px;
-       background-color: white;
-       display: block;
-       width: 100px;
-       padding-left:1%;
-     
-     }
-     .head .title-border2{
-       margin-top: -0.7em;
-       margin-left: 20px;
-       background-color: white;
-       display: block;
-       width: 60px;
-       padding-left:1%;
-     
-     }
-     /* // Small devices (landscape phones, 576px and up) */
-     @media (min-width: 326px) { 
-       #company-heading{
-         font-size: 16px;font-weight: 500;
-       }
-       #industry-text{
-         font-size: 8px;font-weight: 300;
-     
-       }
-       .pic-holder {
-       width: 100px;
-       height: 100px;
-     }
-     .Profile-text{
-         min-height: 25vh;
-        }
-       .profile-pic-wrapper {
-         min-height: 25vh;
-     }
-     
-      }
-     @media (min-width: 576px) { 
-       #company-heading{
-         font-size: 20px;font-weight: 500;
-       }
-       #industry-text{
-         font-size: 12px;font-weight: 300;
-       }
-       .pic-holder {
-       width: 150px;
-       height: 150px;
-     }
-     
-      }
-     
-     /* // Medium devices (tablets, 768px and up) */
-     @media (min-width: 768px) { 
-       #company-heading{
-         font-size: 28px;font-weight: 500;
-       }
-       #industry-text{
-         font-size: 18px;font-weight: 300;
-     
-       }
-       .pic-holder {
-       width: 170px;
-       height: 170px;
-     }
-      }
-     
-     /* // Large devices (desktops, 992px and up) */
-     @media (min-width: 992px) { 
-       #company-heading{
-         font-size: 36px;font-weight: 500;
-       }
-       #industry-text{
-         font-size: 25px;font-weight: 300;
-     
-       }
-       .pic-holder {
-       width:170px;
-       height: 170px;
-     }
-      }
-     
-     /* // X-Large devices (large desktops, 1200px and up) */
-     @media (min-width: 1200px) { 
-       .pic-holder {
-       width:170px;
-       height: 170px;
-     }
-      }
-     
-     /* Snackbar css */
-     .snackbar {
-       visibility: hidden;
-       min-width: 250px;
-       background-color: #333;
-       color: #fff;
-       text-align: center;
-       border-radius: 2px;
-       padding: 16px;
-       position: fixed;
-       z-index: 1;
-       left: 50%;
-       bottom: 30px;
-       font-size: 14px;
-       transform: translateX(-50%);
-     }
-     
-     .snackbar.show {
-       visibility: visible;
-       -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-       animation: fadein 0.5s, fadeout 0.5s 2.5s;
-     }
-     
-     
-     @-webkit-keyframes fadein {
-       from {
-         bottom: 0;
-         opacity: 0;
-       }
-       to {
-         bottom: 30px;
-         opacity: 1;
-       }
-     }
-     
-     @keyframes fadein {
-       from {
-         bottom: 0;
-         opacity: 0;
-       }
-       to {
-         bottom: 30px;
-         opacity: 1;
-       }
-     }
-     
-     @-webkit-keyframes fadeout {
-       from {
-         bottom: 30px;
-         opacity: 1;
-       }
-       to {
-         bottom: 0;
-         opacity: 0;
-       }
-     }
-     
-     @keyframes fadeout {
-       from {
-         bottom: 30px;
-         opacity: 1;
-       }
-       to {
-         bottom: 0;
-         opacity: 0;
-       }
-     }
-     /* lines css  */
-         </style>
+.pic-holder .pic {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.pic-holder .upload-file-block,
+.pic-holder .upload-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(90, 92, 105, 0.7);
+  color: #f8f9fc;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.pic-holder .upload-file-block {
+  cursor: pointer;
+}
+
+.pic-holder:hover .upload-file-block,
+.uploadProfileInput:focus ~ .upload-file-block {
+  opacity: 1;
+}
+
+.pic-holder.uploadInProgress .upload-file-block {
+  display: none;
+}
+
+.pic-holder.uploadInProgress .upload-loader {
+  opacity: 1;
+}
+ /* line css  */
+.head {
+  border: 1px solid rgb(215, 214, 214);
+  width: 100%;
+  height: auto;
+  border-radius:6px;
+}
+.descriptionhead{
+  border: 1px solid rgb(215, 214, 214);
+  width: 100%;
+  height: auto;
+  border-radius:6px;
+
+}
+.descriptionhead .desc-text{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 90px;
+  padding-left:1%;
+}
+.Policy-head {
+  border: 1px solid rgb(215, 214, 214);
+  width: 100%;
+  height: auto;
+  border-radius:6px;
+}
+.title-border-policies {
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 80px;
+  padding-left:1%;
+}
+.head p {
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 80px;
+  padding-left:1%;
+}
+.head label{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 40px;
+  padding-left:1%;
+}
+.maphead {
+  border: 1px solid rgb(215, 214, 214);
+  width: 100%;
+  height: auto;
+  border-radius:6px;
+}
+.maphead .map-title{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 90px;
+  padding-left:1%;
+
+}
+.head .title-border{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 50px;
+  padding-left:1%;
+
+}
+.head .title-border-strength{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 80px;
+  padding-left:1%;
+
+}
+.head .title-border-certificate{
+  margin-top: -0.7em;
+  margin-left: 23px;
+  background-color: white;
+  display: block;
+  width: 100px;
+  padding-left:1%;
+
+}
+.head .title-border2{
+  margin-top: -0.7em;
+  margin-left: 20px;
+  background-color: white;
+  display: block;
+  width: 60px;
+  padding-left:1%;
+
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 326px) { 
+  #company-heading{
+    font-size: 16px;font-weight: 500;
+  }
+  #industry-text{
+    font-size: 8px;font-weight: 300;
+
+  }
+  .pic-holder {
+  width: 100px;
+  height: 100px;
+}
+.Profile-text{
+    min-height: 25vh;
+   }
+  .profile-pic-wrapper {
+    min-height: 25vh;
+}
+
+ }
+@media (min-width: 576px) { 
+  #company-heading{
+    font-size: 20px;font-weight: 500;
+  }
+  #industry-text{
+    font-size: 12px;font-weight: 300;
+  }
+  .pic-holder {
+  width: 150px;
+  height: 150px;
+}
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  #company-heading{
+    font-size: 28px;font-weight: 500;
+  }
+  #industry-text{
+    font-size: 18px;font-weight: 300;
+
+  }
+  .pic-holder {
+  width: 170px;
+  height: 170px;
+}
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #company-heading{
+    font-size: 36px;font-weight: 500;
+  }
+  #industry-text{
+    font-size: 25px;font-weight: 300;
+
+  }
+  .pic-holder {
+  width:170px;
+  height: 170px;
+}
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .pic-holder {
+  width:170px;
+  height: 170px;
+}
+ }
+
+/* Snackbar css */
+.snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 14px;
+  transform: translateX(-50%);
+}
+
+.snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+/* lines css  */
+    </style>
   </head>
   <body class="page-profile">
 
@@ -575,14 +579,13 @@
                 <li  aria-current="page"> Company Profile</li>
               </ol>
             </nav>
-            <h4 class="mg-b-0 tx-spacing--1">Welcome to Dashboard</h4>
+            <h4 class="mg-b-0 tx-spacing--1">Welcome to Suppliers</h4>
           </div>
           <div class="d-none d-md-block">
               <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="share-2" class="wd-10 mg-r-5"></i> Share</button>
               <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="sliders" class="wd-10 mg-r-5"></i> Edit</button>
           </div>
         </div>
-
         <!-- row -->
             <div class="row row-xs mg-t-10">
             <div class=" mg-t-20">
@@ -591,15 +594,16 @@
               <div class="container">
                 <!-- <p class="df-lead " style="opacity: 0;visibility: hidden;">Lorem ipsum dolor sit amet sdfsdfsafd consectetur adipisicing elit. Aliquam exercitationem illum quis consectetur blanditiis natus deserunt earum ducimus optio quos cumque dolorem nihil, quisquam, doloribus quam labore, officia adipisci fugiat?</p> -->
                 <div data-label="Example" class="df-example">
-                  <div id="vmap5" class="ht-300 ht-lg-300"></div>
+                  <div id="vmap5" class="ht-300 ht-lg-400"></div>
                 </div>
               </div>
               </div>
-            </div>
+              
+            </div><!-- content -->
            </div> 
            <!-- table  -->
            <div data-label="Example" class="df-example demo-table">
-            <table id="example2" class="table">
+            <table id="example3" class="table">
               <thead>
                 <tr>
                   <th class="wd-20p">Name</th>
@@ -609,414 +613,12 @@
                   <th class="wd-20p">Salary</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td>System Architect</td>
-                  <td>Edinburgh</td>
-                  <td>61</td>
-                  <td>$320,800</td>
-                </tr>
-                <tr>
-                  <td>Garrett Winters</td>
-                  <td>Accountant</td>
-                  <td>Tokyo</td>
-                  <td>63</td>
-                  <td>$170,750</td>
-                </tr>
-                <tr>
-                  <td>Ashton Cox</td>
-                  <td>Junior Technical Author</td>
-                  <td>San Francisco</td>
-                  <td>66</td>
-                  <td>$86,000</td>
-                </tr>
-                <tr>
-                  <td>Cedric Kelly</td>
-                  <td>Senior Javascript Developer</td>
-                  <td>Edinburgh</td>
-                  <td>22</td>
-                  <td>$433,060</td>
-                </tr>
-                <tr>
-                  <td>Airi Satou</td>
-                  <td>Accountant</td>
-                  <td>Tokyo</td>
-                  <td>33</td>
-                  <td>$162,700</td>
-                </tr>
-                <tr>
-                  <td>Brielle Williamson</td>
-                  <td>Integration Specialist</td>
-                  <td>New York</td>
-                  <td>61</td>
-                  <td>$372,000</td>
-                </tr>
-                <tr>
-                  <td>Herrod Chandler</td>
-                  <td>Sales Assistant</td>
-                  <td>San Francisco</td>
-                  <td>59</td>
-                  <td>$137,500</td>
-                </tr>
-                <tr>
-                  <td>Rhona Davidson</td>
-                  <td>Integration Specialist</td>
-                  <td>Tokyo</td>
-                  <td>55</td>
-                  <td>$327,900</td>
-                </tr>
-                <tr>
-                  <td>Colleen Hurst</td>
-                  <td>Javascript Developer</td>
-                  <td>San Francisco</td>
-                  <td>39</td>
-                  <td>$205,500</td>
-                </tr>
-                <tr>
-                  <td>Sonya Frost</td>
-                  <td>Software Engineer</td>
-                  <td>Edinburgh</td>
-                  <td>23</td>
-                  <td>$103,600</td>
-                </tr>
-                <tr>
-                  <td>Jena Gaines</td>
-                  <td>Office Manager</td>
-                  <td>London</td>
-                  <td>30</td>
-                  <td>$90,560</td>
-                </tr>
-                <tr>
-                  <td>Quinn Flynn</td>
-                  <td>Support Lead</td>
-                  <td>Edinburgh</td>
-                  <td>22</td>
-                  <td>$342,000</td>
-                </tr>
-                <tr>
-                  <td>Charde Marshall</td>
-                  <td>Regional Director</td>
-                  <td>San Francisco</td>
-                  <td>36</td>
-                  <td>$470,600</td>
-                </tr>
-                <tr>
-                  <td>Haley Kennedy</td>
-                  <td>Senior Marketing Designer</td>
-                  <td>London</td>
-                  <td>43</td>
-                  <td>$313,500</td>
-                </tr>
-                <tr>
-                  <td>Tatyana Fitzpatrick</td>
-                  <td>Regional Director</td>
-                  <td>London</td>
-                  <td>19</td>
-                  <td>$385,750</td>
-                </tr>
-                <tr>
-                  <td>Michael Silva</td>
-                  <td>Marketing Designer</td>
-                  <td>London</td>
-                  <td>66</td>
-                  <td>$198,500</td>
-                </tr>
-                <tr>
-                  <td>Paul Byrd</td>
-                  <td>Chief Financial Officer (CFO)</td>
-                  <td>New York</td>
-                  <td>64</td>
-                  <td>$725,000</td>
-                </tr>
-                <tr>
-                  <td>Gloria Little</td>
-                  <td>Systems Administrator</td>
-                  <td>New York</td>
-                  <td>59</td>
-                  <td>$237,500</td>
-                </tr>
-                <tr>
-                  <td>Bradley Greer</td>
-                  <td>Software Engineer</td>
-                  <td>London</td>
-                  <td>41</td>
-                  <td>$132,000</td>
-                </tr>
-                <tr>
-                  <td>Dai Rios</td>
-                  <td>Personnel Lead</td>
-                  <td>Edinburgh</td>
-                  <td>35</td>
-                  <td>$217,500</td>
-                </tr>
-                <tr>
-                  <td>Jenette Caldwell</td>
-                  <td>Development Lead</td>
-                  <td>New York</td>
-                  <td>30</td>
-                  <td>$345,000</td>
-                </tr>
-                <tr>
-                  <td>Yuri Berry</td>
-                  <td>Chief Marketing Officer (CMO)</td>
-                  <td>New York</td>
-                  <td>40</td>
-                  <td>$675,000</td>
-                </tr>
-                <tr>
-                  <td>Caesar Vance</td>
-                  <td>Pre-Sales Support</td>
-                  <td>New York</td>
-                  <td>21</td>
-                  <td>$106,450</td>
-                </tr>
-                <tr>
-                  <td>Doris Wilder</td>
-                  <td>Sales Assistant</td>
-                  <td>Sidney</td>
-                  <td>23</td>
-                  <td>$85,600</td>
-                </tr>
-                <tr>
-                  <td>Angelica Ramos</td>
-                  <td>Chief Executive Officer (CEO)</td>
-                  <td>London</td>
-                  <td>47</td>
-                  <td>$1,200,000</td>
-                </tr>
-                <tr>
-                  <td>Gavin Joyce</td>
-                  <td>Developer</td>
-                  <td>Edinburgh</td>
-                  <td>42</td>
-                  <td>$92,575</td>
-                </tr>
-                <tr>
-                  <td>Jennifer Chang</td>
-                  <td>Regional Director</td>
-                  <td>Singapore</td>
-                  <td>28</td>
-                  <td>$357,650</td>
-                </tr>
-                <tr>
-                  <td>Brenden Wagner</td>
-                  <td>Software Engineer</td>
-                  <td>San Francisco</td>
-                  <td>28</td>
-                  <td>$206,850</td>
-                </tr>
-                <tr>
-                  <td>Fiona Green</td>
-                  <td>Chief Operating Officer (COO)</td>
-                  <td>San Francisco</td>
-                  <td>48</td>
-                  <td>$850,000</td>
-                </tr>
-                <tr>
-                  <td>Shou Itou</td>
-                  <td>Regional Marketing</td>
-                  <td>Tokyo</td>
-                  <td>20</td>
-                  <td>$163,000</td>
-                </tr>
-                <tr>
-                  <td>Michelle House</td>
-                  <td>Integration Specialist</td>
-                  <td>Sidney</td>
-                  <td>37</td>
-                  <td>$95,400</td>
-                </tr>
-                <tr>
-                  <td>Suki Burks</td>
-                  <td>Developer</td>
-                  <td>London</td>
-                  <td>53</td>
-                  <td>$114,500</td>
-                </tr>
-                <tr>
-                  <td>Prescott Bartlett</td>
-                  <td>Technical Author</td>
-                  <td>London</td>
-                  <td>27</td>
-                  <td>$145,000</td>
-                </tr>
-                <tr>
-                  <td>Gavin Cortez</td>
-                  <td>Team Leader</td>
-                  <td>San Francisco</td>
-                  <td>22</td>
-                  <td>$235,500</td>
-                </tr>
-                <tr>
-                  <td>Martena Mccray</td>
-                  <td>Post-Sales support</td>
-                  <td>Edinburgh</td>
-                  <td>46</td>
-                  <td>$324,050</td>
-                </tr>
-                <tr>
-                  <td>Unity Butler</td>
-                  <td>Marketing Designer</td>
-                  <td>San Francisco</td>
-                  <td>47</td>
-                  <td>$85,675</td>
-                </tr>
-                <tr>
-                  <td>Howard Hatfield</td>
-                  <td>Office Manager</td>
-                  <td>San Francisco</td>
-                  <td>51</td>
-                  <td>$164,500</td>
-                </tr>
-                <tr>
-                  <td>Hope Fuentes</td>
-                  <td>Secretary</td>
-                  <td>San Francisco</td>
-                  <td>41</td>
-                  <td>$109,850</td>
-                </tr>
-                <tr>
-                  <td>Vivian Harrell</td>
-                  <td>Financial Controller</td>
-                  <td>San Francisco</td>
-                  <td>62</td>
-                  <td>$452,500</td>
-                </tr>
-                <tr>
-                  <td>Timothy Mooney</td>
-                  <td>Office Manager</td>
-                  <td>London</td>
-                  <td>37</td>
-                  <td>$136,200</td>
-                </tr>
-                <tr>
-                  <td>Jackson Bradshaw</td>
-                  <td>Director</td>
-                  <td>New York</td>
-                  <td>65</td>
-                  <td>$645,750</td>
-                </tr>
-                <tr>
-                  <td>Olivia Liang</td>
-                  <td>Support Engineer</td>
-                  <td>Singapore</td>
-                  <td>64</td>
-                  <td>$234,500</td>
-                </tr>
-                <tr>
-                  <td>Bruno Nash</td>
-                  <td>Software Engineer</td>
-                  <td>London</td>
-                  <td>38</td>
-                  <td>$163,500</td>
-                </tr>
-                <tr>
-                  <td>Sakura Yamamoto</td>
-                  <td>Support Engineer</td>
-                  <td>Tokyo</td>
-                  <td>37</td>
-                  <td>$139,575</td>
-                </tr>
-                <tr>
-                  <td>Thor Walton</td>
-                  <td>Developer</td>
-                  <td>New York</td>
-                  <td>61</td>
-                  <td>$98,540</td>
-                </tr>
-                <tr>
-                  <td>Finn Camacho</td>
-                  <td>Support Engineer</td>
-                  <td>San Francisco</td>
-                  <td>47</td>
-                  <td>$87,500</td>
-                </tr>
-                <tr>
-                  <td>Serge Baldwin</td>
-                  <td>Data Coordinator</td>
-                  <td>Singapore</td>
-                  <td>64</td>
-                  <td>$138,575</td>
-                </tr>
-                <tr>
-                  <td>Zenaida Frank</td>
-                  <td>Software Engineer</td>
-                  <td>New York</td>
-                  <td>63</td>
-                  <td>$125,250</td>
-                </tr>
-                <tr>
-                  <td>Zorita Serrano</td>
-                  <td>Software Engineer</td>
-                  <td>San Francisco</td>
-                  <td>56</td>
-                  <td>$115,000</td>
-                </tr>
-                <tr>
-                  <td>Jennifer Acosta</td>
-                  <td>Junior Javascript Developer</td>
-                  <td>Edinburgh</td>
-                  <td>43</td>
-                  <td>$75,650</td>
-                </tr>
-                <tr>
-                  <td>Cara Stevens</td>
-                  <td>Sales Assistant</td>
-                  <td>New York</td>
-                  <td>46</td>
-                  <td>$145,600</td>
-                </tr>
-                <tr>
-                  <td>Hermione Butler</td>
-                  <td>Regional Director</td>
-                  <td>London</td>
-                  <td>47</td>
-                  <td>$356,250</td>
-                </tr>
-                <tr>
-                  <td>Lael Greer</td>
-                  <td>Systems Administrator</td>
-                  <td>London</td>
-                  <td>21</td>
-                  <td>$103,500</td>
-                </tr>
-                <tr>
-                  <td>Jonas Alexander</td>
-                  <td>Developer</td>
-                  <td>San Francisco</td>
-                  <td>30</td>
-                  <td>$86,500</td>
-                </tr>
-                <tr>
-                  <td>Shad Decker</td>
-                  <td>Regional Director</td>
-                  <td>Edinburgh</td>
-                  <td>51</td>
-                  <td>$183,000</td>
-                </tr>
-                <tr>
-                  <td>Michael Bruce</td>
-                  <td>Javascript Developer</td>
-                  <td>Singapore</td>
-                  <td>29</td>
-                  <td>$183,000</td>
-                </tr>
-                <tr>
-                  <td>Donna Snider</td>
-                  <td>Customer Support</td>
-                  <td>New York</td>
-                  <td>27</td>
-                  <td>$112,000</td>
-                </tr>
-              </tbody>
             </table>
           </div><!-- df-example -->
-          </div>
+  
+         </div>
         </div>
-      </div>
-    </div><!-- content -->
-
+     
     <footer class="footer " style="background-color: black;">
       <div>
         <span class="text-white">&copy; 2023 PositiivPlus v30. </span>
@@ -1027,36 +629,74 @@
 
     <script src="../../lib/jquery/jquery.min.js"></script>
     <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../lib/feather-icons/feather.min.js"></script>
-    <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-   
-   <script src="../../lib/jqvmap/jquery.vmap.min.js"></script>
+    
+    <script src="../../lib/jqvmap/jquery.vmap.min.js"></script>
     <script src="../../lib/jqvmap/maps/jquery.vmap.usa.js"></script> 
-    <script src="../../assets/js/jquery.vmap.sampledata.js"></script>
-    <script src="../../assets/js/dashforge.js"></script>
 
-    <script src="../../lib/chart.js/Chart.bundle.min.js"></script>
-    <script src="../../assets/js/dashforge.sampledata.js"></script>
-    <script src="../../assets/js/dashboard-one.js"></script>
     <script src="../../lib/jqvmap/maps/jquery.vmap.world.js"></script>
-    <script src="../../assets/js/chart.chartjs.js"></script>
-   
-    <script src="../../lib/jquery.flot/jquery.flot.js"></script>
-    <script src="../../lib/jquery.flot/jquery.flot.pie.js"></script>
-    <script src="../../assets/js/chart.flot.sampledata.js"></script>
-    <script src="../../assets/js/chart.flot.js"></script>
-    <script src="../lib/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
-    <script src="../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
-    <script src="../lib/select2/js/select2.min.js"></script>
+    <script src="../../lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="../../lib/select2/js/select2.min.js"></script> 
+        
     <!-- append theme customizer -->
     <script src="../../lib/js-cookie/js.cookie.js"></script>
     <script src="../../assets/js/dashforge.settings.js"></script>
     
     
 <script src="../classic/app.js"></script>
-<!-- map  -->
+<script>
+    $(function(){
+      'use strict'
+
+      $('#example1').DataTable({
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+        }
+      });
+
+      $('#example2').DataTable({
+        responsive: true,
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+        }
+      });
+
+      $('#example3').DataTable({
+        'ajax': '../assets/data/datatable-arrays.txt',
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+        }
+      });
+
+      $('#example4').DataTable({
+        'ajax': '../assets/data/datatable-objects.txt',
+        "columns": [
+          { "data": "name" },
+          { "data": "position" },
+          { "data": "office" },
+          { "data": "extn" },
+          { "data": "salary" }
+        ],
+        language: {
+          searchPlaceholder: 'Search...',
+          sSearch: '',
+          lengthMenu: '_MENU_ items/page',
+        }
+      });
+
+      // Select2
+      $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
+    });
+  </script>
 <script>
   $(function(){
     'use strict';
@@ -1126,57 +766,6 @@
 
   });
 </script>
-<!-- table  -->
-<script>
-    $(function(){
-      'use strict'
 
-      $('#example1').DataTable({
-        language: {
-          searchPlaceholder: 'Search...',
-          sSearch: '',
-          lengthMenu: '_MENU_ items/page',
-        }
-      });
-
-      $('#example2').DataTable({
-        responsive: true,
-        language: {
-          searchPlaceholder: 'Search...',
-          sSearch: '',
-          lengthMenu: '_MENU_ items/page',
-        }
-      });
-
-      $('#example3').DataTable({
-        'ajax': '../assets/data/datatable-arrays.txt',
-        language: {
-          searchPlaceholder: 'Search...',
-          sSearch: '',
-          lengthMenu: '_MENU_ items/page',
-        }
-      });
-
-      $('#example4').DataTable({
-        'ajax': '../assets/data/datatable-objects.txt',
-        "columns": [
-          { "data": "name" },
-          { "data": "position" },
-          { "data": "office" },
-          { "data": "extn" },
-          { "data": "salary" }
-        ],
-        language: {
-          searchPlaceholder: 'Search...',
-          sSearch: '',
-          lengthMenu: '_MENU_ items/page',
-        }
-      });
-
-      // Select2
-      $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
-
-    });
-  </script>
   </body>
 </html>
