@@ -1,150 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Down Indicator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        body {
+            background-color: #292929;
+        }
 
-    <!-- Twitter -->
-    <meta name="twitter:site" content="@themepixels">
-    <meta name="twitter:creator" content="@themepixels">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DashForge">
-    <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="twitter:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
 
-    <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/dashforge">
-    <meta property="og:title" content="DashForge">
-    <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
+        .scrollDown {
+            width: 45px;
+            height: 70px;
+            border: #fff solid 2px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+        }
 
-    <meta property="og:image" content="http://themepixels.me/dashforge/img/dashforge-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/dashforge/img/dashforge-social.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="600">
+        .scrollDown span {
+            background-color: #fff;
+            width: 5px;
+            height: 10px;
+            border-radius: 30px;
+            margin-top: 10px;
+            position: relative;
+        }
 
-    <!-- Meta -->
-    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
-    <meta name="author" content="ThemePixels">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
-
-    <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
-
-    <!-- vendor css -->
-    <link href="../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
-    <link href="../lib/leaflet/leaflet.css" rel="stylesheet">
-
-    <!-- DashForge CSS -->
-    <link rel="stylesheet" href="../assets/css/dashforge.css">
-		<link rel="stylesheet" href="../assets/css/dashforge.demo.css">
-
-  </head>
-  <body data-spy="scroll" data-target="#navSection" data-offset="120">
-
-
-    <div class="content content-components">
-      <div class="container">
-       
-
-        <h4 id="section1" class="mg-b-10">Basic Map</h4>
-        <p class="mg-b-30">A default map style by Leaflet Maps.</p>
-
-        <div data-label="Example" class="df-example">
-          <div id="leaflet1" class="ht-300"></div>
-        </div><!-- df-example -->
-
-        <hr class="mg-y-50 mg-b-40">
-
-        <h4 id="section2" class="mg-b-10">With Popup</h4>
-        <p class="mg-b-30">Popups are usually used when you want to attach some information to a map.</p>
-
-        <div data-label="Example" class="df-example">
-          <div id="leaflet2" class="ht-300"></div>
-        </div><!-- df-example -->
+        .scrollDown span::before {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 15px;
+            border: none;
+            border-right: 2px solid #fff;
+            border-top: 2px solid #fff;
+            transform: translateY(-10px) rotate(135deg);
+            left: -6px;
+            margin-top: 10px;
+            opacity: 0;
+            animation: ani 1.8s infinite linear;
+        }
 
 
-        <footer class="content-footer">
-          <div>
-            <span>&copy; 2019 DashForge v1.0.0. </span>
-            <span>Made by <a href="http://themepixels.me">ThemePixels</a></span>
-          </div>
-          <div>
-            <nav class="nav">
-              <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
-              <a href="../change-log.html" class="nav-link">Change Log</a>
-              <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link">Get Help</a>
-            </nav>
-          </div>
-        </footer><!-- content-footer -->
+        .scrollDown span::after {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 15px;
+            border: none;
+            border-right: 2px solid #fff;
+            border-top: 2px solid #fff;
+            transform: translateY(-10px) rotate(135deg);
+            left: -6px;
+            margin-top: 10px;
+            opacity: 0;
 
-      </div><!-- container -->
-    </div><!-- content -->
+            animation: ani 1.8s infinite linear;
+            animation-delay: 0.8s;
+        }
 
-    <script src="../lib/jquery/jquery.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/feather-icons/feather.min.js"></script>
-    <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="../lib/prismjs/prism.js"></script>
-    <script src="../lib/leaflet/leaflet.js"></script>
+        @keyframes ani {
+            0% {
+                margin-top: 10px;
+                opacity: 0;
+            }
 
-    <script src="../assets/js/dashforge.js"></script>
-    <script>
-      $(function(){
-        'use strict';
+            50% {
+                margin-top: 25px;
+                opacity: 1;
+            }
 
-        // Leftlet Maps
-        var mymap = L.map('leaflet1').setView([51.505, -0.09], 13);
-
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-          maxZoom: 18,
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-          id: 'mapbox.streets'
-        }).addTo(mymap);
-
-
-        // Adding a Popup
-        var mymap2 = L.map('leaflet2').setView([51.505, -0.09], 13);
-
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-          maxZoom: 18,
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-          id: 'mapbox.streets'
-        }).addTo(mymap2);
-
-        L.marker([51.5, -0.09]).addTo(mymap2)
-        .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-
-
-        // Adding a Circle
-        var mymap3 = L.map('leaflet3').setView([51.505, -0.09], 13);
-
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-          maxZoom: 18,
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-          id: 'mapbox.streets'
-        }).addTo(mymap3);
-
-        L.circle([51.508, -0.11], {
-          color: 'red',
-          fillColor: '#f03',
-          fillOpacity: 0.5,
-          radius: 500
-        }).addTo(mymap3);
-
-      });
-    </script>
-
-  </body>
+            100% {
+                margin-top: 40px;
+                opacity: 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <a href="" class="scrollDown">
+            <span></span>
+        </a>
+    </section>
+</body>
 </html>
