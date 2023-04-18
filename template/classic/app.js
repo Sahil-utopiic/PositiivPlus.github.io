@@ -1,3 +1,4 @@
+// logo change script 
 $(document).on("change", ".uploadProfileInput", function () {
     var triggerInput = this;
     var currentImg = $(this).closest(".pic-holder").find(".pic").attr("src");
@@ -60,4 +61,3 @@ $(document).on("change", ".uploadProfileInput", function () {
       }, 3000);
     }
   });
-  

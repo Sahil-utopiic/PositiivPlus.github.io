@@ -43,7 +43,7 @@
     <link href="../../lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="../../lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
     <link href="../../lib/select2/css/select2.min.css" rel="stylesheet">
-
+    <link href="../../lib/leaflet/leaflet.css" rel="stylesheet">
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../../assets/css/dashforge.css">
     <link rel="stylesheet" href="../../assets/css/dashforge.dashboard.css">
@@ -52,80 +52,7 @@
     <!-- <link href="../../lib/morris.js/morris.css" rel="stylesheet"> -->
    
    <style>   
-   .Profile-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  min-height: 30vh;
-  width: 100%;
-   }
-      .profile-pic-wrapper {
-  padding-right: 5%;
-  /* background-color: #f8f8f6; */
-  min-height: 30vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-}
-.pic-holder {
-  text-align: center;
-  position: relative;
-  width: 180px;
-  height: 180px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
 
-.pic-holder .pic {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
-}
-
-.pic-holder .upload-file-block,
-.pic-holder .upload-loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(90, 92, 105, 0.7);
-  color: #f8f9fc;
-  font-size: 12px;
-  font-weight: 600;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-}
-
-.pic-holder .upload-file-block {
-  cursor: pointer;
-}
-
-.pic-holder:hover .upload-file-block,
-.uploadProfileInput:focus ~ .upload-file-block {
-  opacity: 1;
-}
-
-.pic-holder.uploadInProgress .upload-file-block {
-  display: none;
-}
-
-.pic-holder.uploadInProgress .upload-loader {
-  opacity: 1;
-}
  /* line css  */
 .head {
   border: 1px solid rgb(215, 214, 214);
@@ -133,35 +60,7 @@
   height: auto;
   border-radius:6px;
 }
-.descriptionhead{
-  border: 1px solid rgb(215, 214, 214);
-  width: 100%;
-  height: auto;
-  border-radius:6px;
 
-}
-.descriptionhead .desc-text{
-  margin-top: -0.7em;
-  margin-left: 20px;
-  background-color: white;
-  display: block;
-  width: 90px;
-  padding-left:1%;
-}
-.Policy-head {
-  border: 1px solid rgb(215, 214, 214);
-  width: 100%;
-  height: auto;
-  border-radius:6px;
-}
-.title-border-policies {
-  margin-top: -0.7em;
-  margin-left: 20px;
-  background-color: white;
-  display: block;
-  width: 80px;
-  padding-left:1%;
-}
 .head p {
   margin-top: -0.7em;
   margin-left: 20px;
@@ -220,156 +119,6 @@
   padding-left:1%;
 
 }
-.head .title-border2{
-  margin-top: -0.7em;
-  margin-left: 20px;
-  background-color: white;
-  display: block;
-  width: 60px;
-  padding-left:1%;
-
-}
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 326px) { 
-  #company-heading{
-    font-size: 16px;font-weight: 500;
-  }
-  #industry-text{
-    font-size: 8px;font-weight: 300;
-
-  }
-  .pic-holder {
-  width: 100px;
-  height: 100px;
-}
-.Profile-text{
-    min-height: 25vh;
-   }
-  .profile-pic-wrapper {
-    min-height: 25vh;
-}
-
- }
-@media (min-width: 576px) { 
-  #company-heading{
-    font-size: 20px;font-weight: 500;
-  }
-  #industry-text{
-    font-size: 12px;font-weight: 300;
-  }
-  .pic-holder {
-  width: 150px;
-  height: 150px;
-}
-
- }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  #company-heading{
-    font-size: 28px;font-weight: 500;
-  }
-  #industry-text{
-    font-size: 18px;font-weight: 300;
-
-  }
-  .pic-holder {
-  width: 170px;
-  height: 170px;
-}
- }
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  #company-heading{
-    font-size: 36px;font-weight: 500;
-  }
-  #industry-text{
-    font-size: 25px;font-weight: 300;
-
-  }
-  .pic-holder {
-  width:170px;
-  height: 170px;
-}
- }
-
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  .pic-holder {
-  width:170px;
-  height: 170px;
-}
- }
-
-/* Snackbar css */
-.snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  font-size: 14px;
-  transform: translateX(-50%);
-}
-
-.snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-
-@-webkit-keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-/* lines css  */
     </style>
   </head>
   <body class="page-profile">
@@ -575,8 +324,11 @@
           <div>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                
+                <li class="breadcrumb-item"><a href="./dashboard-one.html">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="./suppliers.html">Suppliers</a></li>
                 <!-- <li class="breadcrumb-item"><a href="#">Dashboard</a></li> -->
-                <li  aria-current="page"> Company Profile</li>
+                <!-- <li  aria-current="page"> Company Profile</li> -->
               </ol>
             </nav>
             <h4 class="mg-b-0 tx-spacing--1">Welcome to Suppliers</h4>
@@ -594,28 +346,35 @@
               <div class="container">
                 <!-- <p class="df-lead " style="opacity: 0;visibility: hidden;">Lorem ipsum dolor sit amet sdfsdfsafd consectetur adipisicing elit. Aliquam exercitationem illum quis consectetur blanditiis natus deserunt earum ducimus optio quos cumque dolorem nihil, quisquam, doloribus quam labore, officia adipisci fugiat?</p> -->
                 <div data-label="Example" class="df-example">
-                  <div id="vmap5" class="ht-300 ht-lg-400"></div>
+                  <div  id="vmap5" class="ht-300 ht-lg-400"></div>
                 </div>
               </div>
               </div>
               
             </div><!-- content -->
            </div> 
-           <!-- table  -->
-           <div data-label="Example" class="df-example demo-table">
-            <table id="example3" class="table">
-              <thead>
-                <tr>
-                  <th class="wd-20p">Name</th>
-                  <th class="wd-25p">Position</th>
-                  <th class="wd-20p">Office</th>
-                  <th class="wd-15p">Age</th>
-                  <th class="wd-20p">Salary</th>
-                </tr>
-              </thead>
-            </table>
-          </div><!-- df-example -->
-  
+           <div class="row mt-2">
+            <div class="ead">
+           <h5 id="section3" class="mg-b-10">Data Source (Array)</h5>
+           <div data-label="Example" class="df-example demo-table" style="overflow-x:auto;">
+             <table id="example3" class="table" style="width: auto;">
+               <thead>
+                 <tr>
+                   <th class="wd-35p">Name</th>
+                   <th class="wd-25p">Position</th>
+                   <th class="wd-25p">Office</th>
+                   <th class="wd-45p">Age</th>
+                   <th class="wd-35p">Salary</th>
+                   <!-- <th class="wd-15p">demo</th> -->
+                   <!-- <th class="wd-20p">Salary</th>
+                   <th class="wd-15p">Age</th>
+                   <th class="wd-20p">Salary</th> -->
+                 </tr>
+               </thead>
+             </table>
+           </div><!-- df-example -->
+          </div>
+          </div>
          </div>
         </div>
      
@@ -639,13 +398,13 @@
     <script src="../../lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
     <script src="../../lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
     <script src="../../lib/select2/js/select2.min.js"></script> 
-        
+    <script src="../../lib/leaflet/leaflet.js"></script>  
     <!-- append theme customizer -->
     <script src="../../lib/js-cookie/js.cookie.js"></script>
     <script src="../../assets/js/dashforge.settings.js"></script>
     
     
-<script src="../classic/app.js"></script>
+<script src="../../classic/app.js"></script>
 <script>
     $(function(){
       'use strict'
@@ -668,7 +427,7 @@
       });
 
       $('#example3').DataTable({
-        'ajax': '../assets/data/datatable-arrays.txt',
+        'ajax': '../../assets/data/datatable-arrays.txt',
         language: {
           searchPlaceholder: 'Search...',
           sSearch: '',
@@ -677,13 +436,14 @@
       });
 
       $('#example4').DataTable({
-        'ajax': '../assets/data/datatable-objects.txt',
+        'ajax': '../../assets/data/datatable-objects.txt',
         "columns": [
           { "data": "name" },
           { "data": "position" },
           { "data": "office" },
           { "data": "extn" },
-          { "data": "salary" }
+          { "data": "salary" },
+          { "data": "demo" },
         ],
         language: {
           searchPlaceholder: 'Search...',
@@ -756,13 +516,77 @@
       color: '#313131',
       selectedColor: null,
       hoverColor: null,
-      hoverOpacity: 0.8,
+      // hoverOpacity: 0.8,
       enableZoom: false,
       showTooltip: true,
-      selectedColor: '#dffd73',
+      // selectedColor: '#dffd73',
       selectedRegions: ['IN','TX','MO', 'CO'],
-      multiSelectRegion: true
+      multiSelectRegion: true,
     });
+     // Adding a Popup
+     var vmap5 = L.map('vmap5').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+  maxZoom: 18,
+  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+  '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+  'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+  id: 'mapbox.streets'
+}).addTo(vmap5);
+
+L.marker([51.5, -0.09]).addTo(vmap5)
+.bindPopup("<b>Hello world!</b><br />.").openPopup();
+
+  });
+</script>
+<script>
+  $(function(){
+    'use strict';
+
+    // Leftlet Maps
+    var mymap = L.map('leaflet1').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      id: 'mapbox.streets'
+    }).addTo(mymap);
+
+
+    // Adding a Popup
+    var mymap2 = L.map('leaflet2').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      id: 'mapbox.streets'
+    }).addTo(mymap2);
+
+    L.marker([51.5, -0.09]).addTo(mymap2)
+    .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+
+    // Adding a Circle
+    var mymap3 = L.map('leaflet3').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      id: 'mapbox.streets'
+    }).addTo(mymap3);
+
+    L.circle([51.508, -0.11], {
+      color: 'red',
+      fillColor: '#f03',
+      fillOpacity: 0.5,
+      radius: 500
+    }).addTo(mymap3);
 
   });
 </script>

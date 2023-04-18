@@ -367,14 +367,24 @@
   }
 }
 /* lines css  */
+
+
+    </style>
+    <style>
+      .div{
+      position: fixed;
+      left: 0; top: 0;
+      width: 0; height: 3px;
+      background:#436cfe;
+} 
     </style>
   </head>
   <body class="page-profile">
-
+    <div></div>
     <header class="navbar navbar-header navbar-header-fixed " style="background-color: black;">
       <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
       <div class="navbar-brand">
-        <a href="../classic/dashboard-one.html" class="df-logo"><img src="../../logo1.png"></a>
+        <a href="../classic/dashboard-one.html" class="df-logo"><img rc="../../logo1.png"></a>
       </div><!-- navbar-brand -->
       <div id="navbarMenu" class="navbar-menu-wrapper">
         <div class="navbar-menu-header">
@@ -383,14 +393,20 @@
         </div><!-- navbar-menu-header -->
         <ul class="nav navbar-menu">
           <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
-          <li class="nav-item"><a href="../../components/" class="nav-link text-white"><i data-feather="box"></i> Company Profile</a></li>
           <li class="nav-item with-sub ">
-            
+            <a href="" class="nav-link text-white"><i data-feather="pie-chart"></i> Organization</a>
+            <ul class="navbar-menu-sub">
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Eco-Profile</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Base-Line</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Document</a></li>
+            </ul>
+          </li>
+          <li class="nav-item with-sub ">
             <a href="" class="nav-link text-white"><i data-feather="pie-chart"></i> Boundaries</a>
             <ul class="navbar-menu-sub">
               <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Sites</a></li>
               <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Products</a></li>
-              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Suppliers</a></li>
+              <li class="nav-sub-item"><a href="./suppliers.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Suppliers</a></li>
             </ul>
           </li>
           <li class="nav-item with-sub">
@@ -415,8 +431,16 @@
               </div>
             </div><!-- nav-sub -->
           </li>
-
-          <li class="nav-item"><a href="../../collections/" class="nav-link text-white"><i data-feather="archive"></i> Document</a></li>
+          <li class="nav-item with-sub ">
+            
+            <a href="" class="nav-link text-white"><i data-feather="pie-chart"></i> Resources</a>
+            <ul class="navbar-menu-sub">
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Knowledge-Base</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>E-Learning</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Chat</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item"><a href="../../collections/" class="nav-link text-white"><i data-feather="archive"></i> Document</a></li> -->
         </ul>
       </div><!-- navbar-menu-wrapper -->
       <div class="navbar-right">
@@ -1046,6 +1070,7 @@
     
     
 <script src="../classic/app.js"></script>
+><Script src="../classic/line-indicator.js"></Script>
 <script>
   $(function(){
     'use strict';
@@ -1114,6 +1139,8 @@
     });
 
   });
+</script>
+<!-- <script src=".custom.js"> -->
 </script>
   </body>
 </html>
