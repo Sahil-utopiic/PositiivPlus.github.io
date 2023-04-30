@@ -37,356 +37,821 @@
     <!-- vendor css -->
     <link href="../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
     <link href="../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
-    <link href="../lib/leaflet/leaflet.css" rel="stylesheet">
 
     <!-- DashForge CSS -->
     <link rel="stylesheet" href="../assets/css/dashforge.css">
 		<link rel="stylesheet" href="../assets/css/dashforge.demo.css">
 
   </head>
-  <body data-spy="scroll" data-target="#navSection" data-offset="120">
+  <body class="pos-relative" data-spy="scroll" data-target="#navSection" data-offset="120">
 
-    <header class="navbar navbar-header navbar-header-fixed">
-      <a href="" id="sidebarMenuOpen" class="burger-menu"><i data-feather="arrow-left"></i></a>
+    <header class="navbar navbar-header navbar-header-fixed " style="background-color: black;">
+      <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
       <div class="navbar-brand">
-        <a href="../index.html" class="df-logo">dash<span>forge</span></a>
+        <a href="../classic/dashboard-one.html" class="df-logo"><img rc="../../logo1.png"></a>
       </div><!-- navbar-brand -->
       <div id="navbarMenu" class="navbar-menu-wrapper">
         <div class="navbar-menu-header">
-          <a href="../index.html" class="df-logo">dash<span>forge</span></a>
+          <a href="../classic/dashboard-one.html" class="df-logo"><span>forge</span></a>
           <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
         </div><!-- navbar-menu-header -->
-        <ul class="nav navbar-menu">
+        <ul class="nav navbar-menu d-flex justify-content-center">
           <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
-          <li class="nav-item with-sub">
-            <a href="" class="nav-link"><i data-feather="pie-chart"></i> Dashboard</a>
+          <li class="nav-item with-sub ">
+            <a href="" class="nav-link text-white"><i data-feather="pie-chart"></i> Organization</a>
             <ul class="navbar-menu-sub">
-              <li class="nav-sub-item"><a href="../template/classic/dashboard-one.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Sales Monitoring</a></li>
-              <li class="nav-sub-item"><a href="../template/classic/dashboard-two.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Website Analytics</a></li>
-              <li class="nav-sub-item"><a href="../template/classic/dashboard-three.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Cryptocurrency</a></li>
-              <li class="nav-sub-item"><a href="../template/classic/dashboard-four.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Helpdesk Management</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Eco-Profile</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Base-Line</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Document</a></li>
             </ul>
           </li>
-          <li class="nav-item with-sub">
-            <a href="" class="nav-link"><i data-feather="package"></i> Apps</a>
+          <li class="nav-item with-sub ">
+            <a href="" class="nav-link text-white"><i data-feather="pie-chart"></i> Boundaries</a>
             <ul class="navbar-menu-sub">
-              <li class="nav-sub-item"><a href="../template/classic/app-calendar.html" class="nav-sub-link"><i data-feather="calendar"></i>Calendar</a></li>
-              <li class="nav-sub-item"><a href="../template/classic/app-chat.html" class="nav-sub-link"><i data-feather="message-square"></i>Chat</a></li>
-              <li class="nav-sub-item"><a href="../template/classic/app-contacts.html" class="nav-sub-link"><i data-feather="users"></i>Contacts</a></li>
-              <li class="nav-sub-item"><a href="../template/classic/app-file-manager.html" class="nav-sub-link"><i data-feather="file-text"></i>File Manager</a></li>
-              <li class="nav-sub-item"><a href="../template/classic/app-mail.html" class="nav-sub-link"><i data-feather="mail"></i>Mail</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Sites</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Products</a></li>
+              <li class="nav-sub-item"><a href="./suppliers.html" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Suppliers</a></li>
             </ul>
           </li>
-          <li class="nav-item with-sub">
-            <a href="" class="nav-link"><i data-feather="layers"></i> Pages</a>
-            <div class="navbar-menu-sub">
-              <div class="d-lg-flex">
-                <ul>
-                  <li class="nav-label">Authentication</li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-signin.html" class="nav-sub-link"><i data-feather="log-in"></i> Sign In</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-signup.html" class="nav-sub-link"><i data-feather="user-plus"></i> Sign Up</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-verify.html" class="nav-sub-link"><i data-feather="user-check"></i> Verify Account</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-forgot.html" class="nav-sub-link"><i data-feather="shield-off"></i> Forgot Password</a></li>
-                  <li class="nav-label mg-t-20">User Pages</li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-profile-view.html" class="nav-sub-link"><i data-feather="user"></i> View Profile</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-connections.html" class="nav-sub-link"><i data-feather="users"></i> Connections</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-groups.html" class="nav-sub-link"><i data-feather="users"></i> Groups</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-events.html" class="nav-sub-link"><i data-feather="calendar"></i> Events</a></li>
-                </ul>
-                <ul>
-                  <li class="nav-label">Error Pages</li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-404.html" class="nav-sub-link"><i data-feather="file"></i> 404 Page Not Found</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-500.html" class="nav-sub-link"><i data-feather="file"></i> 500 Internal Server</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-503.html" class="nav-sub-link"><i data-feather="file"></i> 503 Service Unavailable</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-505.html" class="nav-sub-link"><i data-feather="file"></i> 505 Forbidden</a></li>
-                  <li class="nav-label mg-t-20">Other Pages</li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-timeline.html" class="nav-sub-link"><i data-feather="file-text"></i> Timeline</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-pricing.html" class="nav-sub-link"><i data-feather="file-text"></i> Pricing</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-help-center.html" class="nav-sub-link"><i data-feather="file-text"></i> Help Center</a></li>
-                  <li class="nav-sub-item"><a href="../template/classic/page-invoice.html" class="nav-sub-link"><i data-feather="file-text"></i> Invoice</a></li>
-                </ul>
-              </div>
-            </div><!-- nav-sub -->
+        
+          <li class="nav-item with-sub ">
+            
+            <a href="" class="nav-link text-white"><i data-feather="pie-chart"></i> Resources</a>
+            <ul class="navbar-menu-sub">
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Knowledge-Base</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>E-Learning</a></li>
+              <li class="nav-sub-item"><a href="" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Chat</a></li>
+            </ul>
           </li>
-          <li class="nav-item active"><a href="index.html" class="nav-link"><i data-feather="box"></i> Components</a></li>
-          <li class="nav-item"><a href="../collections/" class="nav-link"><i data-feather="archive"></i> Collections</a></li>
+          <!-- <li class="nav-item"><a href="../../collections/" class="nav-link text-white"><i data-feather="archive"></i> Theme</a></li> -->
+         
         </ul>
       </div><!-- navbar-menu-wrapper -->
       <div class="navbar-right">
-        <a href="http://dribbble.com/themepixels" class="btn btn-social"><i class="fab fa-dribbble"></i></a>
-        <a href="https://github.com/themepixels" class="btn btn-social"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/themepixels" class="btn btn-social"><i class="fab fa-twitter"></i></a>
-        <a href="https://themeforest.net/item/azia-responsive-bootstrap-4-dashboard-template/22983790" class="btn btn-buy"><i data-feather="shopping-bag"></i> <span>Buy Now</span></a>
+        <a id="navbarSearch" href="" class="search-link text-white"><i data-feather="search"></i></a>
+        <div class="dropdown dropdown-message">
+          <a href="" class="dropdown-link new-indicator" data-toggle="dropdown" style="color: white;">
+            <i data-feather="message-square"></i>
+            <span>5</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right ">
+            <div class="dropdown-header ">New Messages</div>
+            <a href="" class="dropdown-item " >
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <strong>Socrates Itumay</strong>
+                  <p>nam libero tempore cum so...</p>
+                  <span>Mar 15 12:32pm</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <strong>Joyce Chua</strong>
+                  <p>on the other hand we denounce...</p>
+                  <span>Mar 13 04:16am</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/600" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <strong>Althea Cabardo</strong>
+                  <p>is there anyone who loves...</p>
+                  <span>Mar 13 02:56am</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <strong>Adrian Monino</strong>
+                  <p>duis aute irure dolor in repre...</p>
+                  <span>Mar 12 10:40pm</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <div class="dropdown-footer"><a href="">View all Messages</a></div>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
+        <div class="dropdown dropdown-notification" >
+          <a href="" class="dropdown-link new-indicator" data-toggle="dropdown" style="color: white;">
+            <i data-feather="bell"></i>
+            <span>2</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header" >Notifications</div>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
+                  <span>Mar 15 12:32pm</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <p><strong>Joyce Chua</strong> just created a new blog post</p>
+                  <span>Mar 13 04:16am</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/600" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <p><strong>Althea Cabardo</strong> just created a new blog post</p>
+                  <span>Mar 13 02:56am</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <a href="" class="dropdown-item">
+              <div class="media">
+                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="media-body mg-l-15">
+                  <p><strong>Adrian Monino</strong> added new comment on your photo</p>
+                  <span>Mar 12 10:40pm</span>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            </a>
+            <div class="dropdown-footer"><a href="">View all Notifications</a></div>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
+        <div class="dropdown dropdown-profile">
+          <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+            <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+          </a><!-- dropdown-link -->
+          <div class="dropdown-menu dropdown-menu-right tx-13">
+            <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+            <h6 class="tx-semibold mg-b-5">Katherine Pechon</h6>
+            <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+
+            <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+            <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+            <div class="dropdown-divider"></div>
+            <a href="page-help-center.html" class="dropdown-item"><i data-feather="help-circle"></i> Help Center</a>
+            <a href="" class="dropdown-item"><i data-feather="life-buoy"></i> Forum</a>
+            <a href="" class="dropdown-item"><i data-feather="settings"></i>Account Settings</a>
+            <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a>
+            <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
       </div><!-- navbar-right -->
+      <div class="navbar-search">
+        <div class="navbar-search-header">
+          <input type="search" class="form-control" placeholder="Type and hit enter to search...">
+          <button class="btn"><i data-feather="search"></i></button>
+          <a id="navbarSearchClose" href="" class="link-03 mg-l-5 mg-lg-l-10"><i data-feather="x"></i></a>
+        </div><!-- navbar-search-header -->
+        <div class="navbar-search-body">
+          <label class="tx-10 tx-medium tx-uppercase tx-spacing-1 tx-color-03 mg-b-10 d-flex align-items-center">Recent Searches</label>
+          <ul class="list-unstyled">
+            <li><a href="dashboard-one.html">modern dashboard</a></li>
+            <li><a href="app-calendar.html">calendar app</a></li>
+            <li><a href="../../collections/modal.html">modal examples</a></li>
+            <li><a href="../../components/el-avatar.html">avatar</a></li>
+          </ul>
+
+          <hr class="mg-y-30 bd-0">
+
+          <label class="tx-10 tx-medium tx-uppercase tx-spacing-1 tx-color-03 mg-b-10 d-flex align-items-center">Search Suggestions</label>
+
+          <ul class="list-unstyled">
+            <li><a href="dashboard-one.html">cryptocurrency</a></li>
+            <li><a href="app-calendar.html">button groups</a></li>
+            <li><a href="../../collections/modal.html">form elements</a></li>
+            <li><a href="../../components/el-avatar.html">contact app</a></li>
+          </ul>
+        </div><!-- navbar-search-body -->
+      </div><!-- navbar-search -->
     </header><!-- navbar -->
 
-    <div id="sidebarMenu" class="sidebar sidebar-fixed sidebar-components">
-      <div class="sidebar-header">
-        <a href="" id="mainMenuOpen"><i data-feather="menu"></i></a>
-        <h5>Components</h5>
-        <a href="" id="sidebarMenuClose"><i data-feather="x"></i></a>
-      </div><!-- sidebar-header -->
-      <div class="sidebar-body">
-        <ul class="sidebar-nav">
-          <li class="nav-label mg-b-15">Browse Components</li>
-          <li class="nav-item"><a href="index.html" class="nav-link"><i data-feather="layout"></i> Introduction</a></li>
-          <li class="nav-item"><a href="grid.html" class="nav-link"><i data-feather="grid"></i> Grid System</a></li>
-          <li class="nav-item">
-            <a href="" class="nav-link with-sub"><i data-feather="layers"></i> UI Elements</a>
-            <nav class="nav">
-              <a href="el-accordion.html">Accordion</a>
-              <a href="el-alerts.html">Alerts</a>
-              <a href="el-avatar.html">Avatar</a>
-              <a href="el-badge.html">Badge</a>
-              <a href="el-breadcrumbs.html">Breadcrumbs</a>
-              <a href="el-buttons.html">Buttons</a>
-              <a href="el-button-groups.html">Button Groups</a>
-              <a href="el-cards.html">Cards</a>
-              <a href="el-carousel.html">Carousel</a>
-              <a href="el-collapse.html">Collapse</a>
-              <a href="el-dropdown.html">Dropdown</a>
-              <a href="el-icons.html">Icons</a>
-              <a href="el-images.html">Images</a>
-              <a href="el-list-group.html">List Group</a>
-              <a href="el-marker.html">Marker</a>
-              <a href="el-media-object.html">Media Object</a>
-              <a href="el-modal.html">Modal</a>
-              <a href="el-navs.html">Navs</a>
-              <a href="el-navbar.html">Navbar</a>
-              <a href="el-off-canvas.html">Off-Canvas</a>
-              <a href="el-pagination.html">Pagination</a>
-              <a href="el-placeholder.html">Placeholder</a>
-              <a href="el-popovers.html">Popovers</a>
-							<a href="el-progress.html">Progress</a>
-              <a href="el-steps.html">Steps</a>
-              <a href="el-scrollbar.html">Scrollbar</a>
-              <a href="el-scrollspy.html">Scrollspy</a>
-              <a href="el-spinners.html">Spinners</a>
-              <a href="el-tab.html">Tab</a>
-              <a href="el-toast.html">Toast </a>
-              <a href="el-tooltips.html">Tooltips</a>
-              <a href="el-table-basic.html">Table Basic</a>
-              <a href="el-table-advanced.html">Table Advanced</a>
-            </nav>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link with-sub"><i data-feather="package"></i> Utilities</a>
-            <nav class="nav">
-              <a href="util-animation.html">Animation</a>
-              <a href="util-background.html">Background</a>
-              <a href="util-border.html">Border</a>
-              <a href="util-display.html">Display</a>
-              <a href="util-divider.html">Divider</a>
-              <a href="util-flex.html">Flex</a>
-              <a href="util-height.html">Height</a>
-              <a href="util-margin.html">Margin</a>
-              <a href="util-padding.html">Padding</a>
-              <a href="util-position.html">Position</a>
-              <a href="util-typography.html">Typography</a>
-              <a href="util-width.html">Width</a>
-              <a href="util-extras.html">Extras</a>
-            </nav>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link with-sub"><i data-feather="inbox"></i> Forms</a>
-            <nav class="nav">
-              <a href="form-elements.html">Form Elements</a>
-              <a href="form-input-group.html">Input Group</a>
-              <a href="form-input-tags.html">Input Tags</a>
-              <a href="form-input-masks.html">Input Masks</a>
-              <a href="form-layouts.html">Form Layouts</a>
-              <a href="form-validation.html">Form Validation</a>
-              <a href="form-wizard.html">Form Wizard</a>
-              <a href="form-text-editor.html">Text Editor</a>
-              <a href="form-rangeslider.html">Range Slider</a>
-              <a href="form-datepicker.html">Date Pickers</a>
-              <a href="form-select2.html">Select2</a>
-              <a href="form-search.html">Search</a>
-            </nav>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link with-sub"><i data-feather="pie-chart"></i> Charts</a>
-            <nav class="nav">
-              <a href="chart-flot.html">Flot</a>
-              <a href="chart-chartjs.html">ChartJS</a>
-              <a href="chart-peity.html">Peity</a>
-              <a href="chart-sparkline.html">Sparkline</a>
-              <a href="chart-morris.html">Morris</a>
-            </nav>
-          </li>
-          <li class="nav-item show">
-            <a href="" class="nav-link with-sub active"><i data-feather="map-pin"></i> Maps</a>
-            <nav class="nav">
-              <a href="map-google.html">Google Maps</a>
-              <a href="map-leaflet.html" class="active">Leaflet Maps</a>
-              <a href="map-vector.html">Vector Maps</a>
-            </nav>
-          </li>
-        </ul>
-      </div><!-- sidebar-body -->
-    </div><!-- sidebar -->
 
-    <div class="section-nav">
-      <label class="nav-label">On This Page</label>
-      <nav id="navSection" class="nav flex-column">
-        <a href="#section1" class="nav-link">Basic Map</a>
-        <a href="#section2" class="nav-link">With Popup</a>
-        <a href="#section3" class="nav-link">With Circle</a>
-      </nav>
-    </div><!-- df-section-nav -->
 
     <div class="content content-components">
       <div class="container">
-        <ol class="breadcrumb df-breadcrumbs mg-b-10">
-          <li class="breadcrumb-item"><a href="#">Components</a></li>
-          <li class="breadcrumb-item"><a href="#">Maps</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Leaflet Maps</li>
-        </ol>
-
-        <h1 class="df-title">Leaflet Maps</h1>
-        <p class="df-lead">Leaflet is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms. Read the <a href="https://leafletjs.com/" target="_blank">Official Leaflet Documentation</a> for a full list of instructions and other options.</p>
-
-        <hr class="mg-y-40">
-
-        <h4 id="section1" class="mg-b-10">Basic Map</h4>
-        <p class="mg-b-30">A default map style by Leaflet Maps.</p>
-
+       
         <div data-label="Example" class="df-example">
-          <div id="leaflet1" class="ht-300"></div>
+          <ul class="steps">
+            <li class="step-item comple active form_1_progessbar">
+              <a href="" class="step-link">
+                <span class="step-icon"><i data-feather="user"></i></span>
+                <span class="step-title">Contact Details</span>
+              </a>
+            </li>
+            <li class="step-item acti form_2_progessbar">
+              <a href="" class="step-link">
+                <span class="step-icon"><i data-feather="layers"></i></span>
+                <span class="step-title">Business Activities</span>
+              </a>
+            </li>
+            <li class="step-item form_3_progessbar">
+              <a href="" class="step-link">
+                <span class="step-icon"><i data-feather="credit-card"></i></span>
+                <span class="step-title">Location</span>
+              </a>
+            </li>
+            <li class="step-item form_4_progessbar">
+              <a href="" class="step-link">
+                <span class="step-icon"><i data-feather="user"></i></span>
+                <span class="step-title">workforce</span>
+              </a>
+            </li>
+            <li class="step-item form_5_progessbar">
+              <a href="" class="step-link">
+                <span class="step-icon"><i data-feather="layers"></i></span>
+                <span class="step-title">Market Served</span>
+              </a>
+            </li>
+          </ul>
         </div><!-- df-example -->
-        <pre><code class="language-js">var mymap = L.map(&apos;leaflet1&apos;).setView([51.505, -0.09], 13);
-
-L.tileLayer(&apos;https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw&apos;, {
-  maxZoom: 18,
-  attribution: &apos;Map data &amp;copy; &lt;a href=&quot;http://openstreetmap.org&quot;&gt;OpenStreetMap&lt;/a&gt; contributors, &apos; +
-  &apos;&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.0/&quot;&gt;CC-BY-SA&lt;/a&gt;, &apos; +
-  &apos;Imagery © &lt;a href=&quot;http://mapbox.com&quot;&gt;Mapbox&lt;/a&gt;&apos;,
-  id: &apos;mapbox.streets&apos;
-}).addTo(mymap);</code></pre>
-
-        <hr class="mg-y-50 mg-b-40">
-
-        <h4 id="section2" class="mg-b-10">With Popup</h4>
-        <p class="mg-b-30">Popups are usually used when you want to attach some information to a map.</p>
-
-        <div data-label="Example" class="df-example">
-          <div id="leaflet2" class="ht-300"></div>
-        </div><!-- df-example -->
-        <pre><code class="language-js">var mymap2 = L.map(&apos;leaflet2&apos;).setView([51.505, -0.09], 13);
-
-L.tileLayer(&apos;https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw&apos;, {
-  maxZoom: 18,
-  attribution: &apos;Map data &amp;copy; &lt;a href=&quot;http://openstreetmap.org&quot;&gt;OpenStreetMap&lt;/a&gt; contributors, &apos; +
-  &apos;&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.0/&quot;&gt;CC-BY-SA&lt;/a&gt;, &apos; +
-  &apos;Imagery © &lt;a href=&quot;http://mapbox.com&quot;&gt;Mapbox&lt;/a&gt;&apos;,
-  id: &apos;mapbox.streets&apos;
-}).addTo(mymap2);
-
-L.marker([51.5, -0.09]).addTo(mymap2)
-.bindPopup(&quot;&lt;b&gt;Hello world!&lt;/b&gt;&lt;br /&gt;I am a popup.&quot;).openPopup();</code></pre>
-
-        <hr class="mg-y-50 mg-b-40">
-
-        <h4 id="section3" class="mg-b-10">With Circle</h4>
-        <p class="mg-b-30">Adding a circle is the same (except for specifying the radius in meters as a second argument), but lets you control how it looks by passing options as the last argument when creating the object.</p>
-
-        <div data-label="Example" class="df-example">
-          <div id="leaflet3" class="ht-300"></div>
-        </div><!-- df-example -->
-        <pre><code class="language-js">var mymap3 = L.map(&apos;leaflet3&apos;).setView([51.505, -0.09], 13);
-
-L.tileLayer(&apos;https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw&apos;, {
-  maxZoom: 18,
-  attribution: &apos;Map data &amp;copy; &lt;a href=&quot;http://openstreetmap.org&quot;&gt;OpenStreetMap&lt;/a&gt; contributors, &apos; +
-  &apos;&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.0/&quot;&gt;CC-BY-SA&lt;/a&gt;, &apos; +
-  &apos;Imagery © &lt;a href=&quot;http://mapbox.com&quot;&gt;Mapbox&lt;/a&gt;&apos;,
-  id: &apos;mapbox.streets&apos;
-}).addTo(mymap3);
-
-L.circle([51.508, -0.11], {
-  color: &apos;red&apos;,
-  fillColor: &apos;#f03&apos;,
-  fillOpacity: 0.5,
-  radius: 500
-}).addTo(mymap3);</code></pre>
-
-        <footer class="content-footer">
-          <div>
-            <span>&copy; 2019 DashForge v1.0.0. </span>
-            <span>Made by <a href="http://themepixels.me">ThemePixels</a></span>
+       <div class="container">
+        <div class="wrapper">
+          <!-- <div class="header">
+            <ul>
+              <li class="active form_1_progessbar">
+                <div>
+                  <p>1</p>
+                </div>
+              </li>
+              <li class="form_2_progessbar">
+                <div>
+                  <p>2</p>
+                </div>
+              </li>
+              <li class="form_3_progessbar">
+                <div>
+                  <p>3</p>
+                </div>
+              </li>
+            </ul>
+          </div> -->
+          <div class="form_wrap">
+            <div class="form_1 data_info">
+              <!-- <h2>Signup Info</h2> -->
+              <form>
+                <div class="form_container">
+                  <div class="input_wrap">
+                    <label for="email">Description</label>
+                    <input type="text" name="Email Address" class="input" id="email">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="password">Company Website</label>
+                    <input type="password" name="password" class="input" id="password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Email</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Phone</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Phone</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="form_2 data_info" style="display: none;">
+              <!-- <h2>Personal Info</h2> -->
+              <form>
+                <div class="form_container">
+                  <div class="input_wrap">
+                    <label for="email">Description</label>
+                    <input type="text" name="Email Address" class="input" id="email">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="password">Company Website</label>
+                    <input type="password" name="password" class="input" id="password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Email</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Phone</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Phone</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="form_3 data_info" style="display: none;">
+              <!-- <h2>Professional Info</h2> -->
+              <form>
+                <div class="form_container">
+                  <div class="input_wrap">
+                    <label for="email">Description</label>
+                    <input type="text" name="Email Address" class="input" id="email">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="password">Company Website</label>
+                    <input type="password" name="password" class="input" id="password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Email</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Phone</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Phone</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="form_4 data_info" style="display: none;">
+              <h2>Professional 4</h2>
+              <form>
+                <div class="form_container">
+                  <div class="input_wrap">
+                    <label for="email">Description</label>
+                    <input type="text" name="Email Address" class="input" id="email">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="password">Company Website</label>
+                    <input type="password" name="password" class="input" id="password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Email</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Phone</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="confirm_password">Company Phone</label>
+                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="form_5 data_info" style="display: none;">
+              <h2>Professional 5</h2>
+              <form>
+                <div class="form_container">
+                  <div class="input_wrap">
+                    <label for="company">Current Company</label>
+                    <input type="text" name="Current Company" class="input" id="company">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="experience">Total Experience</label>
+                    <input type="text" name="Total Experience" class="input" id="experience">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="designation">Designation</label>
+                    <input type="text" name="Designation" class="input" id="designation">
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-          <div>
-            <nav class="nav">
-              <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
-              <a href="../change-log.html" class="nav-link">Change Log</a>
-              <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link">Get Help</a>
-            </nav>
-          </div>
-        </footer><!-- content-footer -->
 
+          <div class="btns_wrap">
+            <div class="common_btns form_1_btns">
+              <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+            </div>
+            <div class="common_btns form_2_btns" style="display: none;">
+              <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+              <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+            </div>
+            <div class="common_btns form_3_btns" style="display: none;">
+              <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+              <button type="button" class="btn_next">Next</button>
+            </div>
+            <div class="common_btns form_4_btns" style="display: none;">
+              <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+              <button type="button" class="btn_next">Next</button>
+            </div>
+            <div class="common_btns form_5_btns" style="display: none;">
+              <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+              <button type="button" class="btn_done">Done</button>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
+    
       </div><!-- container -->
     </div><!-- content -->
-
+    <footer class="footer " style="background-color: black;">
+      <div>
+        <span class="text-white">&copy; 2023 PositiivPlus v30. </span>
+      </div>
+      <div>
+      </div>
+    </footer>
     <script src="../lib/jquery/jquery.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../lib/feather-icons/feather.min.js"></script>
     <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="../lib/prismjs/prism.js"></script>
-    <script src="../lib/leaflet/leaflet.js"></script>
 
     <script src="../assets/js/dashforge.js"></script>
     <script>
       $(function(){
-        'use strict';
-
-        // Leftlet Maps
-        var mymap = L.map('leaflet1').setView([51.505, -0.09], 13);
-
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-          maxZoom: 18,
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-          id: 'mapbox.streets'
-        }).addTo(mymap);
-
-
-        // Adding a Popup
-        var mymap2 = L.map('leaflet2').setView([51.505, -0.09], 13);
-
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-          maxZoom: 18,
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-          id: 'mapbox.streets'
-        }).addTo(mymap2);
-
-        L.marker([51.5, -0.09]).addTo(mymap2)
-        .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-
-
-        // Adding a Circle
-        var mymap3 = L.map('leaflet3').setView([51.505, -0.09], 13);
-
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-          maxZoom: 18,
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-          id: 'mapbox.streets'
-        }).addTo(mymap3);
-
-        L.circle([51.508, -0.11], {
-          color: 'red',
-          fillColor: '#f03',
-          fillOpacity: 0.5,
-          radius: 500
-        }).addTo(mymap3);
+        'use strict'
 
       });
     </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root{
+	--primary: #6b59d3;
+	--secondary: #bfc0c0;
+	--white: #fff;
+	--text-clr: #5b6475;
+	--header-clr: #25273d;
+	--next-btn-hover: #8577d2;
+	--back-btn-hover: #8b8c8c;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	/* background: var(--primary); */
+	color: var(--text-clr);
+	font-size: 16px;
+	position: relative;
+}
+
+.wrapper{
+	width: 750px;
+	max-width: 100%;
+	background: var(--white);
+	margin: 10px auto 0;
+	padding: 50px;
+	border-radius: 5px;
+}
+
+.wrapper .header{
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper .header ul{
+	display: flex;
+}
+
+.wrapper .header ul li{
+	margin-right: 50px;
+	position: relative;
+}
+
+.wrapper .header ul li:last-child{
+	margin-right: 0;
+}
+
+.wrapper .header ul li:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 55px;
+	width: 100%;
+	height: 2px;
+	background: var(--secondary);
+}
+
+.wrapper .header ul li:last-child:before{
+	display: none;
+}
+
+.wrapper .header ul li div{
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.wrapper .header ul li p{
+	width: 50px;
+	height: 50px;
+	background: var(--secondary);
+	color: var(--white);
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+}
+
+.wrapper .header ul li.active:before{
+	background: var(--primary);
+}
+
+.wrapper .header ul li.active p{
+	background: var(--primary);
+}
+
+.wrapper .form_wrap{
+	margin-bottom: 35px;
+}
+
+.wrapper .form_wrap h2{
+	color: var(--header-clr);
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.wrapper .form_wrap .input_wrap{
+	width: 350px;
+	max-width: 100%;
+	margin: 0 auto 20px;
+}
+
+.wrapper .form_wrap .input_wrap:last-child{
+	margin-bottom: 0;
+}
+
+.wrapper .form_wrap .input_wrap label{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.wrapper .form_wrap .input_wrap .input{
+	border: 2px solid var(--secondary);
+	border-radius: 3px;
+	padding: 10px;
+	display: block;
+	width: 100%;	
+	font-size: 16px;
+	transition: 0.5s ease;
+}
+
+.wrapper .form_wrap .input_wrap .input:focus{
+	border-color: var(--primary);
+}
+
+.wrapper .btns_wrap{
+	width: 350px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper .btns_wrap .common_btns{
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper .btns_wrap .common_btns.form_1_btns{
+	justify-content: flex-end;
+}
+
+.wrapper .btns_wrap .common_btns button{
+	border: 0;
+	padding: 12px 15px;
+	background: var(--primary);
+	color: var(--white);
+	width: 135px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	border-radius: 3px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.wrapper .btns_wrap .common_btns button.btn_back{
+	background: var(--secondary);
+}
+
+.wrapper .btns_wrap .common_btns button.btn_next .icon{
+	display: flex;
+	margin-left: 10px;
+}
+
+.wrapper .btns_wrap .common_btns button.btn_back .icon{
+	display: flex;
+	margin-right: 10px;
+}
+
+.wrapper .btns_wrap .common_btns button.btn_next:hover,
+.wrapper .btns_wrap .common_btns button.btn_done:hover{
+	background: var(--next-btn-hover);
+}
+
+.wrapper .btns_wrap .common_btns button.btn_back:hover{
+	background: var(--back-btn-hover);
+}
+
+.modal_wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+
+.modal_wrapper .shadow{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	opacity: 0;
+	transition: 0.2s ease;
+}
+
+.modal_wrapper .success_wrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-800px);
+	background: var(--white);
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	transition: 0.5s ease;
+}
+
+.modal_wrapper .success_wrap .modal_icon{
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+	background: var(--primary);
+	color: var(--white);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.modal_wrapper.active{
+	visibility: visible;
+}
+
+.modal_wrapper.active .shadow{
+	opacity: 1;
+}
+
+.modal_wrapper.active .success_wrap{
+	transform: translate(-50%,-50%);
+}
+    </style>
+    <script>
+var form_1 = document.querySelector(".form_1");
+var form_2 = document.querySelector(".form_2");
+var form_3 = document.querySelector(".form_3");
+var form_4 = document.querySelector(".form_4");
+var form_5 = document.querySelector(".form_5");
+
+
+var form_1_btns = document.querySelector(".form_1_btns");
+var form_2_btns = document.querySelector(".form_2_btns");
+var form_3_btns = document.querySelector(".form_3_btns");
+var form_4_btns = document.querySelector(".form_4_btns");
+var form_5_btns = document.querySelector(".form_5_btns");
+
+
+var form_1_next_btn = document.querySelector(".form_1_btns .btn_next");
+var form_2_back_btn = document.querySelector(".form_2_btns .btn_back");
+var form_2_next_btn = document.querySelector(".form_2_btns .btn_next");
+var form_3_back_btn = document.querySelector(".form_3_btns .btn_back");
+var form_3_next_btn = document.querySelector(".form_3_btns .btn_next");
+var form_4_back_btn = document.querySelector(".form_4_btns .btn_back");
+var form_4_next_btn = document.querySelector(".form_4_btns .btn_next");
+var form_5_back_btn = document.querySelector(".form_5_btns .btn_back");
+var form_5_next_btn = document.querySelector(".form_5_btns .btn_next");
+
+var form_2_progessbar = document.querySelector(".form_2_progessbar");
+var form_3_progessbar = document.querySelector(".form_3_progessbar");
+var form_4_progessbar = document.querySelector(".form_4_progessbar");
+var form_5_progessbar = document.querySelector(".form_5_progessbar");
+
+var btn_done = document.querySelector(".btn_done");
+var modal_wrapper = document.querySelector(".modal_wrapper");
+var shadow = document.querySelector(".shadow");
+
+form_1_next_btn.addEventListener("click", function(){
+	form_1.style.display = "none";
+	form_2.style.display = "block";
+
+	form_1_btns.style.display = "none";
+	form_2_btns.style.display = "flex";
+
+	form_2_progessbar.classList.add("active");
+});
+
+form_2_back_btn.addEventListener("click", function(){
+	form_1.style.display = "block";
+	form_2.style.display = "none";
+
+	form_1_btns.style.display = "flex";
+	form_2_btns.style.display = "none";
+
+	form_2_progessbar.classList.remove("active");
+});
+
+form_2_next_btn.addEventListener("click", function(){
+	form_2.style.display = "none";
+	form_3.style.display = "block";
+
+	form_3_btns.style.display = "flex";
+	form_2_btns.style.display = "none";
+
+	form_3_progessbar.classList.add("active");
+});
+
+form_3_back_btn.addEventListener("click", function(){
+	form_2.style.display = "block";
+	form_3.style.display = "none";
+
+	form_3_btns.style.display = "none";
+	form_2_btns.style.display = "flex";
+
+	form_3_progessbar.classList.remove("active");
+});
+
+form_3_next_btn.addEventListener("click", function(){
+	form_2.style.display = "none";
+	form_3.style.display = "block";
+
+	form_3_btns.style.display = "flex";
+	form_2_btns.style.display = "none";
+
+	form_3_progessbar.classList.add("active");
+});
+
+form_4_back_btn.addEventListener("click", function(){
+	form_3.style.display = "block";
+	form_4.style.display = "none";
+
+	form_4_btns.style.display = "none";
+	form_3_btns.style.display = "flex";
+
+	form_4_progessbar.classList.remove("active");
+});
+
+form_4_next_btn.addEventListener("click", function(){
+	form_3.style.display = "none";
+	form_4.style.display = "block";
+
+	form_4_btns.style.display = "flex";
+	form_3_btns.style.display = "none";
+
+	form_4_progessbar.classList.add("active");
+});
+
+form_5_back_btn.addEventListener("click", function(){
+	form_4.style.display = "block";
+	form_5.style.display = "none";
+
+	form_5_btns.style.display = "none";
+	form_4_btns.style.display = "flex";
+
+	form_5_progessbar.classList.remove("active");
+});
+
+form_5_next_btn.addEventListener("click", function(){
+	form_4.style.display = "none";
+	form_5.style.display = "block";
+
+	form_5_btns.style.display = "flex";
+	form_4_btns.style.display = "none";
+
+	form_5_progessbar.classList.add("active");
+});
+
+btn_done.addEventListener("click", function(){
+	modal_wrapper.classList.add("active");
+})
+
+shadow.addEventListener("click", function(){
+	modal_wrapper.classList.remove("active");
+})
+    </script>
   </body>
 </html>
