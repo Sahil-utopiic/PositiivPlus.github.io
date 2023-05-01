@@ -302,24 +302,36 @@
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
-                    <label for="email">Description</label>
-                    <input type="text" name="Email Address" class="input" id="email">
+                    <div class="row">
+                      <div class="col"><label for="email">Description</label>
+                        <input type="text" name="Email Address" class="input" id="email"></div>
+                      <div class="col"><label for="email">Mission statement</label>
+                        <input type="text" name="Email Address" class="input" id="email"></div>
+                    </div>
                   </div>
                   <div class="input_wrap">
-                    <label for="password">Company Website</label>
-                    <input type="password" name="password" class="input" id="password">
+                    <div class="row">
+                      <div class="col"><label for="email">Company Website</label>
+                        <input type="text" name="Email Address" class="input" id="email"></div>
+                      <div class="col"><label for="email">Twitter Page Link</label>
+                        <input type="text" name="Email Address" class="input" id="email"></div>
+                    </div>
                   </div>
                   <div class="input_wrap">
-                    <label for="confirm_password">Company Email</label>
-                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                    <div class="row">
+                      <div class="col"><label for="email">Company E-mail</label>
+                        <input type="text" name="Email Address" class="input" id="email"></div>
+                      <div class="col"><label for="email">LinkedIn Page Link</label>
+                        <input type="text" name="Email Address" class="input" id="email"></div>
+                    </div>
                   </div>
                   <div class="input_wrap">
-                    <label for="confirm_password">Company Phone</label>
-                    <input type="password" name="confirm password" class="input" id="confirm_password">
-                  </div>
-                  <div class="input_wrap">
-                    <label for="confirm_password">Company Phone</label>
-                    <input type="password" name="confirm password" class="input" id="confirm_password">
+                    <div class="row">
+                      <div class="col"><label for="email">Company Phone</label>
+                        <input type="text" name="Email Address" class="input" id="email"></div>
+                      <div class="col"><label for="email">Google Page Link</label>
+                        <input type="text" name="Email Address" class="input" id="email"></div>
+                    </div>
                   </div>
                 </div>
               </form>
@@ -329,25 +341,14 @@
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
-                    <label for="email">Description</label>
+                    <label for="email">Industry</label>
                     <input type="text" name="Email Address" class="input" id="email">
                   </div>
                   <div class="input_wrap">
-                    <label for="password">Company Website</label>
+                    <label for="password">Sub Industry</label>
                     <input type="password" name="password" class="input" id="password">
                   </div>
-                  <div class="input_wrap">
-                    <label for="confirm_password">Company Email</label>
-                    <input type="password" name="confirm password" class="input" id="confirm_password">
-                  </div>
-                  <div class="input_wrap">
-                    <label for="confirm_password">Company Phone</label>
-                    <input type="password" name="confirm password" class="input" id="confirm_password">
-                  </div>
-                  <div class="input_wrap">
-                    <label for="confirm_password">Company Phone</label>
-                    <input type="password" name="confirm password" class="input" id="confirm_password">
-                  </div>
+                
                 </div>
               </form>
             </div>
@@ -356,7 +357,7 @@
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
-                    <label for="email">Description</label>
+                    <label for="email">Sites</label>
                     <input type="text" name="Email Address" class="input" id="email">
                   </div>
                   <div class="input_wrap">
@@ -383,7 +384,7 @@
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
-                    <label for="email">Description</label>
+                    <label for="email">Type</label>
                     <input type="text" name="Email Address" class="input" id="email">
                   </div>
                   <div class="input_wrap">
@@ -410,17 +411,14 @@
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
-                    <label for="company">Current Company</label>
+                    <label for="company">Export Percentage</label>
                     <input type="text" name="Current Company" class="input" id="company">
                   </div>
                   <div class="input_wrap">
-                    <label for="experience">Total Experience</label>
+                    <label for="experience">Countries</label>
                     <input type="text" name="Total Experience" class="input" id="experience">
                   </div>
-                  <div class="input_wrap">
-                    <label for="designation">Designation</label>
-                    <input type="text" name="Designation" class="input" id="designation">
-                  </div>
+                 
                 </div>
               </form>
             </div>
@@ -445,6 +443,13 @@
             <div class="common_btns form_5_btns" style="display: none;">
               <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
               <button type="button" class="btn_done">Done</button>
+            </div>
+          </div>
+          <div class="modal_wrapper">
+            <div class="shadow"></div>
+            <div class="success_wrap">
+              <span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
+              <p>You have successfully completed the process.</p>
             </div>
           </div>
         </div>
@@ -579,9 +584,9 @@ body{
 }
 
 .wrapper .form_wrap .input_wrap{
-	width: 350px;
+	width: auto;
 	max-width: 100%;
-	margin: 0 auto 20px;
+	margin: 0 0px;
 }
 
 .wrapper .form_wrap .input_wrap:last-child{
