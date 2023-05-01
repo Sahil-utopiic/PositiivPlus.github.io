@@ -274,7 +274,7 @@
               </a>
             </li>
           </ul>
-        </div><!-- df-example -->
+        </div>
        <div class="container">
         <div class="wrapper">
           <!-- <div class="header">
@@ -298,7 +298,7 @@
           </div> -->
           <div class="form_wrap">
             <div class="form_1 data_info">
-              <!-- <h2>Signup Info</h2> -->
+              <h2>Form 1</h2>
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
@@ -325,7 +325,7 @@
               </form>
             </div>
             <div class="form_2 data_info" style="display: none;">
-              <!-- <h2>Personal Info</h2> -->
+              <h2>Form 2</h2>
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
@@ -352,7 +352,7 @@
               </form>
             </div>
             <div class="form_3 data_info" style="display: none;">
-              <!-- <h2>Professional Info</h2> -->
+              <h2>Form 3</h2>
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
@@ -379,7 +379,7 @@
               </form>
             </div>
             <div class="form_4 data_info" style="display: none;">
-              <h2>Professional 4</h2>
+              <h2>Form 4</h2>
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
@@ -406,7 +406,7 @@
               </form>
             </div>
             <div class="form_5 data_info" style="display: none;">
-              <h2>Professional 5</h2>
+              <h2>Form 5</h2>
               <form>
                 <div class="form_container">
                   <div class="input_wrap">
@@ -449,9 +449,7 @@
           </div>
         </div>
        </div>
-
-
-    
+   
       </div><!-- container -->
     </div><!-- content -->
     <footer class="footer " style="background-color: black;">
@@ -735,7 +733,6 @@ var form_3_btns = document.querySelector(".form_3_btns");
 var form_4_btns = document.querySelector(".form_4_btns");
 var form_5_btns = document.querySelector(".form_5_btns");
 
-
 var form_1_next_btn = document.querySelector(".form_1_btns .btn_next");
 var form_2_back_btn = document.querySelector(".form_2_btns .btn_back");
 var form_2_next_btn = document.querySelector(".form_2_btns .btn_next");
@@ -744,7 +741,7 @@ var form_3_next_btn = document.querySelector(".form_3_btns .btn_next");
 var form_4_back_btn = document.querySelector(".form_4_btns .btn_back");
 var form_4_next_btn = document.querySelector(".form_4_btns .btn_next");
 var form_5_back_btn = document.querySelector(".form_5_btns .btn_back");
-var form_5_next_btn = document.querySelector(".form_5_btns .btn_next");
+// var form_5_next_btn = document.querySelector(".form_5_btns .btn_next");
 
 var form_2_progessbar = document.querySelector(".form_2_progessbar");
 var form_3_progessbar = document.querySelector(".form_3_progessbar");
@@ -796,13 +793,13 @@ form_3_back_btn.addEventListener("click", function(){
 });
 
 form_3_next_btn.addEventListener("click", function(){
-	form_2.style.display = "none";
-	form_3.style.display = "block";
+	form_3.style.display = "none";
+	form_4.style.display = "block";
 
-	form_3_btns.style.display = "flex";
-	form_2_btns.style.display = "none";
+	form_4_btns.style.display = "flex";
+	form_3_btns.style.display = "none";
 
-	form_3_progessbar.classList.add("active");
+	form_4_progessbar.classList.add("active");
 });
 
 form_4_back_btn.addEventListener("click", function(){
@@ -816,13 +813,13 @@ form_4_back_btn.addEventListener("click", function(){
 });
 
 form_4_next_btn.addEventListener("click", function(){
-	form_3.style.display = "none";
-	form_4.style.display = "block";
+	form_4.style.display = "none";
+	form_5.style.display = "block";
 
-	form_4_btns.style.display = "flex";
-	form_3_btns.style.display = "none";
+	form_5_btns.style.display = "flex";
+	form_4_btns.style.display = "none";
 
-	form_4_progessbar.classList.add("active");
+	form_5_progessbar.classList.add("active");
 });
 
 form_5_back_btn.addEventListener("click", function(){
@@ -835,15 +832,15 @@ form_5_back_btn.addEventListener("click", function(){
 	form_5_progessbar.classList.remove("active");
 });
 
-form_5_next_btn.addEventListener("click", function(){
-	form_4.style.display = "none";
-	form_5.style.display = "block";
+// form_5_next_btn.addEventListener("click", function(){
+// 	form_4.style.display = "none";
+// 	form_5.style.display = "block";
 
-	form_5_btns.style.display = "flex";
-	form_4_btns.style.display = "none";
+// 	form_5_btns.style.display = "flex";
+// 	form_4_btns.style.display = "none";
 
-	form_5_progessbar.classList.add("active");
-});
+// 	form_5_progessbar.classList.add("active");
+// });
 
 btn_done.addEventListener("click", function(){
 	modal_wrapper.classList.add("active");
